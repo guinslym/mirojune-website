@@ -1,3 +1,38 @@
+needs (Miro):
+ ☐ ...what i have been wanted and still want is white background and just some menu on the side or on the top.
+ ☐ Menu i.e.: about, archive, contact.
+ ☐ ... gif or mov file keep playing on homepage without pressing play button
+
+Conclusion:
+ ✔ Not necessarly a Wordpress site @done (17-07-14 02:45)
+ ☐ Start Agile
+ ☐ Need to have a homepage with Video
+ ☐ admin interface
+ ☐ Simple Navigation (3-4 menu max)
+ ☐ Needs to be responsive (meaning can be viewed in mobile phones)
+
+Questions:
+ ✔ You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...) @done (17-07-14 02:58)
+ ✔ What is the content of the website (Pictures / Paintings or both) @done (17-07-14 02:58)
+ ✔ Where do you want to install this website... is it on GoDaddy or ...? So that I will know which programming language to use @done (17-07-14 02:58)
+ ✔ If you show your paintings do you want to sell them on your website? @done (17-07-14 02:58)
+ ✔ if yes.. How will you sell your paints (Paypal; Stripe; Shopify)? @done (17-07-14 02:46)
+
+homeworks:
+ ☐ do a wireframe
+ ☐ find the color theme and fonts
+
+Inspirations:
+ ☐ http://www.salt-projects.be/
+ ☐ https://www.thebestdesigns.com/designs/white/p2
+ ☐ http://www.modehire.com.au/
+ ☐ https://www.awwwards.com/50-fantastic-white-web-designs.html
+ ☐ https://www.awwwards.com/websites/white/
+ ☐ https://www.godoshopping.it/ (flexbox)
+ ☐ http://nordic.design/ (border svg)
+ ☐ http://music.manuelmoreale.com/
+ ☐ http://twostates.in/
+
 todo:
  ☐ find Miro specifications
  ☐ Create DB and routes
@@ -6,3 +41,17 @@ todo:
 
 database:
  ☐ Create Table (Profile-User-Paintings)
+
+
+ ☐ question 1 : You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...)
+ ☐ yes i need to have the pictures of the paintings and video works but the video works are only few like 4 or 4 of them
+ 
+ ☐ question 2 : What is the content of the website (Pictures / Paintings or both)
+ ☐ the contents are paintings but it will be the pictures of the paintings and some other works
+ ☐ question 3 : Where do you want to install this website... is it on GoDaddy or ...? So that I will know which programming language to use
+- my current domain and website is under godaddy and wordpress and once its all set up i need to be available to post new works by myself cause i cannot ask your help every time whenever i want to update new works. therefore, my question is if wordpress is the easiest to update new works for me in the future, then wordpress. or if you have other options, let me know!
+ ☐ question 4 :  If you show your paintings do you want to sell them on your website?
+- no it will be very complicated if there is a shop on the website. i want the website just for my porforlio
+ ☐ i need SNS links in the bottom
+ ☐ like instagram and facebook
+ ✔ if you have more questions, let me know! @done (17-07-14 02:50)
