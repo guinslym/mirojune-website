@@ -1,0 +1,5 @@
+miro/vendor
+miro/node_modules
+miro/Homestead.yaml
+miro/Homestead.json
+miro/.env
