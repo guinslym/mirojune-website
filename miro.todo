@@ -7,9 +7,11 @@ Conclusion:
  ✔ Not necessarly a Wordpress site @done (17-07-14 02:45)
  ☐ Start Agile
  ☐ Need to have a homepage with Video
- ☐ admin interface
+ ✔ admin interface @done (17-07-14 22:04)
  ☐ Simple Navigation (3-4 menu max)
  ☐ Needs to be responsive (meaning can be viewed in mobile phones)
+ ☐ Simplify it
+ ☐ Wireframe
 
 Questions:
  ✔ You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...) @done (17-07-14 02:58)
@@ -55,3 +57,38 @@ database:
  ☐ i need SNS links in the bottom
  ☐ like instagram and facebook
  ✔ if you have more questions, let me know! @done (17-07-14 02:50)
+
+Categories
+ Layout:
+  ☐ Navbar
+    ☐ Homepage
+    ☐ Paintings
+    ☐ Videos
+    ☐ Archives
+    ☐ Other Medias (Pictures)
+    ☐ Contact us
+  ☐ Technologies
+    ☐ Bootstrap (Burma)
+    ☐ Isotopes
+    ☐ Svgplus (Signatures)
+    ☐ Font-awesomes (social network)
+  ☐ Laravel
+    ☐ Authentification
+    ☐ Authorisation
+    ☐ JCrop
+    ☐ Database
+      ☐ User
+      ☐ Medias
+        ☐ MediaFile (fileupload)
+        ☐ Categories (select field)
+        ☐ Crop thumbnail
+      ☐ Categories
+        ☐ Paintings
+        ☐ Videos
+        ☐ Pictures
+        ☐ Other Medias
+      ☐ Profile
+        ☐ Firstname
+        ☐ Lastname
+        ☐ UserPicture
+  ☐ API (for ReactNative)
