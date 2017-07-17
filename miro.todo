@@ -21,7 +21,7 @@ Questions:
  ✔ if yes.. How will you sell your paints (Paypal; Stripe; Shopify)? @done (17-07-14 02:46)
 
 homeworks:
- ☐ do a wireframe
+ ✔ do a wireframe @done (17-07-17 19:56)
  ☐ find the color theme and fonts
 
 Inspirations:
@@ -36,7 +36,7 @@ Inspirations:
  ☐ http://twostates.in/
 
 todo:
- ☐ find Miro specifications
+ ✔ find Miro specifications @done (17-07-17 19:56)
  ☐ Create DB and routes
  ☐ add svgplus
  ☐ add video in the background
@@ -92,3 +92,9 @@ Categories
         ☐ Lastname
         ☐ UserPicture
   ☐ API (for ReactNative)
+
+  Brute force requires checking every possible strategy to find the most optimal
+  Brute forcing is a method in hacking (and apparently computer chess simulation) that means to run every possibility of a problem until the program finds the best solution.
+
+  artificial neural networks, which mimic human learning
+  The learning process involved the computer playing itself, and then calculating whether it would win or not based on its next move.
