@@ -48,12 +48,12 @@ database:
 
 Steps:
  ✔ Create a Image table @done (17-07-17 21:10)
- ☐ Create a CRUD app
+ ✔ Create a CRUD app @done (17-07-17 22:12)
    ✔ Create @done (17-07-17 21:30)
-   ☐ Show/Detail/Read
+   ✔ Show/Detail/Read @done (17-07-17 22:12)
      ✔ List @done (17-07-17 21:30)
-   ☐ Delete
-   ☐ Update
+   ✔ Delete @done (17-07-17 22:12)
+   ✔ Update @done (17-07-17 22:11)
  ☐ Create the front-end
  ☐ Create a contact form (5minutes email)
  ☐ Create categories

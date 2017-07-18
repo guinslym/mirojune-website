@@ -81,7 +81,7 @@ class ImageController extends Controller
     {
         //
          $image = Image::find($id);
-         return view('image-detail')->with('image', $image);
+         return view('show-image')->with('image', $image);
     }
 
     /**

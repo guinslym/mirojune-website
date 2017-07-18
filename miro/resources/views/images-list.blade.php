@@ -1,6 +1,7 @@
 @extends('global-layout')
 
 @section('body')
+<h1>hello</h1>
    <div class="row">
       @if(count($images) > 0)
          <div class="col-md-12 text-center" >
@@ -14,7 +15,9 @@
       @forelse($images as $image)
          <div class="col-md-3">
             <div class="thumbnail">
-               <img src="{{asset($image->file)}}" />
+               <a href="{{ url('/image/'.$image->id)}}">
+                  <img src="{{asset($image->file)}}" />
+               </a>
                <div class="caption">
                   <h3>{{$image->caption}}</h3>
                   <p>{!! substr($image->description, 0,100) !!}</p>
