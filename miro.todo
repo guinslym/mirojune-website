@@ -47,11 +47,13 @@ database:
 
 
 Steps:
- ☐ Create a Image table
- ☐ Create the front-end
+ ✔ Create a Image table @done (17-07-17 21:10)
  ☐ Create a CRUD app
+ ☐ Create the front-end
  ☐ Create a contact form (5minutes email)
  ☐ Create categories
+ ☐ Create image resize
+   ☐ https://www.youtube.com/watch?v=OPWAM0aPCvU
  ☐ Create JCROP
  ☐ Create Medias model to replace Paintings
 
