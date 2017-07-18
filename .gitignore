@@ -4,3 +4,4 @@ miro/Homestead.yaml
 miro/Homestead.json
 miro/.env
 miro/.env.production
+miro/public/uploads

@@ -14,7 +14,9 @@
       @forelse($images as $image)
          <div class="col-md-3">
             <div class="thumbnail">
+               <a href="{{ url('/image/'.$image->id.) }}">
                <img src="{{asset($image->file)}}" />
+               </a>
                <div class="caption">
                   <h3>{{$image->caption}}</h3>
                   <p>{!! substr($image->description, 0,100) !!}</p>

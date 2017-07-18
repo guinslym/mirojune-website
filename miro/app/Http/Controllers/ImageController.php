@@ -45,7 +45,7 @@ class ImageController extends Controller
       $validation = Validator::make($request->all(), [
          'caption'     => 'required|regex:/^[A-Za-z ]+$/',
          'description' => 'required',
-         'userfile'     => 'required|image|mimes:jpeg,png|min:1|max:250'
+         'userfile'     => 'required|image|mimes:jpeg,png|min:1|max:2000000'
       ]);
 
       // Check if it fails //

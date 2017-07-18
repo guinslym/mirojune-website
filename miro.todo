@@ -47,7 +47,7 @@ database:
 
 
 Steps:
- ☐ Create a Paintings table
+ ☐ Create a Image table
  ☐ Create the front-end
  ☐ Create a CRUD app
  ☐ Create a contact form (5minutes email)

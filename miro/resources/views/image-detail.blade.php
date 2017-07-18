@@ -1,6 +1,7 @@
 @extends('global-layout')
 
 @section('content')
+    <h1>hello world</h1>
    <form class="form-horizontal">
 
      <img src="{{ asset($image->file) }}" height="150" />
