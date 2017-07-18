@@ -45,6 +45,14 @@ todo:
 database:
  ☐ Create Table (Profile-User-Paintings)
 
+helps:
+ ☐ http://www.the-amazing-php.com/2015/06/laravel-5.1-image-gallery-crud.html
+ ☐ http://www.easylaravelbook.com/blog/2015/02/09/creating-a-contact-form-in-laravel-5-using-the-form-request-feature/
+ ☐ https://stackoverflow.com/questions/34624496/bootstrap-video-jumbotron
+   ☐ https://jsfiddle.net/kae4q601/15/
+   ☐ https://www.youtube.com/watch?v=OnAAHJTkmWA
+ ☐ 
+
 
 Steps:
  ✔ Create a Image table @done (17-07-17 21:10)
@@ -55,8 +63,17 @@ Steps:
    ✔ Delete @done (17-07-17 22:12)
    ✔ Update @done (17-07-17 22:11)
  ☐ Create the front-end
- ☐ Create a contact form (5minutes email)
+   ☐ Choose Front end Stack
+     ☐ http://getbootstrap.com/css/
+     ☐ http://bulma.io/documentation/elements/box/
+     ☐ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html
+   ☐ Does the Frontend stack works with Video and Isotope
+   ☐ Start the basic layout Base Template
+   ☐ Create a contact form
+ ✔ Create a contact form (5minutes email)---- Postpone @done (17-07-17 22:26)
  ☐ Create categories
+ ☐ Create One to Many (Categorie has one Image)
+ ☐ Create a HomeVideo (add and remove Home Video)
  ☐ Create image resize
    ☐ https://www.youtube.com/watch?v=OPWAM0aPCvU
  ☐ Create JCROP
@@ -117,7 +134,3 @@ Categories
 
   artificial neural networks, which mimic human learning
   The learning process involved the computer playing itself, and then calculating whether it would win or not based on its next move.
-
-
-  helps:
-   ☐ http://www.the-amazing-php.com/2015/06/laravel-5.1-image-gallery-crud.html
