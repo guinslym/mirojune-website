@@ -49,6 +49,11 @@ database:
 Steps:
  ✔ Create a Image table @done (17-07-17 21:10)
  ☐ Create a CRUD app
+   ✔ Create @done (17-07-17 21:30)
+   ☐ Show/Detail/Read
+     ✔ List @done (17-07-17 21:30)
+   ☐ Delete
+   ☐ Update
  ☐ Create the front-end
  ☐ Create a contact form (5minutes email)
  ☐ Create categories
@@ -112,3 +117,7 @@ Categories
 
   artificial neural networks, which mimic human learning
   The learning process involved the computer playing itself, and then calculating whether it would win or not based on its next move.
+
+
+  helps:
+   ☐ http://www.the-amazing-php.com/2015/06/laravel-5.1-image-gallery-crud.html
