@@ -40,10 +40,20 @@ todo:
  ☐ Create DB and routes
  ☐ add svgplus
  ☐ add video in the background
+ ☐ Choose frontend
 
 database:
  ☐ Create Table (Profile-User-Paintings)
 
+
+Steps:
+ ☐ Create a Paintings table
+ ☐ Create the front-end
+ ☐ Create a CRUD app
+ ☐ Create a contact form (5minutes email)
+ ☐ Create categories
+ ☐ Create JCROP
+ ☐ Create Medias model to replace Paintings
 
  ☐ question 1 : You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...)
  ☐ yes i need to have the pictures of the paintings and video works but the video works are only few like 4 or 4 of them
@@ -92,6 +102,8 @@ Categories
         ☐ Lastname
         ☐ UserPicture
   ☐ API (for ReactNative)
+
+
 
   Brute force requires checking every possible strategy to find the most optimal
   Brute forcing is a method in hacking (and apparently computer chess simulation) that means to run every possibility of a problem until the program finds the best solution.
