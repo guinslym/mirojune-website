@@ -41,7 +41,16 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'file' => 'required|image'
+        ]);
+        if ($validator->fails()) {
+            throw new ValidationException($validator);
+        }
+        $file = 'images/' . uniqid() . '.' . $request->file->extension();
+        $image = Image::create(['file' => $file]);
+        $path = $request->file->storeAs('public', $file);
+        return response()->json(['link' => $image->url]);
     }
 
     /**
@@ -90,6 +99,10 @@ class ImageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $image = new image();
+        $image->delete_user_images($id);
+        
+        //return Redirect::to('home');
+        return 'image just deleted';
     }
 }
