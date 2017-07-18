@@ -17,8 +17,11 @@ class AboutController extends Controller
     public function store()
     {
     }
+//
+
 
     public function index(){
+    	return view('frontend.index');
 
     }
     public function about(){

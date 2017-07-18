@@ -26,6 +26,32 @@
         padding: 40px 15px;
         text-align: center;
       }
+.jumbotron{
+  position: relative;
+    overflow: hidden;
+    height: 200px;
+ 
+  /* Tried setting the height. Didnt work either */
+  /* height: 200px; */
+}
+.container {
+  position: relative;
+  color: #ffffff;
+  z-index: 2;
+}
+
+#video-background{ 
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+} 
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -50,7 +76,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Miro June</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -63,6 +89,19 @@
     </nav>
 
     <div class="container">
+      <div class="jumbotron">
+        <video id="video-background" preload muted autoplay loop>
+          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        </video>
+        <div class="container">
+          Hello World Wocka Wocka
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
 
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
@@ -71,12 +110,98 @@
 
     </div><!-- /.container -->
 
+    <div class="container">
+      <div class="row">
+        <section class="Signature"></section>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <section class="paintingsButton"></section>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <section class="paintingsShow"></section>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <section class="About"></section>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <section class="Contact"></section>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <section class="Thanks"></section>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <section class="paintingsList"></section>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <section class="paintingsIsotope"></section>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <section class="sociaIcons"></section>
+      </div>
+    </div>
+
+    <div class="container">
+       @yield('body')
+    </div>
+
+
+
+
+<style>
+  .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+</style>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>

@@ -51,7 +51,11 @@ helps:
  ☐ https://stackoverflow.com/questions/34624496/bootstrap-video-jumbotron
    ☐ https://jsfiddle.net/kae4q601/15/
    ☐ https://www.youtube.com/watch?v=OnAAHJTkmWA
- ☐ 
+   ☐ https://codepen.io/dudleystorey/pen/knqyK
+   ☐ https://www.youtube.com/watch?v=OnAAHJTkmWA
+ ☐ Autohiding bars
+ ☐ https://www.virtuosoft.eu/code/bootstrap-autohidingnavbar/
+ ☐ https://stackoverflow.com/questions/23315031/how-to-create-a-hidden-navbar-with-bootstrap-that-shows-after-you-scroll
 
 
 Steps:
@@ -63,12 +67,12 @@ Steps:
    ✔ Delete @done (17-07-17 22:12)
    ✔ Update @done (17-07-17 22:11)
  ☐ Create the front-end
+   ☐ Start the basic layout Base Template
    ☐ Choose Front end Stack
-     ☐ http://getbootstrap.com/css/
+     ✔ http://getbootstrap.com/css/ @done (17-07-17 23:52)
      ☐ http://bulma.io/documentation/elements/box/
      ☐ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html
    ☐ Does the Frontend stack works with Video and Isotope
-   ☐ Start the basic layout Base Template
    ☐ Create a contact form
  ✔ Create a contact form (5minutes email)---- Postpone @done (17-07-17 22:26)
  ☐ Create categories

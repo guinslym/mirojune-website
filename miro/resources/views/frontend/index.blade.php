@@ -1,1 +1,1 @@
-index.blade.php
+@extends('frontend.frontend')

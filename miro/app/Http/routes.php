@@ -21,6 +21,9 @@ Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'AboutControlle
 Route::get('/paintings', ['as' => 'fontend-painting', 'uses' => 'AboutController@painting']);
 Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'AboutController@painting']);
 
+
+
+
 //Route::get('/', function(){ return redirect('/image'); });
 Route::resource('/image', 'ImageController');
 
