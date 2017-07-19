@@ -25,14 +25,14 @@ homeworks:
  ☐ find the color theme and fonts
 
 Inspirations:
- ☐ http://www.salt-projects.be/
- ☐ https://www.thebestdesigns.com/designs/white/p2
- ☐ http://www.modehire.com.au/
- ☐ https://www.awwwards.com/50-fantastic-white-web-designs.html
- ☐ https://www.awwwards.com/websites/white/
- ☐ https://www.godoshopping.it/ (flexbox)
- ☐ http://nordic.design/ (border svg)
- ☐ http://music.manuelmoreale.com/
+ ✔ http://www.salt-projects.be/ @done (17-07-18 23:14)
+ ✔ https://www.thebestdesigns.com/designs/white/p2 @done (17-07-18 23:14)
+ ✔ http://www.modehire.com.au/ @done (17-07-18 23:14)
+ ✔ https://www.awwwards.com/50-fantastic-white-web-designs.html @done (17-07-18 23:14)
+ ✔ https://www.awwwards.com/websites/white/ @done (17-07-18 23:14)
+ ✔ https://www.godoshopping.it/ (flexbox) @done (17-07-18 23:14)
+ ✔ http://nordic.design/ (border svg) @done (17-07-18 23:14)
+ ✔ http://music.manuelmoreale.com/ @done (17-07-18 23:14)
  ✔ http://twostates.in/ @done (17-07-18 18:58)
 
 todo:
@@ -66,14 +66,16 @@ Steps:
      ✔ List @done (17-07-17 21:30)
    ✔ Delete @done (17-07-17 22:12)
    ✔ Update @done (17-07-17 22:11)
+   ☐ Create Paintings
+   ☐ Create Paintings Mixitup (Archives)
  ☐ Create the front-end
    ☐ Start the basic layout Base Template
    ☐ Choose Front end Stack
-     ✔ http://getbootstrap.com/css/ @done (17-07-17 23:52)
-     ☐ http://bulma.io/documentation/elements/box/
-     ☐ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html
-   ☐ Does the Frontend stack works with Video and Isotope
-   ☐ Create a contact form
+     ✔ http://getbootstrap.com/css/ @done (17-07-17 23:52) (ok)
+     ✔ http://bulma.io/documentation/elements/box/ @done (17-07-18 23:17)
+     ✔ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html @done (17-07-18 23:17)
+   ✔ Does the Frontend stack works with Video and Isotope @done (17-07-18 23:17)
+   ✔ Create a contact form @done (17-07-18 23:17)
  ✔ Create a contact form (5minutes email)---- Postpone @done (17-07-17 22:26)
  ☐ Create categories
  ☐ Create One to Many (Categorie has one Image)
