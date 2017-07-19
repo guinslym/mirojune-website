@@ -12,6 +12,8 @@
 
     <title>Starter Template for Bootstrap</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" />
 
@@ -22,6 +24,9 @@
       body {
         padding-top: 50px;
       }
+            *{
+        color: #2c2a29;
+      }
       .starter-template {
         padding: 40px 15px;
         text-align: center;
@@ -29,7 +34,7 @@
 .jumbotron{
   position: relative;
     overflow: hidden;
-    height: 200px;
+    min-height: 400px;
  
   /* Tried setting the height. Didnt work either */
   /* height: 200px; */
@@ -57,6 +62,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Crimson+Text|Indie+Flower|Raleway" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -88,7 +94,6 @@
       </div>
     </nav>
 
-    <div class="container">
       <div class="jumbotron">
         <video id="video-background" preload muted autoplay loop>
           <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -98,7 +103,6 @@
           Hello World Wocka Wocka
         </div>
       </div>
-    </div>
 
 
     <div class="container">
@@ -122,18 +126,28 @@
       </div>
     </div>
 
+<!--
+             _       _        _____ _                   
+            (_)     | |      /  ___| |                  
+ _ __   __ _ _ _ __ | |_ ___ \ `--.| |__   _____      __
+| '_ \ / _` | | '_ \| __/ __| `--. \ '_ \ / _ \ \ /\ / /
+| |_) | (_| | | | | | |_\__ \/\__/ / | | | (_) \ V  V / 
+| .__/ \__,_|_|_| |_|\__|___/\____/|_| |_|\___/ \_/\_/  
+| |                                                     
+|_|                                                     
+-->
+@include('frontend.partials.paint')
 
-    <div class="container">
-      <div class="row">
-        <section class="paintingsShow"></section>
-      </div>
-    </div>
+<!--
+  ___  _                 _   
+ / _ \| |               | |  
+/ /_\ \ |__   ___  _   _| |_ 
+|  _  | '_ \ / _ \| | | | __|
+| | | | |_) | (_) | |_| | |_ 
+\_| |_/_.__/ \___/ \__,_|\__|
 
-    <div class="container">
-      <div class="row">
-        <section class="About"></section>
-      </div>
-    </div>
+-->
+@include('frontend.partials.about')
 
 
     <div class="container">
@@ -174,27 +188,15 @@
     </div>
 
 
-
-
-<style>
-  .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-</style>
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
+<!--
+                _       _______          _            
+               (_)     | |  ___|        | |           
+ ___  ___   ___ _  __ _| | |_ ___   ___ | |_ ___ _ __ 
+/ __|/ _ \ / __| |/ _` | |  _/ _ \ / _ \| __/ _ \ '__|
+\__ \ (_) | (__| | (_| | | || (_) | (_) | ||  __/ |   
+|___/\___/ \___|_|\__,_|_\_| \___/ \___/ \__\___|_|   
+-->
+@include('frontend.partials.socials')
 
 
     <!-- Bootstrap core JavaScript
