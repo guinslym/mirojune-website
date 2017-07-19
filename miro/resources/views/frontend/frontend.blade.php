@@ -179,12 +179,6 @@
 
 
     <div class="container">
-      <div class="row">
-        <section class="sociaIcons"></section>
-      </div>
-    </div>
-
-    <div class="container">
        @yield('body')
     </div>
 
