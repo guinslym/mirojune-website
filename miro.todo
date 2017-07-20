@@ -67,24 +67,25 @@ Steps:
      ✔ List @done (17-07-17 21:30)
    ✔ Delete @done (17-07-17 22:12)
    ✔ Update @done (17-07-17 22:11)
-   ☐ Create Paintings
-   ☐ Create Paintings Mixitup (Archives)
- ☐ Create the front-end
-   ☐ Start the basic layout Base Template
-   ☐ Choose Front end Stack
+   ✔ Create Paintings @done (17-07-20 00:22)
+   ✔ Create Paintings Mixitup (Archives) @done (17-07-20 00:22)
+ ✔ Create the front-end @done (17-07-20 00:22)
+   ✔ Start the basic layout Base Template @done (17-07-20 00:22)
+   ✔ Choose Front end Stack @done (17-07-20 00:22)
      ✔ http://getbootstrap.com/css/ @done (17-07-17 23:52) (ok)
      ✔ http://bulma.io/documentation/elements/box/ @done (17-07-18 23:17)
      ✔ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html @done (17-07-18 23:17)
    ✔ Does the Frontend stack works with Video and Isotope @done (17-07-18 23:17)
    ✔ Create a contact form @done (17-07-18 23:17)
  ✔ Create a contact form (5minutes email)---- Postpone @done (17-07-17 22:26)
- ☐ Create categories
- ☐ Create One to Many (Categorie has one Image)
- ☐ Create a HomeVideo (add and remove Home Video)
+ ✔ Create categories @done (17-07-20 00:25)
+ ✔ Create One to Many (Categorie has one Image) @done (17-07-20 00:25)
+ ✔ Create a HomeVideo (add and remove Home Video) @done (17-07-20 00:25)
  ☐ Create image resize
    ☐ https://www.youtube.com/watch?v=OPWAM0aPCvU
  ☐ Create JCROP
- ☐ Create Medias model to replace Paintings
+ ✔ Create Medias model to replace Paintings @done (17-07-20 00:23)
+ ☐ Create Painting; Picture; Video; HomeVideo
 
  ☐ question 1 : You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...)
  ☐ yes i need to have the pictures of the paintings and video works but the video works are only few like 4 or 4 of them
