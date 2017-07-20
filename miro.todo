@@ -86,10 +86,10 @@ Steps:
  ☐ Create JCROP
  ✔ Create Medias model to replace Paintings @done (17-07-20 00:23)
  ✔ Create Painting; Picture; Video; HomeVideo @done (17-07-20 00:28)
- ☐ php artisan make:migration create_paintings_table
- ☐ php artisan make:migration create_pictures_table
- ☐ php artisan make:migration create_videos_table
- ☐ php artisan make:migration create_homevideo_table
+ ✔ php artisan make:migration create_paintings_table @done (17-07-20 00:37)
+ ✔ php artisan make:migration create_pictures_table @done (17-07-20 00:37)
+ ✔ php artisan make:migration create_videos_table @done (17-07-20 00:37)
+ ✔ php artisan make:migration create_homevideo_table @done (17-07-20 00:38)
 
  ☐ question 1 : You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...)
  ☐ yes i need to have the pictures of the paintings and video works but the video works are only few like 4 or 4 of them
