@@ -12,7 +12,16 @@ class CreateMediasTable extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('medias', function(Blueprint $table)
+      {
+         $table->increments('id');
+         $table->string('category');
+         $table->string('file');
+         $table->string('video_thumbnail');
+         $table->string('caption');
+         $table->text('description');
+         $table->timestamps();
+      });
     }
 
     /**
@@ -23,5 +32,6 @@ class CreateMediasTable extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('homevideos');
     }
 }
