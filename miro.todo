@@ -1,4 +1,5 @@
 Steps:
+ ☐ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first )
  ☐ Fully Create the frontend (KSKS)
  ☐ Fully create Crud in the backend
  ☐ Add user login (only one)
