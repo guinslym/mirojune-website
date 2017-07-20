@@ -17,9 +17,10 @@
       </style>
       <div class="row">
 
-      <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
-            <h2>About Me</h2>
-      </div>
+            <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
+                  <h2>About me</h2>
+            </div>
+
 
         <section class="About">
           <div class="col-lg-6 vertical">

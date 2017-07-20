@@ -82,9 +82,9 @@
     </style>
 
     <div class="row">
-      <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
-            <h2>Painting</h2>
-      </div>
+            <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
+                  <h2>Painting</h2>
+            </div>
 
     </div>
       <div class="row text-center paintingsShow">

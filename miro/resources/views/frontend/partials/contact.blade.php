@@ -13,6 +13,7 @@
 }
 #contact input {
     margin-bottom: 20px;
+    height: 40px;
 }
 .reply input {
     margin: 0 0 20px;
@@ -89,9 +90,9 @@ div.contact-form{
                         <div class="container">
                               <!-- Title row -->
                               <div class="row">
-                                    <div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;">
-                                          <h2>Contact</h2>
-                                    </div>
+                                          <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
+                                                <h2>Contact Me</h2>
+                                          </div>
 
                                     <div class="clearfix"></div>
 
