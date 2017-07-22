@@ -48,7 +48,7 @@ class MediaController extends Controller
          'caption'     => 'required|regex:/^[A-Za-z ]+$/',
          'description' => 'required',
          'category' => 'required',
-         'userfile'     => 'required|image|mimes:jpeg,png|min:1|max:2000000'
+         'userfile'     => 'required|image|mimes:jpeg,png|min:1|max:10240'
       ]);
 
       // Check if it fails //
@@ -116,7 +116,7 @@ class MediaController extends Controller
             'caption'     => 'required|regex:/^[A-Za-z ]+$/',
             'description' => 'required',
             'category' => 'required',
-            'userfile'    => 'sometimes|image|mimes:jpeg,png|min:1|max:2000000'
+            'userfile'    => 'sometimes|image|mimes:jpeg,png|min:1|max:10240'
       ]);
 
       // Check if it fails //
@@ -126,7 +126,7 @@ class MediaController extends Controller
       }
 
       // Process valid data & go to success page //
-      $image = Image::find($id);
+      $media = Media::find($id);
 
       // if user choose a file, replace the old one //
       if( $request->hasFile('userfile') ){
@@ -134,14 +134,14 @@ class MediaController extends Controller
            $destination_path = 'uploads/';
            $filename = str_random(6).'_'.$file->getClientOriginalName();
            $file->move($destination_path, $filename);
-           $image->file = $destination_path . $filename;
+           $media->file = $destination_path . $filename;
       }
         
       // replace old data with new data from the submitted form //
-      $image->caption = $request->input('caption');
-      $image->description = $request->input('description');
-      $image->category = $request->input('category');
-      $image->save();
+      $media->caption = $request->input('caption');
+      $media->description = $request->input('description');
+      $media->category = $request->input('category');
+      $media->save();
 
       return redirect('/medias')->with('message','You just updated an Upload!');
    }

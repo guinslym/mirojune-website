@@ -14,14 +14,13 @@
 	    <label>Category of Upload
 	        <select name="category" id="category" class="form-control input-sm">
 	            @foreach($categories as $category)
-	            <option value="{{ $category }}" {{ Input::old($media->category) == $category ? 'selected' : '' }}>{{ $category }}</option>
-
+	            <option value="{{ $category }}" {{ $media->category == $category ? 'selected' : '' }}>{{ $category }}</option>
 	            @endforeach
 	           </select>
 	    </label>
 
 	</div>
-
+      
 
       <div class="form-group">
          <label for="caption">Caption</label>

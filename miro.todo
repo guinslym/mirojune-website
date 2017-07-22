@@ -9,9 +9,10 @@ Steps:
  ☐ Medias Controller and View
    ✔ Index @done (17-07-22 01:58)
    ✔ Create @done (17-07-22 01:58)
-   ☐ edit/Update
-     ☐ Add category into the form
-     ☐ Error on max file size (validator)
+   ✔ edit/Update @done (17-07-22 03:12)
+     ✔ I am not sure if Category is necessary anymore, I can just do an array @done (17-07-22 03:12)
+     ✔ Add category into the form @done (17-07-22 03:07)
+     ✔ Error on max file size (validator) @done (17-07-22 03:11)
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
  ☐ Profile Controller and View

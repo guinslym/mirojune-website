@@ -3,6 +3,8 @@
 
 
 @section('body')
+
+
 <div class="container">
 	<div class="row text-right">
 		 <a href="{{ url('/medias/create') }}" class="btn btn-primary" role="button"> Add New Upload
@@ -12,17 +14,29 @@
 </div>
 
 <h1>List of uploads</h1>
-<table class="table table-striped table-bordered">
+<table class="table table-striped table-bordered table-fixed">
 	<thead>
 		<tr>
 			<td>id</td>
 			<td>category</td>
 			<td class="text-center">file</td>
 			<td>created</td>
+			<td>Detail</td>
 			<td>update</td>
 			<td>delete</td>
 		</tr>
 	</thead>
+	<tfoot>
+		<tr>
+			<td>id</td>
+			<td>category</td>
+			<td class="text-center">file</td>
+			<td>created</td>
+			<td>Detail</td>
+			<td>update</td>
+			<td>delete</td>
+		</tr>
+	</tfoot>
 	<tbody>
 	@foreach($medias as $media)
 		<tr>
@@ -30,6 +44,7 @@
 			<td>{{ $media->category}}</td>
 			<td class="text-center"><img src="{{asset($media->file)}}" alt="" width="300px"></td>
 			<td>{{ $media->created_at}}</td>
+			<td><a href="{{ url('/medias/'.$media->id.'/') }}" class="btn btn-default pull-left">Show</a></td></td>
 			<td><a href="{{ url('/medias/'.$media->id.'/edit') }}" class="btn btn-warning pull-left">Edit</a></td>
 			<td>
                      {!! Form::open(['url'=>'/medias/'.$media->id, 'class'=>'pull-left']) !!}
