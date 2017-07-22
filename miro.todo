@@ -6,7 +6,12 @@ Steps:
    ✔ insert into categories(category) values ('Video'); @done (17-07-22 00:45)
    ✔ insert into categories(category) values ('Picture'); @done (17-07-22 00:45)
    ✔ insert into categories(category) values ('Other'); @done (17-07-22 00:45)
- ☐ Medias Controller
+ ☐ Medias Controller and View
+   ☐ Index
+   ☐ Create
+   ☐ Show
+   ☐ Delete
+   ☐ Update
  ☐ Medias admin CRUD
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives

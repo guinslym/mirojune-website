@@ -26,6 +26,7 @@ Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'AboutControlle
 
 //Route::get('/', function(){ return redirect('/image'); });
 Route::resource('/image', 'ImageController');
+Route::resource('/medias', 'MediaController');
 
 
 
