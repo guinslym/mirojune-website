@@ -17,6 +17,8 @@ class CreateProfilesTable extends Migration
       {
          $table->increments('id');
          $table->text('about_me');
+         $table->string('video_ogg');
+         $table->string('video_mp4');
          $table->timestamps();
       });
     }

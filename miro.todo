@@ -15,8 +15,10 @@ Steps:
      ✔ Error on max file size (validator) @done (17-07-22 03:11)
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
- ☐ Profile Controller and View
- ☐ VideoCover Controller and View
+ ✔ Profile Controller @done (17-07-22 03:49)
+ ☐ Profile View
+ ✔ VideoCover Controller @done (17-07-22 03:55)
+ ✔ VideoCover View @done (17-07-22 03:55)
  ✔ Medias can't connect to db @done (17-07-22 01:12)
    ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
  ☐ Admin CRUD

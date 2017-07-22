@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Profile;
 
 class ProfileController extends Controller
 {
@@ -16,7 +17,8 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        //
+         $profiles = Profile::paginate(10);
+         return view('profiles.profiles-list')->with('profiles', $medias);
     }
 
     /**
@@ -27,6 +29,7 @@ class ProfileController extends Controller
     public function create()
     {
         //
+        return view('profiles.add-new-profile');
     }
 
     /**
@@ -36,9 +39,28 @@ class ProfileController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
-    }
+   {
+      // Validation //
+      $validation = Validator::make($request->all(), [
+         'about_me' => 'required',
+         'video_ogg'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240',
+         'video_mp4'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240'
+      ]);
+
+      // Check if it fails //
+      if( $validation->fails() ){
+         return redirect()->back()->withInput()
+                          ->with('errors', $validation->errors() );
+      }
+
+      $profile = new Profile;
+      
+      // save media data into database //
+      $profile->about_me = $request->input('about_me');
+      $profile->save();
+
+      return redirect('/profile')->with('message','You just created your profile!');
+   }
 
     /**
      * Display the specified resource.
@@ -49,6 +71,8 @@ class ProfileController extends Controller
     public function show($id)
     {
         //
+         $profile = Profile::find($id);
+         return view('profiles.show-profile')->with('profile', $media);
     }
 
     /**
@@ -60,6 +84,8 @@ class ProfileController extends Controller
     public function edit($id)
     {
         //
+         $profile = Profile::find($id);
+         return view('profiles.edit-profile')->with('profile', $profile);
     }
 
     /**
@@ -70,9 +96,29 @@ class ProfileController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        //
-    }
+   {
+      // Validation //
+      $validation = Validator::make($request->all(), [
+            'about_me' => 'required',
+             'video_ogg'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240',
+             'video_mp4'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240'
+      ]);
+
+      // Check if it fails //
+      if( $validation->fails() ){
+            return redirect()->back()->withInput()
+                             ->with('errors', $validation->errors() );
+      }
+
+      // Process valid data & go to success page //
+      $profile = Profile::find($id);
+
+      // replace old data with new data from the submitted form //
+      $profile->caption = $request->input('about_me');
+      $profile->save();
+
+      return redirect('/profile')->with('message','You just updated your Profile');
+   }
 
     /**
      * Remove the specified resource from storage.
@@ -81,7 +127,9 @@ class ProfileController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
-    }
+   {
+      $profiles = Profile::find($id);
+      $profiles->delete();
+      return redirect('/profile')->with('message','You just deleted your profile!');
+   }
 }
