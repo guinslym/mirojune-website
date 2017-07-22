@@ -141,7 +141,7 @@ class MediaController extends Controller
       $image->description = $request->input('description');
       $image->save();
 
-      return redirect('/')->with('message','You just updated an image!');
+      return redirect('/medias')->with('message','You just updated an image!');
    }
 
     /**
@@ -154,6 +154,6 @@ class MediaController extends Controller
    {
       $media = Media::find($id);
       $media->delete();
-      return redirect('/')->with('message','You just uploaded an media!');
+      return redirect('/medias')->with('message','You just uploaded an media!');
    }
 }

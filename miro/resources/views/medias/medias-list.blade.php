@@ -17,7 +17,7 @@
 		<tr>
 			<td>id</td>
 			<td>category</td>
-			<td>file</td>
+			<td class="text-center">file</td>
 			<td>created</td>
 			<td>update</td>
 			<td>delete</td>
