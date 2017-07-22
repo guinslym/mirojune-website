@@ -2,26 +2,26 @@
 
 @section('body')
 <h1>new uploads</h1>
-         $table->increments('id');
-         $table->integer('category_id')->unsigned();
-         $table->string('category');
-         $table->string('file');
-         $table->string('video_thumbnail');
-         $table->string('caption');
-         $table->text('description');
-         $table->timestamps();
-
-
-@extends('global-layout')
 
 @section('body')
    @include('error-notification')
    {!! Form::open(['url'=>'/medias', 'method'=>'POST', 'files'=>'true']) !!}
 
+
       <div class="form-group">
          <label for="userfile">Upload File</label>
          <input type="file" class="form-control" name="userfile">
       </div>
+
+	<div class="form-group">
+	    <label>Category of Upload
+	        <select name="state" id="state" class="form-control input-sm">
+	            @foreach($categories as $category)
+	            <option value="{{ $category}}">{{ $category}}</option>
+	            @endforeach
+	           </select>
+	    </label>
+	</div>
 
       <div class="form-group">
          <label for="caption">Caption</label>

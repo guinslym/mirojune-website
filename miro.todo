@@ -2,10 +2,10 @@ Steps:
  ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55)
  ✔ Category (sql insert) @done (17-07-22 00:45)
    ✔ Create categories (Painting, Picture, Video, Other) @done (17-07-22 00:43)
-   ✔ insert into categories(category) values ('Painting'); @done (17-07-22 00:45)
-   ✔ insert into categories(category) values ('Video'); @done (17-07-22 00:45)
-   ✔ insert into categories(category) values ('Picture'); @done (17-07-22 00:45)
-   ✔ insert into categories(category) values ('Other'); @done (17-07-22 00:45)
+   ✔ insert into categories(category); values ('Painting'); @done (17-07-22 01:39)
+   ✔ insert into categories(category); values ('Video'); @done (17-07-22 00:45)
+   ✔ insert into categories(category); values ('Picture'); @done (17-07-22 00:45)
+   ✔ insert into categories(category); values ('Other'); @done (17-07-22 00:45)
  ☐ Medias Controller and View
    ☐ Index
    ☐ Create

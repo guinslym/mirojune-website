@@ -32,7 +32,8 @@ class MediaController extends Controller
     public function create()
     {
         //
-        return view('medias.add-new-media');
+        $categories = Category::lists('category', 'id');
+        return view('medias.add-new-media')->with('categories', $categories);
     }
 
     /**
