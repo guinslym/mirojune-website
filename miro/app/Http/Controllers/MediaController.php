@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Category;
-use App\Image;
 use App\Media;
 use Validator;
 
@@ -99,7 +98,8 @@ class MediaController extends Controller
     {
         //
          $media = Media::find($id);
-         return view('medias.edit-media')->with('media', $media);
+         $categories = Category::lists('category', 'id');
+         return view('medias.edit-media')->with('media', $media)->with('categories', $categories);
     }
 
     /**
@@ -115,7 +115,8 @@ class MediaController extends Controller
       $validation = Validator::make($request->all(), [
             'caption'     => 'required|regex:/^[A-Za-z ]+$/',
             'description' => 'required',
-            'userfile'    => 'sometimes|image|mimes:jpeg,png|min:1|max:250'
+            'category' => 'required',
+            'userfile'    => 'sometimes|image|mimes:jpeg,png|min:1|max:2000000'
       ]);
 
       // Check if it fails //
@@ -139,9 +140,10 @@ class MediaController extends Controller
       // replace old data with new data from the submitted form //
       $image->caption = $request->input('caption');
       $image->description = $request->input('description');
+      $image->category = $request->input('category');
       $image->save();
 
-      return redirect('/medias')->with('message','You just updated an image!');
+      return redirect('/medias')->with('message','You just updated an Upload!');
    }
 
     /**
@@ -154,6 +156,6 @@ class MediaController extends Controller
    {
       $media = Media::find($id);
       $media->delete();
-      return redirect('/medias')->with('message','You just uploaded an media!');
+      return redirect('/medias')->with('message','You just uploaded a File!');
    }
 }

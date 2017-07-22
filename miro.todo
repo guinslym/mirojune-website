@@ -18,14 +18,13 @@ Steps:
  ☐ VideoCover Controller and View
  ✔ Medias can't connect to db @done (17-07-22 01:12)
    ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
- ☐ Medias admin CRUD
+ ☐ Admin CRUD
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives
    ☐ Painting
    ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25)
    ☐ Not satisfy with Archives... (Isotopes views)
    ☐ Multipage
- ☐ Fully create Crud in the backend
  ☐ Add user login (only one)
  ✔ Create a Image table @done (17-07-17 21:10)
  ✔ Create a CRUD app @done (17-07-17 22:12)
