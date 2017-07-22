@@ -15,7 +15,7 @@
 
 	<div class="form-group">
 	    <label>Category of Upload
-	        <select name="state" id="state" class="form-control input-sm">
+	        <select name="category" id="category" class="form-control input-sm">
 	            @foreach($categories as $category)
 	            <option value="{{ $category}}">{{ $category}}</option>
 	            @endforeach

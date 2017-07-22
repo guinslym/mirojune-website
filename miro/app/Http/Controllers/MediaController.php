@@ -48,6 +48,7 @@ class MediaController extends Controller
       $validation = Validator::make($request->all(), [
          'caption'     => 'required|regex:/^[A-Za-z ]+$/',
          'description' => 'required',
+         'category' => 'required',
          'userfile'     => 'required|image|mimes:jpeg,png|min:1|max:2000000'
       ]);
 
@@ -57,21 +58,22 @@ class MediaController extends Controller
                           ->with('errors', $validation->errors() );
       }
 
-      $image = new Image;
+      $media = new Media;
 
-      // upload the image //
+      // upload the media //
       $file = $request->file('userfile');
       $destination_path = 'uploads/';
       $filename = str_random(6).'_'.$file->getClientOriginalName();
       $file->move($destination_path, $filename);
       
-      // save image data into database //
-      $image->file = $destination_path . $filename;
-      $image->caption = $request->input('caption');
-      $image->description = $request->input('description');
-      $image->save();
+      // save media data into database //
+      $media->file = $destination_path . $filename;
+      $media->caption = $request->input('caption');
+      $media->category = $request->input('category');
+      $media->description = $request->input('description');
+      $media->save();
 
-      return redirect('/')->with('message','You just uploaded an image!');
+      return redirect('/medias')->with('message','You just uploaded an media!');
    }
 
     /**
