@@ -1,9 +1,13 @@
 Steps:
  ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55)
+ ☐ Medias upload
+ ☐ Medias admin CRUD
  ☐ Fully Create the frontend (KSKS)
-   ☐ Multipage
    ☐ Archives
    ☐ Painting
+   ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25)
+   ☐ Not satisfy with Archives... (Isotopes views)
+   ☐ Multipage
  ☐ Fully create Crud in the backend
  ☐ Add user login (only one)
  ✔ Create a Image table @done (17-07-17 21:10)

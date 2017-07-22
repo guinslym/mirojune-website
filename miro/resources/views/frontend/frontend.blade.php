@@ -205,6 +205,7 @@
 @include('frontend.partials.paintings3')
 -->
 
+@include('frontend.partials.paintings4')
 
 <!--
                 _       _______          _            
