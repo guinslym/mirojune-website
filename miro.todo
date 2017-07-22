@@ -7,11 +7,11 @@ Steps:
    ✔ insert into categories(category); values ('Picture'); @done (17-07-22 00:45)
    ✔ insert into categories(category); values ('Other'); @done (17-07-22 00:45)
  ☐ Medias Controller and View
-   ☐ Index
-   ☐ Create
+   ✔ Index @done (17-07-22 01:58)
+   ✔ Create @done (17-07-22 01:58)
+   ☐ edit/Update
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
-   ☐ Update
  ✔ Medias can't connect to db @done (17-07-22 01:12)
    ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
  ☐ Medias admin CRUD
