@@ -17,7 +17,7 @@
 	    <label>Category of Upload
 	        <select name="category" id="category" class="form-control input-sm">
 	            @foreach($categories as $category)
-	            <option value="{{ $category}}">{{ $category}}</option>
+	            <option value="{{ $category }}">{{ $category }}</option>
 	            @endforeach
 	           </select>
 	    </label>

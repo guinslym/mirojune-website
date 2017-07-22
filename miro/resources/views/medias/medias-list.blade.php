@@ -28,7 +28,7 @@
 		<tr>
 			<td>{{ $media->id}} </td>
 			<td>{{ $media->category}}</td>
-			<td><img src="{{asset($media->file)}}" alt="" width="15px"></td>
+			<td class="text-center"><img src="{{asset($media->file)}}" alt="" width="300px"></td>
 			<td>{{ $media->created_at}}</td>
 			<td><a href="{{ url('/medias/'.$media->id.'/edit') }}" class="btn btn-warning pull-left">Edit</a></td>
 			<td>
