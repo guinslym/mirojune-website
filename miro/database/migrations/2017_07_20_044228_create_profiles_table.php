@@ -13,6 +13,12 @@ class CreateProfilesTable extends Migration
     public function up()
     {
         //
+      Schema::create('profiles', function(Blueprint $table)
+      {
+         $table->increments('id');
+         $table->text('about_me');
+         $table->timestamps();
+      });
     }
 
     /**
@@ -23,5 +29,6 @@ class CreateProfilesTable extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('profiles');
     }
 }

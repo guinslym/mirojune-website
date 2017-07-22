@@ -48,7 +48,7 @@ class MediaController extends Controller
          'caption'     => 'required|regex:/^[A-Za-z ]+$/',
          'description' => 'required',
          'category' => 'required',
-         'userfile'     => 'required|image|mimes:jpeg,png|min:1|max:10240'
+         'userfile'     => 'sometimes|mimes:jpeg,png,video/avi,video/mpeg,video/quicktime|min:1|max:10240'
       ]);
 
       // Check if it fails //
@@ -116,7 +116,7 @@ class MediaController extends Controller
             'caption'     => 'required|regex:/^[A-Za-z ]+$/',
             'description' => 'required',
             'category' => 'required',
-            'userfile'    => 'sometimes|image|mimes:jpeg,png|min:1|max:10240'
+            'userfile'    => 'sometimes|mimes:jpeg,png,video/avi,video/mpeg,video/quicktime|min:1|max:10240'
       ]);
 
       // Check if it fails //

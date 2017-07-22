@@ -6,7 +6,7 @@ Steps:
    ✔ insert into categories(category); values ('Video'); @done (17-07-22 00:45)
    ✔ insert into categories(category); values ('Picture'); @done (17-07-22 00:45)
    ✔ insert into categories(category); values ('Other'); @done (17-07-22 00:45)
- ☐ Medias Controller and View
+ ✔ Medias Controller and View @done (17-07-22 03:17)
    ✔ Index @done (17-07-22 01:58)
    ✔ Create @done (17-07-22 01:58)
    ✔ edit/Update @done (17-07-22 03:12)
@@ -57,6 +57,9 @@ Steps:
  ✔ php artisan make:migration create_pictures_table @done (17-07-20 00:37)
  ✔ php artisan make:migration create_videos_table @done (17-07-20 00:37)
  ✔ php artisan make:migration create_homevideo_table @done (17-07-20 00:38)
+ ☐ File upload video
+ ☐ https://stackoverflow.com/questions/39854828/laravel-5-file-upload-validation
+ ☐ Maybe de faire un Social Media table
 
 
 needs (Miro):
