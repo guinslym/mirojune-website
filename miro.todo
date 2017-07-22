@@ -10,8 +10,11 @@ Steps:
    ✔ Index @done (17-07-22 01:58)
    ✔ Create @done (17-07-22 01:58)
    ☐ edit/Update
+     ☐ Add category into the form
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
+ ☐ Profile Controller and View
+ ☐ VideoCover Controller and View
  ✔ Medias can't connect to db @done (17-07-22 01:12)
    ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
  ☐ Medias admin CRUD
