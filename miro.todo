@@ -11,6 +11,7 @@ Steps:
    ✔ Create @done (17-07-22 01:58)
    ☐ edit/Update
      ☐ Add category into the form
+     ☐ Error on max file size (validator)
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
  ☐ Profile Controller and View
