@@ -9,6 +9,7 @@ class Media extends Model
     /**
      * Get the phone record associated with the user.
      */
+    public $table = "media";
     public function category()
     {
         return $this->belongsTo('App\Category');

@@ -12,6 +12,7 @@ Steps:
    ☐ Show
    ☐ Delete
    ☐ Update
+ ☐ Medias can't connect to db
  ☐ Medias admin CRUD
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives
