@@ -1,5 +1,53 @@
 @extends('global-layout')
 
+
+
 @section('body')
-<h1>uploads lists</h1>
+<div class="container">
+	<div class="row text-right">
+		 <a href="{{ url('/medias/create') }}" class="btn btn-primary" role="button"> Add New Upload
+	    </a>
+	</div>
+	
+</div>
+
+<h1>List of uploads</h1>
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<td>id</td>
+			<td>category</td>
+			<td>file</td>
+			<td>created</td>
+			<td>update</td>
+			<td>delete</td>
+		</tr>
+	</thead>
+	<tbody>
+	@foreach($medias as $media)
+		<tr>
+			<td>{{ $media->id}} </td>
+			<td>{{ $media->category}}</td>
+			<td><img src="{{asset($media->file)}}" alt="" width="15px"></td>
+			<td>{{ $media->created_at}}</td>
+			<td><a href="{{ url('/media/'.$media->id.'/edit') }}" class="btn btn-warning pull-left">Edit</a></td>
+			<td>
+                     {!! Form::open(['url'=>'/media/'.$media->id, 'class'=>'pull-left']) !!}
+                        {!! Form::hidden('_method', 'DELETE') !!}
+                        {!! Form::submit('Delete', ['class' => 'btn btn-danger', 'onclick'=>'return confirm(\'Are you sure?\')']) !!}
+                     {!! Form::close() !!}
+			</td>
+		</tr>
+	@endforeach
+	</tbody>
+</table>
+
+<div class="container">
+	<div class="row text-right">
+	 	<a href="{{ url('/medias/create') }}" class="btn btn-primary" role="button"> Add New Upload</a>
+	</div>
+	
+</div>
+
+
 @stop

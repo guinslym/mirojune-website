@@ -17,9 +17,7 @@
          </div>
 
          <p class="footer">
-            <a href="http://The-Amazing-PHP.blogspot.com">
-               The-Amazing-PHP.blogspot.com
-            </a>
+            
          </p>
       </div>
 
