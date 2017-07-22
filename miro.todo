@@ -1,4 +1,8 @@
 Steps:
+ ☐ Need to delete the db and recreate it (with Category) because I added two new field into Profile
+ ☐ Profile View (to do and check) 
+ ☐ Admin CRUD
+ ☐ Frontend
  ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55)
  ✔ Category (sql insert) @done (17-07-22 00:45)
    ✔ Create categories (Painting, Picture, Video, Other) @done (17-07-22 00:43)
@@ -16,12 +20,10 @@ Steps:
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
  ✔ Profile Controller @done (17-07-22 03:49)
- ☐ Profile View
  ✔ VideoCover Controller @done (17-07-22 03:55)
  ✔ VideoCover View @done (17-07-22 03:55)
  ✔ Medias can't connect to db @done (17-07-22 01:12)
    ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
- ☐ Admin CRUD
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives
    ☐ Painting
@@ -64,6 +66,8 @@ Steps:
  ☐ File upload video
  ☐ https://stackoverflow.com/questions/39854828/laravel-5-file-upload-validation
  ☐ Maybe de faire un Social Media table
+ ☐ Maybe add a role to the admin user
+ ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
 
 
 needs (Miro):
