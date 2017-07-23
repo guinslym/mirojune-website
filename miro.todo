@@ -1,7 +1,7 @@
 Steps:
  ✔ Need to delete the db and recreate it (with Category) because I added two new field into Profile @done (17-07-22 21:20)
- ☐ Profile Views (to do and verify)
- ☐ Profile only Edit/Update/View
+ ✔ Profile Views (to do and verify) @done (17-07-22 22:31)
+ ☐ Profile only Edit/Update/View (postpone)
  ☐ Frontend (multipages)
  ☐ Socials network Models
  ☐ Fully Create the frontend (KSKS)
