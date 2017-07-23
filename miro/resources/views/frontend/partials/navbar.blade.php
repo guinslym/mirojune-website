@@ -11,13 +11,13 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/archive">Archive</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li class="{{ Request::segment(1)=='' ? 'active' : '' }}"><a href="/">Home</a></li>
+            <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">About</a></li>
+            <li class="{{ Route::currentRouteNamed('fontend-archive') ? 'active' : '' }}"><a href="/archive">Archive</a></li>
+            <li class="{{ Route::currentRouteNamed('fontend-contact') ? 'active' : '' }}"><a href="/contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/dashboard">
+            <li class="{{ Route::currentRouteNamed('dashboard') ? 'active' : '' }}"><a href="/dashboard">
             Admin Interface</a></li>
             <li><a href="/auth/logout">
              Logout</a></li>
