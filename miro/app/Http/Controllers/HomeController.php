@@ -6,20 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Profile;
+use App\Media;
+use App\Category;
+use App\User;
 
-class AboutController extends Controller
+class HomeController extends Controller
 {
-    public function create()
-    {
-        return view('about.contact');
-    }
-
-    public function store()
-    {
-    }
-//
-
-
+   
     public function index(){
     	return view('frontend.index');
 

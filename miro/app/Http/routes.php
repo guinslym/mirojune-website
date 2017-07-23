@@ -13,13 +13,13 @@
 
 
 
-Route::get('/', ['as' => 'frontend-index', 'uses' => 'AboutController@index']);
-Route::get('/about', ['as' => 'fontend-about', 'uses' => 'AboutController@about']);
-Route::get('/contact', ['as' => 'fontend-contact', 'uses' => 'AboutController@contact']);
-Route::get('/thanks', ['as' => 'fontend-thanks', 'uses' => 'AboutController@thanks']);
-Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'AboutController@paintings']);
-Route::get('/paintings', ['as' => 'fontend-painting', 'uses' => 'AboutController@painting']);
-Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'AboutController@painting']);
+Route::get('/', ['as' => 'frontend-index', 'uses' => 'HomeController@index']);
+Route::get('/about', ['as' => 'fontend-about', 'uses' => 'HomeController@about']);
+Route::get('/contact', ['as' => 'fontend-contact', 'uses' => 'HomeController@contact']);
+Route::get('/thanks', ['as' => 'fontend-thanks', 'uses' => 'HomeController@thanks']);
+Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'HomeController@paintings']);
+Route::get('/paintings', ['as' => 'fontend-painting', 'uses' => 'HomeController@painting']);
+Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'HomeController@painting']);
 
 
 // Only authenticated users may enter...
@@ -39,9 +39,9 @@ Route::get('profilelkjlkj', [
 
 
 Route::get('contact', 
-  ['as' => 'contact', 'uses' => 'AboutController@create']);
+  ['as' => 'contact', 'uses' => 'HomeController@create']);
 Route::post('contact', 
-  ['as' => 'contact_store', 'uses' => 'AboutController@store']);
+  ['as' => 'contact_store', 'uses' => 'HomeController@store']);
 
 
 

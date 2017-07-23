@@ -18,11 +18,14 @@
             </div>
 
 
-        <section class="Paintings">
-        @for ($i = 0; $i < 5; $i++)
+        @for ($i = 0; $i < 7; $i++)
           <div class="col-lg-3 text-center paintings">
-            <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" alt="" class="img-responsive">
-            <address style="font-size:1.3em; line-height:1.4em;">
+           @if ($i % 2 == 0)
+            <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" alt="" class="img-responsive" width="255" height="327">
+          @else
+            <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/12/_MG_5351.jpg" alt="" class="img-responsive" width="255" height="327">
+          @endif 
+            <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>Sun Kang</h4>
                 by Miró June<br>
                 25x30inch<br>
@@ -31,7 +34,8 @@
             </address>
           </div>
         @endfor
-        </section>
+
+        
       </div>
     </div>
   </div>

@@ -191,7 +191,7 @@
     </div>
 
 
-@include('frontend.partials.paintings4')
+
 
 <!--
                 _       _______          _            
