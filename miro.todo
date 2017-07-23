@@ -6,7 +6,10 @@ Steps:
  ✔ Navbar @done (17-07-23 01:19)
  ☐ Profile add email to receive message
  ☐ Profile add name of the website
+ ☐ Change Profile to Configuration (only on the view)
+ ☐ Create a Dashboard (simple)
  ☐ Navbar==active (path)
+   ☐ https://stackoverflow.com/questions/29837555/setting-bootstrap-navbar-active-class-in-laravel-5
  ☐ Video access ain't working (App/temp)
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives
