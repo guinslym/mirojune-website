@@ -97,46 +97,46 @@ div.contact-form{
                                     <div class="clearfix"></div>
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;">
-                                          <h3>Contact with us to learn more about all of our Web Design Services!</h3>
+                                          <h3>Use this form to contact me or click on a Social Media Icon.</h3>
                                     </div>
                               </div>
                               <!-- /Title row -->
 
-                              <!-- Form element row -->
-                              <div class="row text-center">
-                                    <div class="col-md-2"></div>
+<!-- Form element row -->
+<div class="row text-center">
+<div class="col-md-2"></div>
 
-                                    <div class="col-md-8">
-                                          <form method="post" class="reply" id="contact">
-                                                <fieldset>
-                                                      <div class="row">
-                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated" style="visibility: visible;">
-                                                                  <div class="row">
-                                                                        <div class="col-md-12">
-                                                                              <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required="">
-                                                                        </div>
-                                                                        <div class="col-md-12">
-                                                                              <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required="">
-                                                                        </div>
-                                                                        <div class="col-md-12">
-                                                                              <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" value="" required="">
-                                                                        </div>
-                                                                  </div>
-                                                            </div>
+<div class="col-md-8">
+<form method="post" class="reply" id="contact">
+<fieldset>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated" style="visibility: visible;">
+<div class="row">
+<div class="col-md-12">
+    <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required="">
+</div>
+<div class="col-md-12">
+    <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required="">
+</div>
+<div class="col-md-12">
+    <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" value="" required="">
+</div>
+</div>
+</div>
 
-                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight animated" style="visibility: visible;">
-                                                                  <div class="row">
-                                                                        <div class="col-md-12">
-                                                                              <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Your Message" required=""></textarea>
-                                                                        </div>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div class="row">
-                                                            <div class="col-md-12 wow fadeInUp animated" style="visibility: visible;">
-                                                                  <button type="submit" class="btn btn-2 btn-2c">Send</button>
-                                                                  <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
-                                                                  <div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight animated" style="visibility: visible;">
+<div class="row">
+<div class="col-md-12">
+    <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Your Message" required=""></textarea>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 wow fadeInUp animated" style="visibility: visible;">
+<button type="submit" class="btn btn-2 btn-2c">Send</button>
+<div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
+<div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
                                                             </div>
                                                       </div>
                                                 </fieldset>

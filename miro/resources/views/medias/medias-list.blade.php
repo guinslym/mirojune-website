@@ -46,7 +46,9 @@
 			<td>{{ $media->category}}</td>
 			<td class="text-center">
 				<img src="{{asset($media->file)}}" alt="" width="300px">
-			 <!--{{ $media->file}}-->
+			 {{ $media->file}}
+			 <!--
+			 -->
 			</td>
 			<td>{{ $media->created_at}}</td>
 			<td><a href="{{ url('/medias/'.$media->id.'/') }}" class="btn btn-default pull-left">Show</a></td></td>

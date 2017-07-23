@@ -67,13 +67,6 @@ class ProfileController extends Controller
       $destination_path = 'videos/';
       $filename = str_random(6).'_'.$file->getClientOriginalName();
       $file->move($destination_path, $filename);
-
-      //dd($request);
-      //dd($request->files);
-      //dd($request->input('video_ogg'));
-      //$v_ogg = $request->input('video_ogg');
-      //dd($v_ogg->mimeType);
-
       
       // save media data into database //
       $profile->about_me = $request->input('about_me');

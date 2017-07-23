@@ -42,6 +42,13 @@ img{
 
 <div class="container">
 		<div class="row">
+
+            <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
+                  <h2>Archive</h2>
+            </div>
+
+
+
 			<div class="controls">
 
 				<div class="col-md-3 col-xs-12">

@@ -16,6 +16,7 @@
 Route::get('/', ['as' => 'frontend-index', 'uses' => 'HomeController@index']);
 Route::get('/about', ['as' => 'fontend-about', 'uses' => 'HomeController@about']);
 Route::get('/contact', ['as' => 'fontend-contact', 'uses' => 'HomeController@contact']);
+Route::get('/archive', ['as' => 'fontend-archive', 'uses' => 'HomeController@archive']);
 Route::get('/thanks', ['as' => 'fontend-thanks', 'uses' => 'HomeController@thanks']);
 Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'HomeController@paintings']);
 Route::get('/paintings', ['as' => 'fontend-painting', 'uses' => 'HomeController@painting']);
@@ -37,12 +38,12 @@ Route::get('profilelkjlkj', [
     'uses' => 'ProfileController@show'
 ]);
 
-
+/*
 Route::get('contact', 
   ['as' => 'contact', 'uses' => 'HomeController@create']);
 Route::post('contact', 
   ['as' => 'contact_store', 'uses' => 'HomeController@store']);
-
+*/
 
 
 // Authentication routes...

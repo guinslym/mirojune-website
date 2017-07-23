@@ -142,26 +142,7 @@
 
   <body>
 
-      <div class="jumbotron">
-        <video id="video-background" preload muted autoplay loop>
-          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-        </video>
-      </div>
-
 @include('frontend.partials.navbar')
-
-    <div class="container">
-      <div class="row">
-        <section class="Signature"></section>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <section class="paintingsButton"></section>
-      </div>
-    </div>
 
 <!--
              _       _        _____ _                   
@@ -186,9 +167,7 @@
 @include('frontend.partials.about')
 -->
 
-    <div class="container">
        @yield('body')
-    </div>
 
 
 
