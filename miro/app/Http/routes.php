@@ -28,7 +28,7 @@ Route::group(['middleware' => 'auth'], function()
     //Route::resource('todo', 'TodoController', ['only' => ['index']]);
 	Route::resource('/image', 'ImageController');
 	Route::resource('/medias', 'MediaController');
-	Route::resource('/profile', 'MediaController');
+	Route::resource('/profile', 'ProfileController');
 });
 // Using A Controller...
 

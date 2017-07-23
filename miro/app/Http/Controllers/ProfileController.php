@@ -18,7 +18,7 @@ class ProfileController extends Controller
     public function index()
     {
          $profiles = Profile::paginate(10);
-         return view('profiles.profiles-list')->with('profiles', $medias);
+         return view('profiles.profiles-list')->with('profiles', $profiles);
     }
 
     /**

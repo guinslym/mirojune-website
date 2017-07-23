@@ -26,6 +26,7 @@
 			<td>delete</td>
 		</tr>
 	</thead>
+	@if (count($medias) > 0)
 	<tfoot>
 		<tr>
 			<td>id</td>
@@ -37,6 +38,7 @@
 			<td>delete</td>
 		</tr>
 	</tfoot>
+	@endif
 	<tbody>
 	@foreach($medias as $media)
 		<tr>
