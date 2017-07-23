@@ -15,7 +15,8 @@ class HomeController extends Controller
 {
    
     public function index(){
-    	return view('frontend.index');
+        $medias = Media::where('category', '==', 'painting')->paginate(10);
+    	return view('frontend.index')->with('medias', $medias);
 
     }
     public function about(){
