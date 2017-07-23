@@ -1,4 +1,18 @@
 Steps:
+ ✔ Need to delete the db and recreate it (with Category) because I added two new field into Profile @done (17-07-22 21:20)
+ ✔ Profile Views (to do and verify) @done (17-07-22 22:31)
+ ☐ Frontend (multipages)
+ ☐ Wireframe
+ ☐ Navbar
+ ☐ Fully Create the frontend (KSKS)
+   ☐ Archives
+   ☐ Paintings
+   ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25)
+   ☐ Not satisfy with Archives... (Isotopes views)
+   ✔ Multipage @done (17-07-22 21:23)
+ ☐ Admin CRUD
+ ☐ Socials network Models
+ ☐ Profile only Edit/Update/View (postpone)
  ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55)
  ✔ Category (sql insert) @done (17-07-22 00:45)
    ✔ Create categories (Painting, Picture, Video, Other) @done (17-07-22 00:43)
@@ -16,21 +30,13 @@ Steps:
    ☐ Show
    ✔ Delete @done (17-07-22 01:57)
  ✔ Profile Controller @done (17-07-22 03:49)
- ☐ Profile View
  ✔ VideoCover Controller @done (17-07-22 03:55)
  ✔ VideoCover View @done (17-07-22 03:55)
  ✔ Medias can't connect to db @done (17-07-22 01:12)
    ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
- ☐ Admin CRUD
- ☐ Fully Create the frontend (KSKS)
-   ☐ Archives
-   ☐ Painting
-   ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25)
-   ☐ Not satisfy with Archives... (Isotopes views)
-   ☐ Multipage
- ☐ Add user login (only one)
+ ✔ Add user login (only one) @done (17-07-22 21:23)
  ✔ https://www.youtube.com/watch?v=ubUWbcdbyNo @done (17-07-22 04:03)
- ☐ https://www.youtube.com/watch?v=VoGLOtit1do
+ ✔ https://www.youtube.com/watch?v=VoGLOtit1do @done (17-07-22 21:23)
  ✔ Create a Image table @done (17-07-17 21:10)
  ✔ Create a CRUD app @done (17-07-17 22:12)
    ✔ Create @done (17-07-17 21:30)
@@ -62,8 +68,10 @@ Steps:
  ✔ php artisan make:migration create_videos_table @done (17-07-20 00:37)
  ✔ php artisan make:migration create_homevideo_table @done (17-07-20 00:38)
  ☐ File upload video
- ☐ https://stackoverflow.com/questions/39854828/laravel-5-file-upload-validation
+ ✔ https://stackoverflow.com/questions/39854828/laravel-5-file-upload-validation @done (17-07-22 21:23)
  ☐ Maybe de faire un Social Media table
+ ☐ Maybe add a role to the admin user
+ ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
 
 
 needs (Miro):
@@ -181,3 +189,10 @@ Categories
 
   artificial neural networks, which mimic human learning
   The learning process involved the computer playing itself, and then calculating whether it would win or not based on its next move.
+
+
+
+  insert into categories(category); values ('Painting');
+  insert into categories(category); values ('Video');
+  insert into categories(category); values ('Picture');
+  insert into categories(category); values ('Other');
