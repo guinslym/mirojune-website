@@ -49,7 +49,7 @@
 			<td></td>
 			<td></td>
 			<td><a href="" class="btn btn-default pull-left">Show</a></td></td>
-			<td><a href="" class="btn btn-warning pull-left">Edit</a></td>
+			<td><a href="{{ url('/profile/'.$media->id.'/edit') }}" class="btn btn-warning pull-left">Edit</a></td>
 			<td>
                      {!! Form::open(['url'=>'/profile/'.$media->id, 'class'=>'pull-left']) !!}
                         {!! Form::hidden('_method', 'DELETE') !!}
