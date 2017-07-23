@@ -112,15 +112,6 @@
 
 
     <div class="container">
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class="container">
       <div class="row">
         <section class="Signature"></section>
       </div>
@@ -141,8 +132,8 @@
 | .__/ \__,_|_|_| |_|\__|___/\____/|_| |_|\___/ \_/\_/  
 | |                                                     
 |_|                                                     
--->
 @include('frontend.partials.paint')
+-->
 
 <!--
   ___  _                 _   
@@ -152,36 +143,8 @@
 | | | | |_) | (_) | |_| | |_ 
 \_| |_/_.__/ \___/ \__,_|\__|
 
--->
 @include('frontend.partials.about')
-
-
-    <div class="container">
-      <div class="row">
-        <section class="Contact"></section>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="row">
-        <section class="Thanks"></section>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <section class="paintingsList"></section>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="row">
-        <section class="paintingsIsotope"></section>
-      </div>
-    </div>
-
+-->
 
     <div class="container">
        @yield('body')
@@ -200,14 +163,15 @@
                                                            
                                                            
 
--->
 @include('frontend.partials.contact')
+-->
 
 <!--
 @include('frontend.partials.paintings')
 @include('frontend.partials.paintings2')
 @include('frontend.partials.paintings3')
 -->
+
 
 @include('frontend.partials.paintings4')
 
