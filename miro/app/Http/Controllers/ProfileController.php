@@ -55,6 +55,19 @@ class ProfileController extends Controller
       }
 
       $profile = new Profile;
+
+      // upload the media //
+      $file = $request->file('video_ogg');
+      $destination_path = 'videos/';
+      $filename = str_random(6).'_'.$file->getClientOriginalName();
+      $file->move($destination_path, $filename);
+
+      // upload the media //
+      $file = $request->file('video_mp4');
+      $destination_path = 'videos/';
+      $filename = str_random(6).'_'.$file->getClientOriginalName();
+      $file->move($destination_path, $filename);
+
       //dd($request);
       //dd($request->files);
       //dd($request->input('video_ogg'));
@@ -121,6 +134,24 @@ class ProfileController extends Controller
 
       // Process valid data & go to success page //
       $profile = Profile::find($id);
+
+
+      // if user choose a file, replace the old one //
+      if( $request->hasFile('video_ogg') ){
+           $file = $request->file('video_ogg');
+           $destination_path = 'uploads/';
+           $filename = str_random(6).'_'.$file->getClientOriginalName();
+           $file->move($destination_path, $filename);
+           $media->file = $destination_path . $filename;
+      }
+      if( $request->hasFile('video_mp4') ){
+           $file = $request->file('video_mp4');
+           $destination_path = 'uploads/';
+           $filename = str_random(6).'_'.$file->getClientOriginalName();
+           $file->move($destination_path, $filename);
+           $media->file = $destination_path . $filename;
+      }
+        
 
       // save media data into database //
       $profile->about_me = $request->input('about_me');

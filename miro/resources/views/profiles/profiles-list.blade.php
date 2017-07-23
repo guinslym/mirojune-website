@@ -45,9 +45,9 @@
 	@foreach($profiles as $media)
 		<tr>
 			<td>{{ $media->id}} </td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>{{ $media->about_me}} </td>
+			<td>{{ $media->video_ogg}} </td>
+			<td>{{ $media->video_mp4}} </td>
 			<td><a href="" class="btn btn-default pull-left">Show</a></td></td>
 			<td><a href="{{ url('/profile/'.$media->id.'/edit') }}" class="btn btn-warning pull-left">Edit</a></td>
 			<td>
