@@ -5,6 +5,9 @@
   .paintings img:hover {
     box-shadow: 0 12px 10px rgba(0, 0, 0, 0.2);
   }
+  .paintings img{
+    margin: 0 auto;
+  }
 
 
 </style>
