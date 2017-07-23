@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Profile;
+use Validator;
 
 class ProfileController extends Controller
 {
@@ -43,8 +44,8 @@ class ProfileController extends Controller
       // Validation //
       $validation = Validator::make($request->all(), [
          'about_me' => 'required',
-         'video_ogg'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240',
-         'video_mp4'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240'
+         'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
+         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
       ]);
 
       // Check if it fails //
@@ -54,9 +55,12 @@ class ProfileController extends Controller
       }
 
       $profile = new Profile;
+      //dd($request->files);
       
       // save media data into database //
       $profile->about_me = $request->input('about_me');
+      $profile->video_mp4 = $request->input('video_mp4');
+      $profile->video_ogg = $request->input('video_ogg');
       $profile->save();
 
       return redirect('/profile')->with('message','You just created your profile!');
@@ -99,9 +103,9 @@ class ProfileController extends Controller
    {
       // Validation //
       $validation = Validator::make($request->all(), [
-            'about_me' => 'required',
-             'video_ogg'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240',
-             'video_mp4'    => 'sometimes|mimes:video/avi,video/mpeg,video/quicktime|min:1|max:3240'
+         'about_me' => 'required',
+         'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
+         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
       ]);
 
       // Check if it fails //
@@ -113,8 +117,10 @@ class ProfileController extends Controller
       // Process valid data & go to success page //
       $profile = Profile::find($id);
 
-      // replace old data with new data from the submitted form //
-      $profile->caption = $request->input('about_me');
+      // save media data into database //
+      $profile->about_me = $request->input('about_me');
+      $profile->video_mp4 = $request->input('video_mp4');
+      $profile->video_ogg = $request->input('video_ogg');
       $profile->save();
 
       return redirect('/profile')->with('message','You just updated your Profile');

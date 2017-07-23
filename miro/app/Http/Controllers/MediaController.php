@@ -62,6 +62,7 @@ class MediaController extends Controller
       }
 
       $media = new Media;
+      //dd($request);
 
       // upload the media //
       $file = $request->file('userfile');

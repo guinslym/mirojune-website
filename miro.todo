@@ -1,14 +1,16 @@
 Steps:
  ✔ Need to delete the db and recreate it (with Category) because I added two new field into Profile @done (17-07-22 21:20)
- ☐ Profile View (to do and verify)
+ ☐ Profile Views (to do and verify)
+ ☐ Profile only Edit/Update/View
  ☐ Frontend (multipages)
- ☐ Admin CRUD
+ ☐ Socials network Models
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives
    ☐ Paintings
    ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25)
    ☐ Not satisfy with Archives... (Isotopes views)
    ✔ Multipage @done (17-07-22 21:23)
+ ☐ Admin CRUD
  ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55)
  ✔ Category (sql insert) @done (17-07-22 00:45)
    ✔ Create categories (Painting, Picture, Video, Other) @done (17-07-22 00:43)
