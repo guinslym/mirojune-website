@@ -13,13 +13,13 @@
        
       <div class="row">
 
-            <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
+            <div class="col-md-12 big-title wow bounceIn animated paintings" style="visibility: visible;">
                   <h2>Paintings</h2>
             </div>
 
 
         <section class="Paintings">
-        @for ($i = 0; $i < 10; $i++)
+        @for ($i = 0; $i < 5; $i++)
           <div class="col-lg-3 text-center paintings">
             <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" alt="" class="img-responsive">
             <address style="font-size:1.3em; line-height:1.4em;">

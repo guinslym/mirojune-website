@@ -45,7 +45,7 @@ class ProfileController extends Controller
       $validation = Validator::make($request->all(), [
          'about_me' => 'required',
          'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
-         //'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
+         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
       ]);
 
       // Check if it fails //
@@ -55,17 +55,17 @@ class ProfileController extends Controller
       }
 
       $profile = new Profile;
-      dd($request);
-      dd($request->files);
+      //dd($request);
+      //dd($request->files);
       //dd($request->input('video_ogg'));
-      $v_ogg = $request->input('video_ogg');
-      dd($v_ogg->mimeType);
+      //$v_ogg = $request->input('video_ogg');
+      //dd($v_ogg->mimeType);
 
       
       // save media data into database //
       $profile->about_me = $request->input('about_me');
-      //$profile->video_mp4 = $request->input('video_mp4');
-      $profile->video_ogg = $request->input('video_ogg');
+      $profile->video_mp4 = $request->file('video_mp4');
+      $profile->video_ogg = $request->file('video_ogg');
       $profile->save();
 
       return redirect('/profile')->with('message','You just created your profile!');

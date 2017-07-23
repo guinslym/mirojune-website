@@ -33,10 +33,77 @@
         padding: 40px 15px;
         text-align: center;
       }
+
+      .big-title {
+    text-align: center;
+}
+  .big-title h2 {
+      padding: 12px 10px 10px;
+      color: #566473;
+      font-size: 44px;
+      line-height: 50px;
+      margin: 0 auto 50px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+  }
+
+
+  .big-title h2::before,
+  .big-title h2::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #566473;
+      content: '';
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+      -webkit-transform: scale(0.85);
+      -moz-transform: scale(0.85);
+      transform: scale(0.85);
+  }
+
+  .big-title h2::after {
+      opacity: 0;
+      -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+      transition: top 0.3s, opacity 0.3s, transform 0.3s;
+  }
+
+  .big-title h2:hover::before,
+  .big-title h2:hover::after,
+  .big-title h2:focus::before,
+  .big-title h2:focus::after {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      transform: scale(1);
+  }
+  .big-title h2:hover::after,
+  .big-title h2:focus::after {
+      top: 0%;
+      opacity: 1;
+  }
+
+  /* big title light */
+
+  .big-title.light h2::before,
+  .big-title.light h2::after {
+      background: white;
+  }
+
+  .big-title{
+    margin: 80px 0 20px 0;
+  }
 .jumbotron{
   position: relative;
     overflow: hidden;
-    min-height: 400px;
+    min-height: 500px;
  
   /* Tried setting the height. Didnt work either */
   /* height: 200px; */
@@ -75,34 +142,6 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Miro June</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/archive">Archive</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/dashboard">
-            Admin Interface</a></li>
-            <li><a href="/auth/logout">
-             Logout</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
       <div class="jumbotron">
         <video id="video-background" preload muted autoplay loop>
           <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -110,6 +149,7 @@
         </video>
       </div>
 
+@include('frontend.partials.navbar')
 
     <div class="container">
       <div class="row">
@@ -149,28 +189,6 @@
     <div class="container">
        @yield('body')
     </div>
-
-
-
-<!--
-
-                 _             _  ______                   
-                | |           | | |  ___|                  
-  ___ ___  _ __ | |_ __ _  ___| |_| |_ ___  _ __ _ __ ___  
- / __/ _ \| '_ \| __/ _` |/ __| __|  _/ _ \| '__| '_ ` _ \ 
-| (_| (_) | | | | || (_| | (__| |_| || (_) | |  | | | | | |
- \___\___/|_| |_|\__\__,_|\___|\__\_| \___/|_|  |_| |_| |_|
-                                                           
-                                                           
-
-@include('frontend.partials.contact')
--->
-
-<!--
-@include('frontend.partials.paintings')
-@include('frontend.partials.paintings2')
-@include('frontend.partials.paintings3')
--->
 
 
 @include('frontend.partials.paintings4')
