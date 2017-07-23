@@ -11,8 +11,8 @@ Steps:
  ☐ Profile add about me Picture
  ☐ Change Profile to Configuration (only on the view)
  ☐ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo
- ☐ Navbar==active (path)
-   ☐ https://stackoverflow.com/questions/29837555/setting-bootstrap-navbar-active-class-in-laravel-5
+ ✔ Navbar==active (path) @done (17-07-23 01:53)
+   ✔ https://stackoverflow.com/questions/29837555/setting-bootstrap-navbar-active-class-in-laravel-5 @done (17-07-23 01:53)
  ☐ Video access ain't working (App/temp)
  ☐ Find something to put in before the footer (SVG or Animation Miro June)
  ☐ Medias to add...so that I can check Archive (video/paintings...)
