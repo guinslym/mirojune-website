@@ -89,8 +89,15 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dashboard">
+            Admin Interface</a></li>
+            <li><a href="/auth/logout">
+             Logout</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -101,9 +108,6 @@
           <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
           <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
         </video>
-        <div class="container">
-          Hello World Wocka Wocka
-        </div>
       </div>
 
 

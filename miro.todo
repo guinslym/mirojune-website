@@ -2,6 +2,8 @@ Steps:
  ✔ Need to delete the db and recreate it (with Category) because I added two new field into Profile @done (17-07-22 21:20)
  ✔ Profile Views (to do and verify) @done (17-07-22 22:31)
  ☐ Frontend (multipages)
+ ☐ Wireframe
+ ☐ Navbar
  ☐ Fully Create the frontend (KSKS)
    ☐ Archives
    ☐ Paintings
