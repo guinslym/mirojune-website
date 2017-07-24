@@ -38,4 +38,8 @@ class HomeController extends Controller
     public function archive(){
     	return view('frontend.archive');
     }
+    public function dashboard(){
+        return view('frontend.dashboard');
+        
+    }
 }

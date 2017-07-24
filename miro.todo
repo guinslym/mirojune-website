@@ -9,10 +9,10 @@ Steps:
  ☐ Small mode navbar menu button doesn't work (maybe check with Javascript)
  ☐ Contact page (make it work) --postpone
    ☐ https://learninglaravel.net/learn-to-send-emails-using-gmail-and-sendgrid-in-laravel-5
+   ☐ https://10minutemail.com/10MinuteMail/index.html
  ☐ Profile only Edit/Update/View (postpone)
  ☐ Medias Controller and View
    ☐ Show
- ☐ File upload video
  ☐ Maybe de faire un Social Media table
  ☐ Maybe add a role to the admin user
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
@@ -127,6 +127,7 @@ Categories
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
  ✔ https://www.youtube.com/watch?v=OPWAM0aPCvU @done (17-07-24 19:07) @project(Steps)
+ ✔ File upload video @done (17-07-24 19:07) @project(Steps)
  ✔ Create image resize @done (17-07-24 19:07) @project(Steps)
  ✔ Create JCROP @done (17-07-24 19:07) @project(Steps)
  ✔ Archives layout (Button) @done (17-07-24 19:06) @project(Steps)

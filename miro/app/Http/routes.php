@@ -29,6 +29,7 @@ Route::group(['middleware' => 'auth'], function()
     Route::resource('/image', 'ImageController');
     Route::resource('/medias', 'MediaController');
     Route::resource('/profile', 'ProfileController');
+    Route::get('/dashboard', ['as' => 'fontend-admin-dashboard', 'uses' => 'HomeController@dashboard']);
 });
 // Using A Controller...
 
