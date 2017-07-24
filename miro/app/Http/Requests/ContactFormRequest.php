@@ -13,7 +13,7 @@ class ContactFormRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class ContactFormRequest extends Request
     public function rules()
     {
         return [
-            //
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
         ];
     }
 
@@ -38,11 +40,11 @@ class ContactFormRequest extends Request
                 'user_message' => $request->get('message')
             ), function($message)
         {
-            $message->from('wj@wjgilmore.com');
-            $message->to('wj@wjgilmore.com', 'Admin')->subject('TODOParrot Feedback');
+            $message->from('guinslym@gmail.com');
+            $message->to('j883739@mvrht.net', 'Admin')->subject('TODOParrot Feedback');
         });
 
-      return \Redirect::route('contact')->with('message', 'Thanks for contacting us!');
+      return Redirect::route('contact')->with('message', 'Thanks for contacting me!');
 
     }
 }

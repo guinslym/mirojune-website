@@ -90,11 +90,24 @@ div.contact-form{
                         <div class="container">
                               <!-- Title row -->
                               <div class="row">
+
+
                                           <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
                                                 <h2>Contact Me</h2>
                                           </div>
 
                                     <div class="clearfix"></div>
+
+
+@if(Session::has('message'))
+    
+    <div class="col-lg-12">
+      <div class="alert alert-info">
+        {{Session::get('message')}}
+      </div>
+    </div>
+
+@else
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;">
                                           <h3>Use this form to contact me or click on a Social Media Icon.</h3>
@@ -104,30 +117,60 @@ div.contact-form{
 
 <!-- Form element row -->
 <div class="row text-center">
+
+
+
+
+<ul>
+    @foreach($errors->all() as $error)
+        <li>{{ $error }}</li>
+    @endforeach
+</ul>
+
 <div class="col-md-2"></div>
 
 <div class="col-md-8">
-<form method="post" class="reply" id="contact">
+{!! Form::open(array('route' => 'contact_store', 'class' => 'form reply', 'id'=> 'contact')) !!}
 <fieldset>
 <div class="row">
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft animated" style="visibility: visible;">
 <div class="row">
 <div class="col-md-12">
-    <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required="">
+
+    {!! Form::text('name', null, 
+        array('required', 
+              'class'=>'form-control', 
+              'placeholder'=>'Your name',
+              'id' => 'name')) !!}
 </div>
 <div class="col-md-12">
-    <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required="">
+
+    {!! Form::text('email', null, 
+        array('required', 
+              'class'=>'form-control', 
+              'placeholder'=>'Your e-mail address',
+              'id' => 'email')) !!}
+
 </div>
+<!--
 <div class="col-md-12">
     <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" value="" required="">
 </div>
+-->
 </div>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight animated" style="visibility: visible;">
 <div class="row">
 <div class="col-md-12">
-    <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Your Message" required=""></textarea>
+
+        {!! Form::textarea('message', null, 
+        array('required', 
+              'class'=>'form-control', 
+              'placeholder'=>'Your message',
+              'rows' => '3',
+              'cols' => '40')) !!}
+
 </div>
 </div>
 </div>
@@ -135,12 +178,14 @@ div.contact-form{
 <div class="row">
 <div class="col-md-12 wow fadeInUp animated" style="visibility: visible;">
 <button type="submit" class="btn btn-2 btn-2c">Send</button>
+
+      
 <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
 <div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
                                                             </div>
                                                       </div>
                                                 </fieldset>
-                                          </form>
+                                          {!! Form::close() !!}
                                     </div>
 
                                     <div class="col-md-2"></div>
@@ -151,4 +196,6 @@ div.contact-form{
 
         </section>
       </div>
+@endif
+
     </div>

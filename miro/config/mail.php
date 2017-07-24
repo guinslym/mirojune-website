@@ -1,5 +1,9 @@
 <?php
 
+//To know how to send email check this link
+//https://stackoverflow.com/a/32515570/2581266
+// you might need to use mailgun instead of gmail
+
 return [
 
     /*
@@ -28,7 +32,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.org'),
 
     /*
     |--------------------------------------------------------------------------

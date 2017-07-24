@@ -1,91 +1,27 @@
 Steps:
- ✔ Need to delete the db and recreate it (with Category) because I added two new field into Profile @done (17-07-22 21:20)
- ✔ Profile Views (to do and verify) @done (17-07-22 22:31)
- ☐ Frontend (multipages)
- ☐ Contact page (make it work)
-   ☐ Contact add thank-you page
- ✔ Wireframe @done (17-07-23 01:42)
- ✔ Navbar @done (17-07-23 01:19)
- ☐ Profile add email to receive message
- ☐ Profile add name of the website
  ☐ Profile add about me Picture
- ☐ Change Profile to Configuration (only on the view)
  ☐ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo
- ✔ Navbar==active (path) @done (17-07-23 01:53)
-   ✔ https://stackoverflow.com/questions/29837555/setting-bootstrap-navbar-active-class-in-laravel-5 @done (17-07-23 01:53)
+ ☐ Change Profile to Configuration (only on the view)
  ☐ Video access ain't working (App/temp)
  ☐ Find something to put in before the footer (SVG or Animation Miro June)
  ☐ Medias to add...so that I can check Archive (video/paintings...)
- ☐ Small mode navbar menu button doesn't work (maybe check with Javascript)
- ☐ Fully Create the frontend (KSKS)
-   ☐ Archives
-   ☐ Paintings
-   ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25)
    ☐ Not satisfy with Archives... (Isotopes views)
-   ✔ Multipage @done (17-07-22 21:23)
- ☐ Admin CRUD
- ☐ Question do you want a contact form
- ☐ Socials network Models
+ ☐ Small mode navbar menu button doesn't work (maybe check with Javascript)
+ ☐ Contact page (make it work) --postpone
+   ☐ https://learninglaravel.net/learn-to-send-emails-using-gmail-and-sendgrid-in-laravel-5
  ☐ Profile only Edit/Update/View (postpone)
- ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55)
- ✔ Category (sql insert) @done (17-07-22 00:45)
-   ✔ Create categories (Painting, Picture, Video, Other) @done (17-07-22 00:43)
-   ✔ insert into categories(category); values ('Painting'); @done (17-07-22 01:39)
-   ✔ insert into categories(category); values ('Video'); @done (17-07-22 00:45)
-   ✔ insert into categories(category); values ('Picture'); @done (17-07-22 00:45)
-   ✔ insert into categories(category); values ('Other'); @done (17-07-22 00:45)
- ✔ Medias Controller and View @done (17-07-22 03:17)
-   ✔ Index @done (17-07-22 01:58)
-   ✔ Create @done (17-07-22 01:58)
-   ✔ edit/Update @done (17-07-22 03:12)
-     ✔ I am not sure if Category is necessary anymore, I can just do an array @done (17-07-22 03:12)
-     ✔ Add category into the form @done (17-07-22 03:07)
-     ✔ Error on max file size (validator) @done (17-07-22 03:11)
+ ☐ Medias Controller and View
    ☐ Show
-   ✔ Delete @done (17-07-22 01:57)
- ✔ Profile Controller @done (17-07-22 03:49)
- ✔ VideoCover Controller @done (17-07-22 03:55)
- ✔ VideoCover View @done (17-07-22 03:55)
- ✔ Medias can't connect to db @done (17-07-22 01:12)
-   ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13)
- ✔ Add user login (only one) @done (17-07-22 21:23)
- ✔ https://www.youtube.com/watch?v=ubUWbcdbyNo @done (17-07-22 04:03)
- ✔ https://www.youtube.com/watch?v=VoGLOtit1do @done (17-07-22 21:23)
- ✔ Create a Image table @done (17-07-17 21:10)
- ✔ Create a CRUD app @done (17-07-17 22:12)
-   ✔ Create @done (17-07-17 21:30)
-   ✔ Show/Detail/Read @done (17-07-17 22:12)
-     ✔ List @done (17-07-17 21:30)
-   ✔ Delete @done (17-07-17 22:12)
-   ✔ Update @done (17-07-17 22:11)
-   ✔ Create Paintings @done (17-07-20 00:22)
-   ✔ Create Paintings Mixitup (Archives) @done (17-07-20 00:22)
- ✔ Create the front-end @done (17-07-20 00:22)
-   ✔ Start the basic layout Base Template @done (17-07-20 00:22)
-   ✔ Choose Front end Stack @done (17-07-20 00:22)
-     ✔ http://getbootstrap.com/css/ @done (17-07-17 23:52) (ok)
-     ✔ http://bulma.io/documentation/elements/box/ @done (17-07-18 23:17)
-     ✔ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html @done (17-07-18 23:17)
-   ✔ Does the Frontend stack works with Video and Isotope @done (17-07-18 23:17)
-   ✔ Create a contact form @done (17-07-18 23:17)
- ✔ Create a contact form (5minutes email)---- Postpone @done (17-07-17 22:26)
- ✔ Create categories @done (17-07-20 00:25)
- ✔ Create One to Many (Categorie has one Image) @done (17-07-20 00:25)
- ✔ Create a HomeVideo (add and remove Home Video) @done (17-07-20 00:25)
- ☐ Create image resize
-   ☐ https://www.youtube.com/watch?v=OPWAM0aPCvU
- ☐ Create JCROP
- ✔ Create Medias model to replace Paintings @done (17-07-20 00:23)
- ✔ Create Painting; Picture; Video; HomeVideo @done (17-07-20 00:28)
- ✔ php artisan make:migration create_paintings_table @done (17-07-20 00:37)
- ✔ php artisan make:migration create_pictures_table @done (17-07-20 00:37)
- ✔ php artisan make:migration create_videos_table @done (17-07-20 00:37)
- ✔ php artisan make:migration create_homevideo_table @done (17-07-20 00:38)
  ☐ File upload video
- ✔ https://stackoverflow.com/questions/39854828/laravel-5-file-upload-validation @done (17-07-22 21:23)
  ☐ Maybe de faire un Social Media table
  ☐ Maybe add a role to the admin user
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
+
+
+Postpone:
+ ☐ Profile add email to receive message -- postpone (Ask him if he wants a contact page first)
+ ☐ Profile add name of the website (Ask him this Question)
+ ☐ Socials network Models
 
 
 needs (Miro):
@@ -94,39 +30,17 @@ needs (Miro):
  ☐ ... gif or mov file keep playing on homepage without pressing play button
 
 Conclusion:
- ✔ Not necessarly a Wordpress site @done (17-07-14 02:45)
- ✔ Start Agile @done (17-07-20 00:38)
- ✔ Need to have a homepage with Video @done (17-07-20 00:38)
- ✔ admin interface @done (17-07-14 22:04)
  ☐ Simple Navigation (3-4 menu max)
  ☐ Needs to be responsive (meaning can be viewed in mobile phones)
- ✔ Simplify it @done (17-07-20 00:38)
- ✔ Wireframe @done (17-07-20 00:38)
 
 Questions:
- ✔ You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...) @done (17-07-14 02:58)
- ✔ What is the content of the website (Pictures / Paintings or both) @done (17-07-14 02:58)
- ✔ Where do you want to install this website... is it on GoDaddy or ...? So that I will know which programming language to use @done (17-07-14 02:58)
- ✔ If you show your paintings do you want to sell them on your website? @done (17-07-14 02:58)
- ✔ if yes.. How will you sell your paints (Paypal; Stripe; Shopify)? @done (17-07-14 02:46)
 
 homeworks:
- ✔ do a wireframe @done (17-07-17 19:56)
  ☐ find the color theme and fonts
 
 Inspirations:
- ✔ http://www.salt-projects.be/ @done (17-07-18 23:14)
- ✔ https://www.thebestdesigns.com/designs/white/p2 @done (17-07-18 23:14)
- ✔ http://www.modehire.com.au/ @done (17-07-18 23:14)
- ✔ https://www.awwwards.com/50-fantastic-white-web-designs.html @done (17-07-18 23:14)
- ✔ https://www.awwwards.com/websites/white/ @done (17-07-18 23:14)
- ✔ https://www.godoshopping.it/ (flexbox) @done (17-07-18 23:14)
- ✔ http://nordic.design/ (border svg) @done (17-07-18 23:14)
- ✔ http://music.manuelmoreale.com/ @done (17-07-18 23:14)
- ✔ http://twostates.in/ @done (17-07-18 18:58)
 
 todo:
- ✔ find Miro specifications @done (17-07-17 19:56)
  ☐ Create DB and routes
  ☐ add svgplus
  ☐ add video in the background
@@ -159,7 +73,6 @@ helps:
 - no it will be very complicated if there is a shop on the website. i want the website just for my porforlio
  ☐ i need SNS links in the bottom
  ☐ like instagram and facebook
- ✔ if you have more questions, let me know! @done (17-07-14 02:50)
 
 Categories
  Layout:
@@ -210,3 +123,98 @@ Categories
   insert into categories(category); values ('Video');
   insert into categories(category); values ('Picture');
   insert into categories(category); values ('Other');
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ https://www.youtube.com/watch?v=OPWAM0aPCvU @done (17-07-24 19:07) @project(Steps)
+ ✔ Create image resize @done (17-07-24 19:07) @project(Steps)
+ ✔ Create JCROP @done (17-07-24 19:07) @project(Steps)
+ ✔ Archives layout (Button) @done (17-07-24 19:06) @project(Steps)
+ ✔ Frontend (multipages) @done (17-07-24 19:05) @project(Steps)
+ ✔ Question do you want a contact form @done (17-07-24 19:04) @project(Steps)
+ ✔ Paintings @done (17-07-24 19:04) @project(Steps)
+ ✔ Fully Create the frontend (KSKS) @done (17-07-24 19:04) @project(Steps)
+ ✔ Archives @done (17-07-24 19:04) @project(Steps)
+ ✔ Admin CRUD @done (17-07-24 19:04) @project(Steps)
+ ✔ Contact add thank-you page @done (17-07-24 19:01) @project(Steps)
+ ✔ https://stackoverflow.com/questions/29837555/setting-bootstrap-navbar-active-class-in-laravel-5 @done (17-07-23 01:53) @project(Steps)
+ ✔ Navbar==active (path) @done (17-07-23 01:53) @project(Steps)
+ ✔ Wireframe @done (17-07-23 01:42) @project(Steps)
+ ✔ Navbar @done (17-07-23 01:19) @project(Steps)
+ ✔ Profile Views (to do and verify) @done (17-07-22 22:31) @project(Steps)
+ ✔ https://www.youtube.com/watch?v=VoGLOtit1do @done (17-07-22 21:23) @project(Steps)
+ ✔ https://stackoverflow.com/questions/39854828/laravel-5-file-upload-validation @done (17-07-22 21:23) @project(Steps)
+ ✔ Multipage @done (17-07-22 21:23) @project(Steps)
+ ✔ Add user login (only one) @done (17-07-22 21:23) @project(Steps)
+ ✔ Need to delete the db and recreate it (with Category) because I added two new field into Profile @done (17-07-22 21:20) @project(Steps)
+ ✔ https://www.youtube.com/watch?v=ubUWbcdbyNo @done (17-07-22 04:03) @project(Steps)
+ ✔ VideoCover View @done (17-07-22 03:55) @project(Steps)
+ ✔ VideoCover Controller @done (17-07-22 03:55) @project(Steps)
+ ✔ Profile Controller @done (17-07-22 03:49) @project(Steps)
+ ✔ edit/Update @done (17-07-22 03:12) @project(Steps)
+ ✔ I am not sure if Category is necessary anymore, I can just do an array @done (17-07-22 03:12) @project(Steps)
+ ✔ Error on max file size (validator) @done (17-07-22 03:11) @project(Steps)
+ ✔ Add category into the form @done (17-07-22 03:07) @project(Steps)
+ ✔ Index @done (17-07-22 01:58) @project(Steps)
+ ✔ Create @done (17-07-22 01:58) @project(Steps)
+ ✔ Delete @done (17-07-22 01:57) @project(Steps)
+ ✔ insert into categories(category); values ('Painting'); @done (17-07-22 01:39) @project(Steps)
+ ✔ fix by adding public table = medias in Media.php @done (17-07-22 01:13) @project(Steps)
+ ✔ Medias can't connect to db @done (17-07-22 01:12) @project(Steps)
+ ✔ insert into categories(category); values ('Video'); @done (17-07-22 00:45) @project(Steps)
+ ✔ insert into categories(category); values ('Picture'); @done (17-07-22 00:45) @project(Steps)
+ ✔ insert into categories(category); values ('Other'); @done (17-07-22 00:45) @project(Steps)
+ ✔ Category (sql insert) @done (17-07-22 00:45) @project(Steps)
+ ✔ Create categories (Painting, Picture, Video, Other) @done (17-07-22 00:43) @project(Steps)
+ ✔ Not satisfy with Paintings... (list View) @done (17-07-22 00:25) @project(Steps)
+ ✔ Categories---Medias table error for foreignkey (Maybe that I have to delete App\Media et App\Category first ) @done (17-07-20 01:55) @project(Steps)
+ ✔ php artisan make:migration create_homevideo_table @done (17-07-20 00:38) @project(Steps)
+ ✔ Wireframe @done (17-07-20 00:38) @project(Conclusion)
+ ✔ Start Agile @done (17-07-20 00:38) @project(Conclusion)
+ ✔ Simplify it @done (17-07-20 00:38) @project(Conclusion)
+ ✔ Need to have a homepage with Video @done (17-07-20 00:38) @project(Conclusion)
+ ✔ php artisan make:migration create_videos_table @done (17-07-20 00:37) @project(Steps)
+ ✔ php artisan make:migration create_pictures_table @done (17-07-20 00:37) @project(Steps)
+ ✔ php artisan make:migration create_paintings_table @done (17-07-20 00:37) @project(Steps)
+ ✔ Create Painting; Picture; Video; HomeVideo @done (17-07-20 00:28) @project(Steps)
+ ✔ Create categories @done (17-07-20 00:25) @project(Steps)
+ ✔ Create a HomeVideo (add and remove Home Video) @done (17-07-20 00:25) @project(Steps)
+ ✔ Create One to Many (Categorie has one Image) @done (17-07-20 00:25) @project(Steps)
+ ✔ Create Medias model to replace Paintings @done (17-07-20 00:23) @project(Steps)
+ ✔ Start the basic layout Base Template @done (17-07-20 00:22) @project(Steps)
+ ✔ Create the front-end @done (17-07-20 00:22) @project(Steps)
+ ✔ Create Paintings Mixitup (Archives) @done (17-07-20 00:22) @project(Steps)
+ ✔ Create Paintings @done (17-07-20 00:22) @project(Steps)
+ ✔ Choose Front end Stack @done (17-07-20 00:22) @project(Steps)
+ ✔ http://foundation.zurb.com/sites/docs/v/5.5.3/css.html @done (17-07-18 23:17) @project(Steps)
+ ✔ http://bulma.io/documentation/elements/box/ @done (17-07-18 23:17) @project(Steps)
+ ✔ Does the Frontend stack works with Video and Isotope @done (17-07-18 23:17) @project(Steps)
+ ✔ Create a contact form @done (17-07-18 23:17) @project(Steps)
+ ✔ https://www.thebestdesigns.com/designs/white/p2 @done (17-07-18 23:14) @project(Inspirations)
+ ✔ https://www.godoshopping.it/ (flexbox) @done (17-07-18 23:14) @project(Inspirations)
+ ✔ https://www.awwwards.com/websites/white/ @done (17-07-18 23:14) @project(Inspirations)
+ ✔ https://www.awwwards.com/50-fantastic-white-web-designs.html @done (17-07-18 23:14) @project(Inspirations)
+ ✔ http://www.salt-projects.be/ @done (17-07-18 23:14) @project(Inspirations)
+ ✔ http://www.modehire.com.au/ @done (17-07-18 23:14) @project(Inspirations)
+ ✔ http://nordic.design/ (border svg) @done (17-07-18 23:14) @project(Inspirations)
+ ✔ http://music.manuelmoreale.com/ @done (17-07-18 23:14) @project(Inspirations)
+ ✔ http://twostates.in/ @done (17-07-18 18:58) @project(Inspirations)
+ ✔ http://getbootstrap.com/css/ @done (17-07-17 23:52) (ok) @project(Steps)
+ ✔ Create a contact form (5minutes email)---- Postpone @done (17-07-17 22:26) @project(Steps)
+ ✔ Show/Detail/Read @done (17-07-17 22:12) @project(Steps)
+ ✔ Delete @done (17-07-17 22:12) @project(Steps)
+ ✔ Create a CRUD app @done (17-07-17 22:12) @project(Steps)
+ ✔ Update @done (17-07-17 22:11) @project(Steps)
+ ✔ List @done (17-07-17 21:30) @project(Steps)
+ ✔ Create @done (17-07-17 21:30) @project(Steps)
+ ✔ Create a Image table @done (17-07-17 21:10) @project(Steps)
+ ✔ find Miro specifications @done (17-07-17 19:56) @project(todo)
+ ✔ do a wireframe @done (17-07-17 19:56) @project(homeworks)
+ ✔ admin interface @done (17-07-14 22:04) @project(Conclusion)
+ ✔ You have an Archive menu what is it for? ( is it for a Blog; a list of Pictures or Paintings...) @done (17-07-14 02:58) @project(Questions)
+ ✔ Where do you want to install this website... is it on GoDaddy or ...? So that I will know which programming language to use @done (17-07-14 02:58) @project(Questions)
+ ✔ What is the content of the website (Pictures / Paintings or both) @done (17-07-14 02:58) @project(Questions)
+ ✔ If you show your paintings do you want to sell them on your website? @done (17-07-14 02:58) @project(Questions)
+ ✔ if you have more questions, let me know! @done (17-07-14 02:50) @project(helps)
+ ✔ if yes.. How will you sell your paints (Paypal; Stripe; Shopify)? @done (17-07-14 02:46) @project(Questions)
+ ✔ Not necessarly a Wordpress site @done (17-07-14 02:45) @project(Conclusion)
