@@ -44,6 +44,7 @@ class ProfileController extends Controller
       // Validation //
       $validation = Validator::make($request->all(), [
          'about_me' => 'required',
+         'aboutmepicture'     => 'required|image|mimes:jpeg,png|min:1|max:3000',
          'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
          'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
       ]);
@@ -72,6 +73,7 @@ class ProfileController extends Controller
       $profile->about_me = $request->input('about_me');
       $profile->video_mp4 = $request->file('video_mp4');
       $profile->video_ogg = $request->file('video_ogg');
+      $profile->aboutmepicture = $request->file('aboutmepicture');
       $profile->save();
 
       return redirect('/profile')->with('message','You just created your profile!');
@@ -115,6 +117,7 @@ class ProfileController extends Controller
       // Validation //
       $validation = Validator::make($request->all(), [
          'about_me' => 'required',
+         'aboutmepicture'     => 'required|image|mimes:jpeg,png|min:1|max:3000',
          'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
          'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
       ]);
@@ -150,6 +153,7 @@ class ProfileController extends Controller
       $profile->about_me = $request->input('about_me');
       $profile->video_mp4 = $request->input('video_mp4');
       $profile->video_ogg = $request->input('video_ogg');
+      $profile->aboutmepicture = $request->file('aboutmepicture');
       $profile->save();
 
       return redirect('/profile')->with('message','You just updated your Profile');

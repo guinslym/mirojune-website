@@ -1,6 +1,8 @@
 Steps:
+ ☐ Django-vote (Ajax and Non-Ajax)
+ ☐ Django-relationship (custom profile)
  ☐ Profile add about me Picture
- ☐ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo
+ ✔ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo @done (17-07-24 19:46)
  ☐ Change Profile to Configuration (only on the view)
  ☐ Video access ain't working (App/temp)
  ☐ Find something to put in before the footer (SVG or Animation Miro June)
@@ -16,6 +18,7 @@ Steps:
  ☐ Maybe de faire un Social Media table
  ☐ Maybe add a role to the admin user
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
+ ✔ php artisan make:migration add_paid_to_users --table="users" @done (17-07-24 20:34)
 
 
 Postpone:
