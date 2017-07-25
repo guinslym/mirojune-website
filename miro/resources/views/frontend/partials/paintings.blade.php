@@ -37,11 +37,56 @@ button:focus{
 img{
 	padding-bottom: 40px;
 }
+ul.sortit {
+	list-style: none;
+}
+
+
+#filters ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+#filters ul li a {
+    display: block;
+}
+#filters ul li a:hover h5, #filters ul li a.active h5 {
+    color: #fff;
+}
+#filters ul li a h5 {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+#filters {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: block;
+    float: none;
+    z-index: 2;
+    position: relative;
+}
 </style>
 
 
 <div class="container">
 		<div class="row">
+
+
+	<ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active"><h5>All</h5></a></li> 
+        <li><a href="#" data-filter=".wordpress"><h5>Wordpress</h5></a></li>
+        <li><a href="#" data-filter=".jquery"><h5>jQuery</h5></a></li>
+        <li><a href="#" data-filter=".php"><h5>PHP</h5></a></li>
+        <li><a href="#" data-filter=".css"><h5>CSS</h5></a></li>
+        <li><a href="#" data-filter=".html"><h5>HTML</h5></a></li>
+    </ul>
+
 
             <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
                   <h2>Archive</h2>
@@ -64,11 +109,27 @@ img{
 					
 					<div class="col-md-9 col-xs-12 text-right">
 						<br/>
-						<a><button class="white-border filter" data-filter=".category-1">A</button></a>
-						<a><button class="white-border filter" data-filter=".category-2">B</button></a>
-						<a><button class="white-border filter" data-filter=".category-3">C</button></a>
-						<a><button class="white-border filter" data-filter=".category-4">D</button></a>
-						<a><button class="filter" data-filter="all" class="white-border filter" data-filter=".category-8" >All</button></a>
+						<ul class="sortit">
+							<li>
+								<a><button class="white-border filter btn btn-primary" data-filter=".category-1">A</button></a>
+								
+							</li>
+							<li>
+								<a><button class="white-border filter btn btn-primary" data-filter=".category-2">B</button></a>
+								
+							</li>
+							<li>
+								<a><button class="white-border filter btn btn-primary" data-filter=".category-3">C</button></a>
+								
+							</li>
+							<li>
+								<a><button class="white-border filter btn btn-primary" data-filter=".category-4">D</button></a>
+								
+							</li>
+							<li>
+								<a><button class="filter" data-filter="all" class="white-border filter" data-filter=".category-8" >All</button></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			  
