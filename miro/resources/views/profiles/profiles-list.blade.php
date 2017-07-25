@@ -19,6 +19,7 @@
 		<tr>
 			<td>id</td>
 			<td>About Me</td>
+			<td>About Me Picture</td>
 			<td>video ogg</td>
 			<td>video mp4</td>
 			<td>created</td>
@@ -32,6 +33,7 @@
 		<tr>
 			<td>id</td>
 			<td>About Me</td>
+			<td>About Me Picture</td>
 			<td>video ogg</td>
 			<td>video mp4</td>
 			<td>created</td>
@@ -45,7 +47,8 @@
 	@foreach($profiles as $media)
 		<tr>
 			<td>{{ $media->id}} </td>
-			<td>{{ $media->about_me}} </td>
+			<td>{{ $media->about_me }} </td>
+			<td>{{ $media->aboutmepicture }} </td>
 			<td>{{ $media->video_ogg}} </td>
 			<td>{{ $media->video_mp4}} </td>
 			<td><a href="" class="btn btn-default pull-left">Show</a></td></td>

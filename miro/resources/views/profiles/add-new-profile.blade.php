@@ -12,6 +12,12 @@
          <textarea class="form-control" name="about_me"></textarea>
       </div>
 
+
+      <div class="form-group">
+         <label for="aboutmepicture">About me Picture</label>
+         <input type="file" class="form-control" name="aboutmepicture">
+      </div>
+
       <div class="form-group">
          <label for="video_ogg">Upload Video (ogg)</label>
          <input type="file" class="form-control" name="video_ogg">

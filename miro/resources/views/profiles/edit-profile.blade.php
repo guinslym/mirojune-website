@@ -10,6 +10,12 @@
         Your browser does not support HTML5 video.
       </video>
 
+
+      <div class="form-group">
+         <label for="aboutmepicture">About me Picture</label>
+         {!! Form::file('aboutmepicture',null,['class'=>'form-control']) !!}
+      </div>
+      
       <div class="form-group">
          <label for="video_ogg">Upload File</label>
          {!! Form::file('video_ogg',null,['class'=>'form-control']) !!}
