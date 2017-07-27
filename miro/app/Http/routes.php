@@ -21,7 +21,7 @@ Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'HomeController
 
 Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'HomeController@paintings']);
 
-Route::get('/videosok', ['as' => 'videos', 'uses' => 'HomeController@videos']);
+Route::get('/videos-miro', ['as' => 'videos', 'uses' => 'HomeController@videos']);
 
 Route::get('/pictures', ['as' => 'fontend-pictures', 'uses' => 'HomeController@pictures']);
 
