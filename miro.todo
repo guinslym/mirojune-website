@@ -1,7 +1,7 @@
 Steps:
  ☐ Add Homevideo_mp4
    ✔ Add Homevideo_ogg @done (17-07-26 23:55)
-   ☐ Call it in HomeController to view video
+   ✔ Call it in HomeController to view video @done (17-07-27 00:44)
  ☐ Social_networks
    ☐ CRUD
  ☐ Paintings/Pictures/Video
@@ -31,6 +31,7 @@ Steps:
 Other tasks:
  ☐ Django-vote (Ajax and Non-Ajax)
  ☐ Django-relationship (custom profile)
+ ☐ https://coverr.co/
 
 Postpone:
  ☐ Profile add email to receive message -- postpone (Ask him if he wants a contact page first)
