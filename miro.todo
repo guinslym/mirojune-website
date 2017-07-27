@@ -1,4 +1,13 @@
 Steps:
+ ☐ Add Homevideo_mp4
+   ✔ Add Homevideo_ogg @done (17-07-26 23:55)
+   ☐ Call it in HomeController to view video
+ ☐ Social_networks
+   ☐ CRUD
+ ☐ Paintings/Pictures/Video
+   ☐ Each in one page
+   ☐ Create detail page for each too
+   
  ☐ Profile add about me Picture
  ☐ Archives (what to do is to create a list-oneliner first and ... )
  ✔ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo @done (17-07-24 19:46)
@@ -124,10 +133,12 @@ Categories
 
 
 
-  insert into categories(category); values ('Painting');
-  insert into categories(category); values ('Video');
-  insert into categories(category); values ('Picture');
-  insert into categories(category); values ('Other');
+  insert into categories(category) values ('Painting');
+  insert into categories(category) values ('Video');
+  insert into categories(category) values ('Picture');
+  insert into categories(category) values ('HomeVideo_mp4');
+  insert into categories(category) values ('HomeVideo_ogg');
+  insert into categories(category) values ('Other');
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:

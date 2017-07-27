@@ -125,6 +125,7 @@
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
   z-index: 1;
+  
 } 
     </style>
 
@@ -153,7 +154,6 @@
 | .__/ \__,_|_|_| |_|\__|___/\____/|_| |_|\___/ \_/\_/  
 | |                                                     
 |_|                                                     
-@include('frontend.partials.paint')
 -->
 
 <!--
@@ -164,7 +164,6 @@
 | | | | |_) | (_) | |_| | |_ 
 \_| |_/_.__/ \___/ \__,_|\__|
 
-@include('frontend.partials.about')
 -->
 
        @yield('body')
