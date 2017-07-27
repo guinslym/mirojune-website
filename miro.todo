@@ -1,6 +1,4 @@
 Steps:
- ☐ Django-vote (Ajax and Non-Ajax)
- ☐ Django-relationship (custom profile)
  ☐ Profile add about me Picture
  ☐ Archives (what to do is to create a list-oneliner first and ... )
  ✔ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo @done (17-07-24 19:46)
@@ -21,6 +19,9 @@ Steps:
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
  ✔ php artisan make:migration add_paid_to_users --table="users" @done (17-07-24 20:34)
 
+Other tasks:
+ ☐ Django-vote (Ajax and Non-Ajax)
+ ☐ Django-relationship (custom profile)
 
 Postpone:
  ☐ Profile add email to receive message -- postpone (Ask him if he wants a contact page first)
