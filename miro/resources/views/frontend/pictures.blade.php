@@ -21,13 +21,13 @@
       <div class="row">
 
             <div class="col-md-12 big-title wow bounceIn animated paintings" style="visibility: visible;">
-                  <h2>Paintings</h2>
+                  <h2>Pictures</h2>
             </div>
 
 
-        @foreach($paintings as $painting)
+        @foreach($pictures as $picture)
           <div class="col-lg-4 text-center paintings">
-            <img src="{{  asset($painting->file) }}" alt="" class="img-responsive" width="255" height="327">
+            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive" width="255" height="327">
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>Sun Kang</h4>
                 by Miró June<br>
