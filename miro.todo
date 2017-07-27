@@ -2,8 +2,8 @@ Steps:
  ☐ Add Homevideo_mp4
    ✔ Add Homevideo_ogg @done (17-07-26 23:55)
    ✔ Call it in HomeController to view video @done (17-07-27 00:44)
- ☐ Social_networks
-   ☐ CRUD
+ ✔ Social_networks @done (17-07-27 02:15)
+   ✔ CRUD @done (17-07-27 02:15)
  ☐ Paintings/Pictures/Video
    ☐ Each in one page
    ☐ Create detail page for each too

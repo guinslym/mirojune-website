@@ -10,11 +10,22 @@ use App\Profile;
 use App\Media;
 use App\Category;
 use App\User;
+use App\Social;
+use View;
 
 class HomeController extends Controller
 {
+    public function __construct()
+      {
+        //its just a dummy data object.
+        $socials = Social::all();
+
+        // Sharing is caring
+        View::share('socials', $socials);
+      }
    
     public function index(){
+        $socials = Social::all();
         $medias = Media::where('category', '==', 'painting')->paginate(10);
     	return view('frontend.index')->with('medias', $medias);
 

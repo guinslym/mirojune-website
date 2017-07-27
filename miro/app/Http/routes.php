@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth'], function()
     //Route::resource('todo', 'TodoController', ['only' => ['index']]);
     Route::resource('/image', 'ImageController');
     Route::resource('/medias', 'MediaController');
+    Route::resource('/socials', 'SocialController');
     Route::resource('/profile', 'ProfileController');
     Route::get('/dashboard', ['as' => 'fontend-admin-dashboard', 'uses' => 'HomeController@dashboard']);
 });

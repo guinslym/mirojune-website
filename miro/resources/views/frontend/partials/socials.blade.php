@@ -45,35 +45,10 @@
 <div class="col-md-12 text-center social-footer">
                     <ul class="list-inline social-buttons">
                         
-                        
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-envelope-o"></i></a>
+@foreach($socials as $social)
+                        <li class="social-button-item"><a href="{{ $social->url }}" target="_blank"><i class="{{ $social->icon }}"></i></a>
                         </li>
-                        
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-slack" alt="slack"></i></a>
-                        </li>
-                        
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                        
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-snapchat"></i></a>
-                        </li>
-
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                        </li>
-
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                        </li>
-
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                        </li>   
-
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-facebook-official"></i></a>
-                        </li>   
-
-                        <li class="social-button-item"><a href="#" target="_blank"><i class="fa fa-tumblr-square"></i></a>
-                        </li>                        
+@endforeach
+                       
                     </ul>
                 </div>
