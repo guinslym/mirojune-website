@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="margin-bottom: :0">
                 <div class="container-fluid">
                   <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -13,14 +13,14 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="{{ Request::segment(1)=='' ? 'active' : '' }}"><a href="/">Home</a></li>
-              <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">About</a></li>
+              <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">About Me</a></li>
 
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Archive <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Archive <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">Paintings</a></li>
-                          <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">Pictures</a></li>
-                          <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">Videos</a></li>
+                          <li class="{{ Route::currentRouteNamed('fontend-paintings') ? 'actived' : '' }}"><a href="/paintings">Paintings</a></li>
+                          <li class="{{ Route::currentRouteNamed('fontend-pictures') ? 'actived' : '' }}"><a href="/about">Pictures</a></li>
+                          <li class="{{ Route::currentRouteNamed('fontend-videos') ? 'actived' : '' }}"><a href="/about">Videos</a></li>
                         </ul>
                       </li>
                       <li class="{{ Route::currentRouteNamed('fontend-contact') ? 'active' : '' }}"><a href="/contact">Contact</a></li>

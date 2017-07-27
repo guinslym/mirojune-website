@@ -31,7 +31,7 @@
       @-o-viewport      { width: device-width; }
       @viewport         { width: device-width; }
       body {
-        padding-top: 50px;
+        padding-top: 0px;
       }
             *{
         color: #2c2a29;

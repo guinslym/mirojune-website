@@ -44,7 +44,16 @@ class HomeController extends Controller
     	return view('frontend.thanks');
     }
     public function paintings(){
-    	return view('frontend.paintings');
+        $paintings = Media::where('category', "=", 'Painting')->get();
+    	return view('frontend.paintings')->with('paintings', $paintings);
+    }
+    public function videos(){
+        $videos = Media::where('category', "=", 'Video')->get();
+        return view('frontend.videos')->with('videos', $videos);
+    }
+    public function pictures(){
+        $pictures = Media::where('category', "=", 'Picture')->get();
+        return view('frontend.pictures')->with('pictures', $pictures);
     }
     public function archive(){
     	return view('frontend.archive');

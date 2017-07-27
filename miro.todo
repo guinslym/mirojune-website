@@ -1,18 +1,13 @@
 Steps:
- ☐ Add Homevideo_mp4
-   ✔ Add Homevideo_ogg @done (17-07-26 23:55)
-   ✔ Call it in HomeController to view video @done (17-07-27 00:44)
- ✔ Social_networks @done (17-07-27 02:15)
-   ✔ CRUD @done (17-07-27 02:15)
  ☐ Paintings/Pictures/Video
-   ☐ Each in one page
+   ✔ Each in one page @done (17-07-27 03:10)
+   ☐ Add 10 Paintings
+   ☐ Add 10 Videos
+   ☐ Add 10 Pictures
    ☐ Create detail page for each too
-   
- ☐ Profile add about me Picture
- ☐ Archives (what to do is to create a list-oneliner first and ... )
- ✔ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo @done (17-07-24 19:46)
+ ☐ goal 4 today: Add videos
+ ☐ Navbar to correct (padding top)
  ☐ Change Profile to Configuration (only on the view)
- ☐ Video access ain't working (App/temp)
  ☐ Find something to put in before the footer (SVG or Animation Miro June)
  ☐ Medias to add...so that I can check Archive (video/paintings...)
    ☐ Not satisfy with Archives... (Isotopes views)
@@ -23,10 +18,9 @@ Steps:
  ☐ Profile only Edit/Update/View (postpone)
  ☐ Medias Controller and View
    ☐ Show
- ☐ Maybe de faire un Social Media table
+ ✔ Maybe de faire un Social Media table @done (17-07-27 02:50)
  ☐ Maybe add a role to the admin user
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
- ✔ php artisan make:migration add_paid_to_users --table="users" @done (17-07-24 20:34)
 
 Other tasks:
  ☐ Django-vote (Ajax and Non-Ajax)
@@ -143,6 +137,16 @@ Categories
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Add Homevideo_mp4 @done (17-07-27 02:45) @project(Steps)
+ ✔ Video access ain't working (App/temp) @done (17-07-27 02:34) @project(Steps)
+ ✔ Profile add about me Picture @done (17-07-27 02:34) @project(Steps)
+ ✔ Archives (what to do is to create a list-oneliner first and ... ) @done (17-07-27 02:34) @project(Steps)
+ ✔ Social_networks @done (17-07-27 02:15) @project(Steps)
+ ✔ CRUD @done (17-07-27 02:15) @project(Steps)
+ ✔ Call it in HomeController to view video @done (17-07-27 00:44) @project(Steps)
+ ✔ Add Homevideo_ogg @done (17-07-26 23:55) @project(Steps)
+ ✔ php artisan make:migration add_paid_to_users --table="users" @done (17-07-24 20:34) @project(Steps)
+ ✔ Create a Dashboard (simple) with Auth:: Bootstrap VCard with Font-awesome logo @done (17-07-24 19:46) @project(Steps)
  ✔ https://www.youtube.com/watch?v=OPWAM0aPCvU @done (17-07-24 19:07) @project(Steps)
  ✔ File upload video @done (17-07-24 19:07) @project(Steps)
  ✔ Create image resize @done (17-07-24 19:07) @project(Steps)
