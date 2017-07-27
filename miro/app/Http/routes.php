@@ -17,9 +17,11 @@ Route::get('/', ['as' => 'frontend-index', 'uses' => 'HomeController@index']);
 Route::get('/about', ['as' => 'fontend-about', 'uses' => 'HomeController@about']);
 Route::get('/archive', ['as' => 'fontend-archive', 'uses' => 'HomeController@archive']);
 Route::get('/thanks', ['as' => 'fontend-thanks', 'uses' => 'HomeController@thanks']);
-Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'HomeController@paintings']);
-Route::get('/paintings', ['as' => 'fontend-painting', 'uses' => 'HomeController@painting']);
 Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'HomeController@painting']);
+
+Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'HomeController@paintings']);
+Route::get('/videos', ['as' => 'fontend-videos', 'uses' => 'HomeController@vidoes']);
+Route::get('/pictures', ['as' => 'fontend-pictures', 'uses' => 'HomeController@pictures']);
 
 
 // Only authenticated users may enter...
