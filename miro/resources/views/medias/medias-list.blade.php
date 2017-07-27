@@ -45,8 +45,12 @@
 			<td>{{ $media->id}} </td>
 			<td>{{ $media->category}}</td>
 			<td class="text-center">
+			 @if($media->category == "Video")
+				Video
+			@else	
 				<img src="{{asset($media->file)}}" alt="" width="300px">
 			 {{ $media->file}}
+			 @endif
 			 <!--
 			 -->
 			</td>
