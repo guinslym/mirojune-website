@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 use App\Category;
 use App\Media;
 use Validator;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class MediaController extends Controller
 {
@@ -66,8 +68,11 @@ class MediaController extends Controller
 
       // upload the media //
       $file = $request->file('userfile');
-      $destination_path = 'uploads/';
       $filename = str_random(6).'_'.$file->getClientOriginalName();
+      if($file){
+        Storage::disk('local')->put($filename, File::get($file));
+      }
+      $destination_path = 'uploads/';
       $file->move($destination_path, $filename);
       
       // save media data into database //

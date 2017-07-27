@@ -12,6 +12,8 @@ use App\Category;
 use App\User;
 use App\Social;
 use View;
+use Illuminate\Support\Facades\Storage;
+
 
 class HomeController extends Controller
 {

@@ -20,7 +20,9 @@ Route::get('/thanks', ['as' => 'fontend-thanks', 'uses' => 'HomeController@thank
 Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'HomeController@painting']);
 
 Route::get('/paintings', ['as' => 'fontend-paintings', 'uses' => 'HomeController@paintings']);
-Route::get('/videos', ['as' => 'fontend-videos', 'uses' => 'HomeController@vidoes']);
+
+Route::get('/videosok', ['as' => 'videos', 'uses' => 'HomeController@videos']);
+
 Route::get('/pictures', ['as' => 'fontend-pictures', 'uses' => 'HomeController@pictures']);
 
 

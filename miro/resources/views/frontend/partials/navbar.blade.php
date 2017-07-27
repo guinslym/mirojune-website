@@ -19,8 +19,8 @@
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Archive <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                           <li class="{{ Route::currentRouteNamed('fontend-paintings') ? 'actived' : '' }}"><a href="/paintings">Paintings</a></li>
-                          <li class="{{ Route::currentRouteNamed('fontend-pictures') ? 'actived' : '' }}"><a href="/about">Pictures</a></li>
-                          <li class="{{ Route::currentRouteNamed('fontend-videos') ? 'actived' : '' }}"><a href="/about">Videos</a></li>
+                          <li class="{{ Route::currentRouteNamed('fontend-pictures') ? 'actived' : '' }}"><a href="/pictures">Pictures</a></li>
+                          <li class="{{ Route::currentRouteNamed('fontend-videos') ? 'actived' : '' }}"><a href="{{ URL::route('videos') }} ">Videos</a></li>
                         </ul>
                       </li>
                       <li class="{{ Route::currentRouteNamed('fontend-contact') ? 'active' : '' }}"><a href="/contact">Contact</a></li>
