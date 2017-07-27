@@ -1,26 +1,16 @@
 Steps:
- ✔ Paintings/Pictures/Video @done (17-07-27 04:04)
-   ✔ Each in one page @done (17-07-27 03:10)
-   ✔ Add 10 Paintings @done (17-07-27 03:46)
-   ✔ Add 10 Pictures @done (17-07-27 03:46)
-   ✔ Add 10 Videos (diff format) @done (17-07-27 04:04)
-   ✔ Create detail page for each too @done (17-07-27 04:07)
    ☐ isotope page ???
- ✔ goal 4 today: Add videos @done (17-07-27 04:04)
  ☐ Navbar to correct (padding top)
  ☐ Change Profile to Configuration (only on the view)
  ☐ Find something to put in before the footer (SVG or Animation Miro June)
- ☐ Medias to add...so that I can check Archive (video/paintings...)
-   ☐ Not satisfy with Archives... (Isotopes views)
  ☐ Small mode navbar menu button doesn't work (maybe check with Javascript)
  ☐ Contact page (make it work) --postpone
    ☐ https://learninglaravel.net/learn-to-send-emails-using-gmail-and-sendgrid-in-laravel-5
    ☐ https://10minutemail.com/10MinuteMail/index.html
  ☐ Profile only Edit/Update/View (postpone)
  ☐ Add Share on Facebook or Instagram
- ☐ Medias Controller and View
-   ☐ Show
- ✔ Maybe de faire un Social Media table @done (17-07-27 02:50)
+ ✔ Medias Controller and View @done (17-07-27 04:07)
+   ✔ Show @done (17-07-27 04:07)
  ☐ Maybe add a role to the admin user
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
 
@@ -139,6 +129,16 @@ Categories
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Not satisfy with Archives... (Isotopes views) @done (17-07-27 04:07) @project(Steps)
+ ✔ Medias to add...so that I can check Archive (video/paintings...) @done (17-07-27 04:07) @project(Steps)
+ ✔ Create detail page for each too @done (17-07-27 04:07) @project(Steps)
+ ✔ goal 4 today: Add videos @done (17-07-27 04:04) @project(Steps)
+ ✔ Paintings/Pictures/Video @done (17-07-27 04:04) @project(Steps)
+ ✔ Add 10 Videos (diff format) @done (17-07-27 04:04) @project(Steps)
+ ✔ Add 10 Pictures @done (17-07-27 03:46) @project(Steps)
+ ✔ Add 10 Paintings @done (17-07-27 03:46) @project(Steps)
+ ✔ Each in one page @done (17-07-27 03:10) @project(Steps)
+ ✔ Maybe de faire un Social Media table @done (17-07-27 02:50) @project(Steps)
  ✔ Add Homevideo_mp4 @done (17-07-27 02:45) @project(Steps)
  ✔ Video access ain't working (App/temp) @done (17-07-27 02:34) @project(Steps)
  ✔ Profile add about me Picture @done (17-07-27 02:34) @project(Steps)
