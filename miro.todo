@@ -1,11 +1,12 @@
 Steps:
- ☐ Paintings/Pictures/Video
+ ✔ Paintings/Pictures/Video @done (17-07-27 04:04)
    ✔ Each in one page @done (17-07-27 03:10)
    ✔ Add 10 Paintings @done (17-07-27 03:46)
    ✔ Add 10 Pictures @done (17-07-27 03:46)
-   ☐ Add 10 Videos (diff format)
-   ☐ Create detail page for each too
- ☐ goal 4 today: Add videos
+   ✔ Add 10 Videos (diff format) @done (17-07-27 04:04)
+   ✔ Create detail page for each too @done (17-07-27 04:07)
+   ☐ isotope page ???
+ ✔ goal 4 today: Add videos @done (17-07-27 04:04)
  ☐ Navbar to correct (padding top)
  ☐ Change Profile to Configuration (only on the view)
  ☐ Find something to put in before the footer (SVG or Animation Miro June)
@@ -16,6 +17,7 @@ Steps:
    ☐ https://learninglaravel.net/learn-to-send-emails-using-gmail-and-sendgrid-in-laravel-5
    ☐ https://10minutemail.com/10MinuteMail/index.html
  ☐ Profile only Edit/Update/View (postpone)
+ ☐ Add Share on Facebook or Instagram
  ☐ Medias Controller and View
    ☐ Show
  ✔ Maybe de faire un Social Media table @done (17-07-27 02:50)
