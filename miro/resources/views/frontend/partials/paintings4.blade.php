@@ -22,7 +22,7 @@
 
 
         @for ($i = 0; $i < 7; $i++)
-          <div class="col-lg-3 text-center paintings">
+          <div class="col-lg-4 text-center paintings">
            @if ($i % 2 == 0)
             <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" alt="" class="img-responsive" width="255" height="327">
           @else
