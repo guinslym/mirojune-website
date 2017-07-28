@@ -55,7 +55,7 @@ text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
 
 <div class="container">
     <div class="row text-center">
-        <h1 class="footer_name">Miró June</h1>
+        <h1 class="footer_name">Mirö Jun</h1>
     </div>
 </div>
 
