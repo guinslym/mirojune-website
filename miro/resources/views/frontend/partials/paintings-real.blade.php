@@ -41,7 +41,7 @@
             <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/12/_MG_5351.jpg" alt="" class="img-responsive" width="255" height="327">
           @endif 
             <address style="font-size:1.3em; line-height:1.4em;" class="">
-              <h4>Sun Kang</h4>
+              <h4>My title</h4>
                 by Miró June<br>
                 25x30inch<br>
                 Oil<br>
@@ -53,4 +53,34 @@
         
       </div>
     </div>
-  </div>
+
+<style>
+  .btn-large {
+    padding: 14px 26px 16px;
+    font-size: 15px;
+    background-color: #f8f8f8;
+    color: black;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>li>a:hover, .pagination>li>a:focus {
+    background-color: #2eaef0;
+    color:black;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active {
+    background: #2eaef0;
+    color: #FFF!important;
+    -webkit-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+.paintingsButton{
+  padding: 60px 0;
+}
+</style>
+    <div class="row text-center paintingsButton">
+      <a href="/paintings" class="btn btn-large">View more Paintings</a>
+    </div>

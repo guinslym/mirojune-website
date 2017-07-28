@@ -16,7 +16,7 @@
 
 </style>
 
-     <div class="container">
+     <div class="container contents">
        
       <div class="row">
 
@@ -29,7 +29,7 @@
           <div class="col-lg-4 text-center paintings">
             <img src="{{  asset($picture->file) }}" alt="" class="img-responsive" width="255" height="327">
             <address style="font-size:1.3em; line-height:1.4em;" class="">
-              <h4>Sun Kang</h4>
+              <h4>My title</h4>
                 by Miró June<br>
                 25x30inch<br>
                 Oil<br>

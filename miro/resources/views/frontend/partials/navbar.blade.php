@@ -16,7 +16,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Miro June</a>
+                    <a class="navbar-brand" href="/">Mirö Jun</a>
                   </div>
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -24,7 +24,15 @@
                         <li class="{{ Request::segment(1)=='' ? 'active' : '' }}"><a href="/">Home</a></li>
               <li class="{{ Route::currentRouteNamed('fontend-about') ? 'active' : '' }}"><a href="/about">About Me</a></li>
 
+                      @if (Route::currentRouteNamed('fontend-paintings'))
+                        <li class="dropdown active">
+                      @elseif (Route::currentRouteNamed('fontend-pictures'))
+                        <li class="dropdown active">
+                      @elseif (Route::currentRouteNamed('videos'))
+                        <li class="dropdown active">
+                      @else
                       <li class="dropdown">
+                      @endif
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Archive <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                           <li class="{{ Route::currentRouteNamed('fontend-paintings') ? 'actived' : '' }}"><a href="/paintings">Paintings</a></li>
@@ -32,15 +40,18 @@
                           <li class="{{ Route::currentRouteNamed('fontend-videos') ? 'actived' : '' }}"><a href="{{ URL::route('videos') }} ">Videos</a></li>
                         </ul>
                       </li>
-                      <li class="{{ Route::currentRouteNamed('fontend-contact') ? 'active' : '' }}"><a href="/contact">Contact</a></li>
+                      <li class="{{ Route::currentRouteNamed('contact') ? 'active' : '' }}"><a href="/contact">Contact</a></li>
 
                     </ul>
+                    @if (Auth::check())
                     <ul class="nav navbar-nav navbar-right">
                       <li class="{{ Route::currentRouteNamed('dashboard') ? 'active' : '' }}"><a href="/dashboard">
                       Admin Interface</a></li>
                       <li><a href="/auth/logout">
                        Logout</a></li>
                     </ul>
+                    @else
+                    @endif
                   </div>
                 </div>
               </nav>

@@ -14,6 +14,6 @@
 
 
 
-</script>
 	@include('frontend.partials.paintings-real')
+
 @stop

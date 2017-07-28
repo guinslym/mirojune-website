@@ -1,5 +1,5 @@
 
-    <div class="container">
+    <div class="container contents">
       <div class="row">
         <section class="contactForm">
 <link rel="stylesheet" href="{{  asset('css/contact.css') }}" />

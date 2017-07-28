@@ -1,19 +1,23 @@
 Steps:
  ☐ Frontend to do the part that everyone sees
+ ☐ Navbar
+   ✔ Correct the Gap @done (17-07-28 02:26)
  ☐ Homepage
    ✔ 3 - 4 Images @done (17-07-28 01:27)
-   ☐ If user is signed-in
-   ☐ Image align
-   ☐ Add a show Paintings button
+   ✔ If user is signed-in @done (17-07-28 01:40)
+   ✔ Image align ---postpone @done (17-07-28 01:40)
+   ✔ Add a show Paintings button @done (17-07-28 01:58)
    ☐ Before bottom deal
-   ☐ Maybe to do fullbackground videos
+   ✔ Maybe to do fullbackground videos @done (17-07-28 02:21)
  ☐ About me
+   ✔ Remove space between navbar and body @done (17-07-28 02:01)
    ☐ Remove space between navbar and body
-   ☐ Why does the text takes so much time
-   ☐ Change image with wow down
+   ✔ Why does the text takes so much time @done (17-07-28 02:05)
+   ✔ Change image with wow down @done (17-07-28 02:13)
  ☐ Paintings
    ☐ Get details page or 
    ☐ Pop up
+   ☐ Change layout for pictures/videos/etc...
  ☐ Redo wireframe
  ☐ Not satisfy with videos (mobile view???)
  ☐ Navbar to correct (padding top)
@@ -27,6 +31,7 @@ Steps:
  ☐ Maybe add a role to the admin user
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
  ☐ isotope page ???
+ ☐ Metadata
 
 Other tasks:
  ☐ Django-vote (Ajax and Non-Ajax)

@@ -38,12 +38,36 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        .contents{
+    padding-bottom: 80px;
+  }
+  .navbar .navbar-default{
+    margin-bottom: 0;
+  }
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.navbar-collapse {
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    border-bottom: 1px solid #e6e9ed;
+}
+.navbar, .navbar-default {
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    border-bottom: 1px solid #e6e9ed;
+}
+    </style>
   </head>
 
   <body>
 
 @include('frontend.partials.navbar')
-
 
 
 

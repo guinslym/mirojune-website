@@ -16,7 +16,7 @@
 
 </style>
 
-     <div class="container">
+     <div class="container contents">
        
       <div class="row">
 
@@ -35,7 +35,7 @@
 
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>
-                <a href="#">Sun Kang</a>
+                <a href="#">My title</a>
               </h4>
                 
             </address>
