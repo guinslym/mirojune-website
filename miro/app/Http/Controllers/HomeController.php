@@ -28,7 +28,7 @@ class HomeController extends Controller
    
     public function index(){
         $socials = Social::all();
-        $medias = Media::where('category', '==', 'painting')->limit(5)->orderBy('created_at', 'desc');
+        $medias = Media::where('category', '==', 'painting')->limit(3)->orderBy('created_at', 'desc');
     	return view('frontend.index')->with('medias', $medias);
 
     }
@@ -46,7 +46,7 @@ class HomeController extends Controller
     	return view('frontend.thanks');
     }
     public function paintings(){
-        $paintings = Media::where('category', "=", 'Painting')->orderBy('created_at', 'desc')->get();
+        $paintings = Media::where('category', "=", 'Painting')->limit(5)->orderBy('created_at', 'desc')->get();
     	return view('frontend.paintings')->with('paintings', $paintings);
     }
     public function videos(){
@@ -54,7 +54,7 @@ class HomeController extends Controller
         return view('frontend.videos')->with('videos', $videos);
     }
     public function pictures(){
-        $pictures = Media::where('category', "=", 'Picture')->orderBy('created_at', 'desc')->get();
+        $pictures = Media::where('category', "=", 'Picture')->limit(5)->orderBy('created_at', 'desc')->get();
         return view('frontend.pictures')->with('pictures', $pictures);
     }
     public function archive(){
@@ -62,6 +62,10 @@ class HomeController extends Controller
     }
     public function dashboard(){
         return view('frontend.dashboard');
+        
+    }
+    public function vid(){
+        return view('frontend.vid1');
         
     }
 }

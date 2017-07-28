@@ -16,7 +16,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Mirö Jun</a>
+                    <a class="navbar-brand" href="/" style="font-family: 'Kaushan Script', cursive;, cursive;font-size:28px;">Mirö Jun</a>
                   </div>
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

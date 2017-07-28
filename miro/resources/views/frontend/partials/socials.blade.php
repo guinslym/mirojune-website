@@ -38,17 +38,38 @@
          -webkit-transition-duration: 500ms;
      transition-duration: 500ms;
 }
+.footer_name{
+    font-weight: bolder;
+    color: #CDCCCC;
+    font-size: 72px;
+    font-family: 'Satisfy', cursive;
+    padding: 20px 0;
+}
+.footer_name:hover{
+    color:#afc8db;
+text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
 
 
 </style>
+
+<div class="container">
+    <div class="row text-center">
+        <h1 class="footer_name">Miró June</h1>
+    </div>
+</div>
 
 <div class="col-md-12 text-center social-footer">
                     <ul class="list-inline social-buttons">
                         
 @foreach($socials as $social)
-                        <li class="social-button-item"><a href="{{ $social->url }}" target="_blank"><i class="{{ $social->icon }}"></i></a>
+                        <li class="social-button-item">
+                            <a href="{{ $social->url }}" target="_blank">
+                                <i class="{{ $social->icon }}"></i>
+                            </a>
                         </li>
 @endforeach
                        
                     </ul>
                 </div>
+

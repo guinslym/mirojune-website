@@ -15,6 +15,8 @@
 
 
 </style>
+<script src="https://unpkg.com/smartphoto@0.7.6/js/smartphoto.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/smartphoto@0.7.6/css/smartphoto.min.css">
 
      <div class="container contents">
        
@@ -27,7 +29,9 @@
 
         @foreach($pictures as $picture)
           <div class="col-lg-4 text-center paintings">
-            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive" width="255" height="327">
+          <a href="{{  asset($picture->file) }}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
+            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive " width="80%" >
+            </a>
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>My title</h4>
                 by Miró June<br>
@@ -42,5 +46,11 @@
       </div>
     </div>
   </div>
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+    new smartPhoto(".js-smartPhoto");
+});
+</script>
 
 @stop
