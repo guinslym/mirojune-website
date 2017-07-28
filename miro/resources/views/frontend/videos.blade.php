@@ -28,7 +28,7 @@
         @foreach($videos as $video)
           <div class="col-lg-6 text-center paintings">
 
-          <video width="400" controls>
+          <video width="400" controls loop>
               <source src="{{  asset($video->file) }}" >
               Your browser does not support HTML5 video.
             </video>
