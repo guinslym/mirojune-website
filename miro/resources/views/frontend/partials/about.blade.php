@@ -1,20 +1,13 @@
+<!--
+  ___  _                 _   
+ / _ \| |               | |  
+/ /_\ \ |__   ___  _   _| |_ 
+|  _  | '_ \ / _ \| | | | __|
+| | | | |_) | (_) | |_| | |_ 
+\_| |_/_.__/ \___/ \__,_|\__|
+
+-->
     <div class="container">
-      <style>
-        .About p{
-          font-size: 24px;
-        line-height: 32px;
-            margin-bottom: 20px;
-            margin-top: 5px;
-               
-        }
-        .About small, .About p{
-           color: #2c2a29;
-          font-family: 'Bellefair', serif;
-          font-family: 'Raleway', sans-serif;
-          font-family: 'Indie Flower', cursive;
-          font-family: 'Crimson Text', serif;
-        }
-      </style>
       <div class="row">
 
             <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">

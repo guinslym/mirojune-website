@@ -2,91 +2,9 @@
     <div class="container">
       <div class="row">
         <section class="contactForm">
+<link rel="stylesheet" href="{{  asset('css/contact.css') }}" />
 
-<style>
-  .sub-title h3 {
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 auto 70px;
-    max-width: 900px;
-    text-transform: none;
-}
-#contact input {
-    margin-bottom: 20px;
-    height: 40px;
-}
-.reply input {
-    margin: 0 0 20px;
-}
-input.form-control, textarea.form-control {
-    border: solid 1px #CCC;
-    background: #fff !important;
-    box-shadow: none !important;
-}
-.form-control {
-    height: 44px;
-}
-#contact textarea {
-    height: 172px;
-    resize: none;
-}
-.reply textarea {
-    min-width: 97.5%;
-    min-height: 172px;
-    margin: 0 0 18px;
-}
-input.form-control, textarea.form-control {
-    border: solid 1px #CCC;
-    background: #fff !important;
-    box-shadow: none !important;
-}
-#contact .btn {
-    padding: 10px 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.btn-2:hover, .btn-2:active, .btn-2 {
-    box-shadow: 0 4px #026ea6;
-}
-.btn:focus, .btn-2, ul.why li:before, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .flat .plan li.plan-name, .flat .plan.featured:hover li.plan-name, #filters ul li a:hover h5, #filters ul li a.active h5, .cl-effect-21 a::before, .cl-effect-21 a::after, .cl-effect-21 .active a::before, .cl-effect-21 .active a::after, .post-date a.date i, .service-icon i {
-    background: #2eaef0;
-}
-.btn-2 {
-    border-radius: 5px;
-}
-.btn-2 {
-    color: #fff;
-    transition: none;
-}
-.btn {
-    border: none;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    z-index: 101;
-}
-.btn-2:hover, .btn-2:active, .btn-2 {
-    box-shadow: 0 4px #026ea6;
-}
-.btn-2:active {
-    color: #fff;
-    top: 6px;
-}
-input:hover, textarea:hover, input:focus, textarea:focus {
-    border-color: #C9C9C9;
-}
-div.contact-form{
-  margin:60px 0;
-}
-</style>
-<div class="contact-form">
+<div class="contact-form" id="miro_contact_form">
                         <div class="container">
                               <!-- Title row -->
                               <div class="row">

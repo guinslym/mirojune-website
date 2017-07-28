@@ -20,6 +20,17 @@
 
     </style>
 
+
+<!--
+             _       _        _____ _                   
+            (_)     | |      /  ___| |                  
+ _ __   __ _ _ _ __ | |_ ___ \ `--.| |__   _____      __
+| '_ \ / _` | | '_ \| __/ __| `--. \ '_ \ / _ \ \ /\ / /
+| |_) | (_| | | | | | |_\__ \/\__/ / | | | (_) \ V  V / 
+| .__/ \__,_|_|_| |_|\__|___/\____/|_| |_|\___/ \_/\_/  
+| |                                                     
+|_|                                                     
+-->
     <div class="row">
             <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
                   <h2>Painting</h2>

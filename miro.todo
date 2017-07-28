@@ -1,12 +1,14 @@
 Steps:
  ☐ Frontend to do the part that everyone sees
  ☐ Homepage
-   ☐ 3 - 4 Images
+   ✔ 3 - 4 Images @done (17-07-28 01:27)
    ☐ If user is signed-in
    ☐ Image align
    ☐ Add a show Paintings button
    ☐ Before bottom deal
+   ☐ Maybe to do fullbackground videos
  ☐ About me
+   ☐ Remove space between navbar and body
    ☐ Why does the text takes so much time
    ☐ Change image with wow down
  ☐ Paintings
