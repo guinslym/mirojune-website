@@ -1,0 +1,49 @@
+
+.reply input {
+    margin: 0 0 20px;
+}
+input.form-control, textarea.form-control {
+    border: solid 1px #CCC;
+    background: #fff !important;
+    box-shadow: none !important;
+}
+.form-control {
+    height: 44px;
+}
+
+.reply textarea {
+    min-width: 97.5%;
+    min-height: 172px;
+    margin: 0 0 18px;
+}
+input.form-control, textarea.form-control {
+    border: solid 1px #CCC;
+    background: #fff !important;
+    box-shadow: none !important;
+}
+
+
+.btn:focus, .btn-2, ul.why li:before, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .flat .plan li.plan-name, .flat .plan.featured:hover li.plan-name, #filters ul li a:hover h5, #filters ul li a.active h5, .cl-effect-21 a::before, .cl-effect-21 a::after, .cl-effect-21 .active a::before, .cl-effect-21 .active a::after, .post-date a.date i, .service-icon i {
+    background: #2eaef0;
+}
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    z-index: 101;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #C9C9C9;
+}
+div.contact-form{
+  margin:60px 0;
+}
