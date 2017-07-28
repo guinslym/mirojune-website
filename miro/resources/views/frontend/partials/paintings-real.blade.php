@@ -81,6 +81,9 @@
   padding: 60px 0;
 }
 </style>
+<div class="container">
     <div class="row text-center paintingsButton">
       <a href="/paintings" class="btn btn-large">View more Paintings</a>
     </div>
+  
+</div>
