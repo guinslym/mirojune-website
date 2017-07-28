@@ -22,7 +22,59 @@ input.form-control, textarea.form-control {
     background: #fff !important;
     box-shadow: none !important;
 }
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
 
+input[type=submit],
+input[type=button],
+input[type=text],
+input[type=email],
+textarea,
+label
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+    //background-color: #c9c9c9!important;
+   background-color : #d1d1d1 !important; 
+     padding: 3px;
+    //background-color: #d1d1d1 !important;
+    border-radius: 4px!important;
+    font-size: 16px;
+     box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+
+
+}
+input[type=text]:focus, 
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=email]:focus,
+textarea:focus, 
+select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 2px solid #88D5E9;
+    padding: 3px;
+    color:black!important;
+    font-weight: bolder;
+    background-color: #d1d1d1 !important;
+    border-radius: 4px!important;
+}
 
 .btn:focus, .btn-2, ul.why li:before, .progress .progress-bar, .accordionMod .panel-heading .current, #current:after, .flat .plan li.plan-name, .flat .plan.featured:hover li.plan-name, #filters ul li a:hover h5, #filters ul li a.active h5, .cl-effect-21 a::before, .cl-effect-21 a::after, .cl-effect-21 .active a::before, .cl-effect-21 .active a::after, .post-date a.date i, .service-icon i {
     background: #2eaef0;
