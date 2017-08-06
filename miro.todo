@@ -2,17 +2,19 @@ Steps:
  ✔ Contact Form css to correct @done (17-08-06 10:11)
  ✔ About me Add footer with a PictureWall ---doesn't work @done (17-08-06 10:43)
  ☐ Thumbnail or JCrop with Laravel
- ☐ Login doesn<t work... + Add image + How to remove register
+ ✔ Login doesn<t work... + Add image + How to remove register @done (17-08-06 12:56)
  ✔ IsotopeJS or MixItUp.js for contents -- not important @done (17-08-06 10:44)
  ☐ Backend to do...
- ☐ SignIn/SignUP form
- ☐ Change password
+ ✔ SignIn/SignUP form @done (17-08-06 12:57)
+ ✔ Change password @done (17-08-06 12:57)
  ☐ Dashboard Layout
  ☐ Pictures/ Paintings/ Video table
  ✔ Readme.md @done (17-08-06 10:25)
  ☐ Change the secret key
  ☐ Goddady Assets (public) How to debug it (maybe remove development)
  ☐ miro@gmail.com (famille)
+ ☐ how to remove auth/register (in routes....)
+ ☐ Messages to add in Auth/login
 
 
  ☐ I took the video from ....
