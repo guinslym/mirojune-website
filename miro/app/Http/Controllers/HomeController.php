@@ -30,10 +30,13 @@ class HomeController extends Controller
         $socials = Social::all();
         $medias = Media::where('category', '==', 'painting')->limit(3)->orderBy('created_at', 'desc');
         $video_webm = Media::orderBy('created_at', 'desc');
-        $video_mp4 = Media::where('category', '==', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
-        return $video_webm->first();
+        $video_mp4 = Media::where('category', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
+        $video_ogg = Media::where('category', 'HomeVideo_ogg')->orderBy('created_at', 'desc')->get()->first();
         //to the same as in other...
-    	return view('frontend.index')->with('medias', $medias);
+    	return view('frontend.index')
+                ->with('medias', $medias)
+                ->with('video_mp4', $video_mp4->file)
+                ->with('video_ogg', $video_ogg->file);
 
     }
     public function about(){

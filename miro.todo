@@ -7,9 +7,9 @@ Steps:
  ✔ SignIn/SignUP form @done (17-08-06 12:57)
  ✔ Change password @done (17-08-06 12:57)
  ✔ Dashboard Layout @done (17-08-06 13:00)
- ✔ Backend (check Editing Profile) @done (17-08-06 14:47)
  ☐ Frontend Index (Video-all)
- ☐ Image add wow transition left-right
+ ✔ Backend (check Editing Profile) @done (17-08-06 14:47)
+ ✔ Image add wow transition left-right @done (17-08-06 15:54)
  ✔ Thumbnail or JCrop with Laravel @done (17-08-06 15:13)
  ✔ Video to have @done (17-08-06 14:58)
  ☐ pagination

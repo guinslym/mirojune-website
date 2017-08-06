@@ -80,11 +80,16 @@
 <script src="{{  asset('js/background.js') }}"></script>
 
 <script>
+    var mp4 = "{{ $video_mp4 }}";
+    var ogg = "{{ $video_ogg }}";
+
+</script>
+<script>
               // Formstone Background - Video Background Settings
     $(".video-section").background({
         source: {
-            poster: "{{ asset('videos/Flower_Ceiling.jpg') }}",
-            mp4: "{{ asset('videos/Flower_Ceiling.mp4') }}"
+            poster: ogg,
+            mp4: mp4
         }
     });
 </script>
