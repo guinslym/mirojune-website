@@ -1,5 +1,5 @@
-###Laravel website
-
+### Miro June's website
+This is a website made with Laravel for Miro June
 
 Screen Capture: 
   - HomePage

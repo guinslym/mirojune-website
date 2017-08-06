@@ -13,6 +13,9 @@ Steps:
  ✔ Thumbnail or JCrop with Laravel @done (17-08-06 15:13)
  ✔ Video to have @done (17-08-06 14:58)
  ☐ pagination
+ ☐ Maybe add a loading video Picture
+ ☐ Maybe add a Info Modal Button for Information on Medias (categories)
+ ☐ Maybe add a Jquery on change (select box) for the name of the category in blue
  ☐ How to deploy
  ☐ https://www.youtube.com/watch?v=6g8G3YQtQt4
  ✔ Homepage frontend last 3 images @done (17-08-06 16:30)
