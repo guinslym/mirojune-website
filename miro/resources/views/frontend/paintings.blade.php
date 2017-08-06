@@ -27,7 +27,7 @@
             <div class="col-md-12 big-title wow fadeIn animated paintings" style="visibility: visible;">
                   <h2>Paintings</h2>
             </div>
-
+      </div>
 <style>
   .thumb {
     margin-bottom: 30px;
@@ -35,12 +35,13 @@
 
 </style>
         @foreach($paintings as $painting)
-          <div class="col-lg-12 thumb text-center paintings" >
+        <div class="row "  >
+          <div class="col-lg-12 thumb text-center paintings wow fadeIn" data-wow-duration="4s" data-wow-offset="40" >
           <!--
             <img src="{{  asset($painting->file) }}" alt="" class="img-responsive" width="255" height="327">
             -->
             <a href="{{  asset($painting->file) }}" class="js-smartPhoto " data-caption="miro" data-id="miro" data-group="miro">
-              <img src="{{  asset($painting->file) }}" alt="" class="img-responsive wow FadeIn" width="40%" data-wow-duration="2s">
+              <img src="{{  asset($painting->file) }}" alt="" class="img-responsive" width="50%" >
            </a>
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>My Title</h4>
@@ -54,6 +55,8 @@
 
         
       </div>
+
+
     </div>
   </div>
 

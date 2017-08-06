@@ -28,9 +28,9 @@
 
 
         @foreach($pictures as $picture)
-          <div class="col-lg-4 text-center paintings">
+          <div class="col-lg-12 thumb text-center paintings wow fadeIn" data-wow-duration="4s" data-wow-offset="40" >
           <a href="{{  asset($picture->file) }}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
-            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive " width="80%" >
+            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive " width="40%" >
             </a>
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>My title</h4>
