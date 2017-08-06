@@ -27,6 +27,7 @@
                 </div>
                 <button class="btn btn-lg btn-success btn-block btn-signin" type="submit">Submit</button>
             </form><!-- /form -->
+            <a href="/auth/register" class="btn btn-xs btn-warning btn-signin btn-block" style="padding:5px;">Register</a>
         </div><!-- /card-container -->
     </div><!-- /container -->
 
