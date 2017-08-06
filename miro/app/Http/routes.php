@@ -67,6 +67,6 @@ Route::get('home', function(){
             // $request->user() returns an instance of the authenticated user...
             return Redirect::to('auth/login');
         }else{
-			echo 'Welcome home' . Auth::user()->email . "."; 
+            return Redirect::to('/');
         }
 });
