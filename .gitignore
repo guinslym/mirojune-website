@@ -6,3 +6,4 @@ miro/.env
 miro/.env.production
 miro/public/uploads
 miro/public/videos
+*.zip
