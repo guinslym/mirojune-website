@@ -26,14 +26,14 @@ class HomeController extends Controller
       }
    
     public function index(){
-        $socials = Social::all();
-        $medias = Media::where('category', '==', 'painting')->limit(3)->orderBy('created_at', 'desc');
+        $paintings = Media::where('category', 'painting')->limit(3)->orderBy('created_at', 'desc')->get();
         $video_webm = Media::orderBy('created_at', 'desc');
         $video_mp4 = Media::where('category', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
         $video_ogg = Media::where('category', 'HomeVideo_ogg')->orderBy('created_at', 'desc')->get()->first();
+
         //to the same as in other...
     	return view('frontend.index')
-                ->with('medias', $medias)
+                ->with('paintings', $paintings)
                 ->with('video_mp4', $video_mp4->file)
                 ->with('video_ogg', $video_ogg->file);
 

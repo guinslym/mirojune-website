@@ -34,27 +34,19 @@
                   <h2>Paintings</h2>
             </div>
 
-
-        @for ($i = 0; $i < 3; $i++)
+        @foreach($paintings as $painting)
           <div class="col-lg-4 text-center paintings wow fadeInUp" data-wow-offset="10" data-wow-duration="2s">
-           @if ($i % 2 == 0)
-            <a href="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
-              <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" alt="" class="img-responsive" width="255" height="327">
+          
+            <a href="{{asset($painting->file)}}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
+              <img src="{{asset($painting->file)}}" alt="" class="img-responsive" width="255" height="327">
             </a>
-          @else
-           <a href="https://mirojune.s3.amazonaws.com/uploads/painting/image/12/_MG_5351.jpg" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
-             <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/12/_MG_5351.jpg" alt="" class="img-responsive" width="255" height="327">
-            </a>
-          @endif 
+          
             <address style="font-size:1.3em; line-height:1.4em;" class="">
-              <h4>My title</h4>
-                by Miró June<br>
-                25x30inch<br>
-                Oil<br>
+              <h4>{{ $painting->caption }}</h4>
                 
             </address>
           </div>
-        @endfor
+        @endforeach
 
         
       </div>

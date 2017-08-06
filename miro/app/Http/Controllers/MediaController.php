@@ -25,7 +25,7 @@ class MediaController extends Controller
      */
     public function index()
     {
-         $medias = Media::paginate(15);
+         $medias = Media::paginate(200);
          return view('medias.medias-list')->with('medias', $medias);
     }
 
