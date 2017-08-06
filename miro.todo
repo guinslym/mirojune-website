@@ -13,7 +13,7 @@ Steps:
  ✔ Thumbnail or JCrop with Laravel @done (17-08-06 15:13)
  ✔ Video to have @done (17-08-06 14:58)
  ☐ pagination
- ☐ Homepage frontend last 3 images
+ ✔ Homepage frontend last 3 images @done (17-08-06 16:30)
  ✔ Backend Remove profile (not yet) @done (17-08-06 16:11)
  ✔ Where are the socials @done (17-08-06 13:31)
  ✔ Pictures/ Paintings/ Video table--- no need @done (17-08-06 13:01)
@@ -25,7 +25,7 @@ Steps:
  ☐ how to remove auth/register (in routes...)
  ✔ Image to have(Paintings to add) --- live on the server @done (17-08-06 16:11)
  ☐ File max upload (on server)
- ☐ https://blackrockdigital.github.io/startbootstrap-thumbnail-gallery/#
+ ✔ https://blackrockdigital.github.io/startbootstrap-thumbnail-gallery/# @done (17-08-06 16:30)
 
 
  ☐ I took the video from ....
