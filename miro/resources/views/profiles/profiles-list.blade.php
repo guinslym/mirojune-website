@@ -7,8 +7,10 @@
 
 <div class="container">
 	<div class="row text-right">
+		<!--
 		 <a href="{{ url('/profile/create') }}" class="btn btn-primary" role="button"> Add a Profile
 	    </a>
+	    -->
 	</div>
 	
 </div>
@@ -22,12 +24,11 @@
 			<td>About Me Picture</td>
 			<td>video ogg</td>
 			<td>video mp4</td>
-			<td>created</td>
 			<td>Detail</td>
 			<td>update</td>
-			<td>delete</td>
 		</tr>
 	</thead>
+	<!--
 	@if (count($profiles) > 0)
 	<tfoot>
 		<tr>
@@ -36,14 +37,13 @@
 			<td>About Me Picture</td>
 			<td>video ogg</td>
 			<td>video mp4</td>
-			<td>created</td>
 			<td>Detail</td>
 			<td>update</td>
-			<td>delete</td>
 		</tr>
 	</tfoot>
 	@endif
 	<tbody>
+	-->
 	@foreach($profiles as $media)
 		<tr>
 			<td>{{ $media->id}} </td>
@@ -56,8 +56,7 @@
 			<td>
                      {!! Form::open(['url'=>'/profile/'.$media->id, 'class'=>'pull-left']) !!}
                         {!! Form::hidden('_method', 'DELETE') !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger', 'onclick'=>'return confirm(\'Are you sure?\')']) !!}
-                     {!! Form::close() !!}
+                        {!! Form::close() !!}
 			</td>
 		</tr>
 	@endforeach
@@ -66,7 +65,9 @@
 
 <div class="container">
 	<div class="row text-right">
+	<!--
 	 	<a href="{{ url('/profile/create') }}" class="btn btn-primary" role="button"> Add New Profile</a>
+	 	-->
 	</div>
 	
 </div>

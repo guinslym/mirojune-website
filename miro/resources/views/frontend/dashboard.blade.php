@@ -1,4 +1,4 @@
-@extends('frontend.frontend')
+@extends('global-layout')
 
 
 @section('body')

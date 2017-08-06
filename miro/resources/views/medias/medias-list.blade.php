@@ -48,7 +48,7 @@
 			 @if($media->category == "Video")
 				Video
 			@else	
-				<img src="{{asset($media->file)}}" alt="" width="300px">
+				<img src="{{asset($media->file)}}" alt="" width="150px">
 			 {{ $media->file}}
 			 @endif
 			 <!--

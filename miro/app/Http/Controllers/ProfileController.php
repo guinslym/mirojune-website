@@ -159,16 +159,4 @@ class ProfileController extends Controller
       return redirect('/profile')->with('message','You just updated your Profile');
    }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-   {
-      $profiles = Profile::find($id);
-      $profiles->delete();
-      return redirect('/profile')->with('message','You just deleted your profile!');
-   }
 }
