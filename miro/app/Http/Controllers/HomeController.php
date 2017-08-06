@@ -42,7 +42,6 @@ class HomeController extends Controller
          $socials = Social::all();
         $about_me_pic = Media::where('category', 'About me picture')->orderBy('created_at', 'desc')->get()->first();
         return view('frontend.about')
-                ->with('profile', $profile)
                 ->with('about_me_pic', $about_me_pic->file)
                 ->with('about_me_description', $about_me_pic->description);
     	}
