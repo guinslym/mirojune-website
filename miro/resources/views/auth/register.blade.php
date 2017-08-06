@@ -54,6 +54,9 @@ input[type=text], input[type=password], input[type=email], input[type=number], [
     <div class="form-group">
         <button type="submit" class='btn btn-primary'>Register</button>
     </div>
+    <!--
+    <a href="/auth/login" class="btn btn-warning btn-xs">SignIn</a>
+    -->
 </form>
 
  </div>
