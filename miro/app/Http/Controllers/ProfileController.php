@@ -40,8 +40,8 @@ class ProfileController extends Controller
       $validation = Validator::make($request->all(), [
          'about_me' => 'required',
          'aboutmepicture'     => 'required|image|mimes:jpeg,png|min:1|max:3000',
-         'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
-         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
+         'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:32400',
+         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:32400'
       ]);
 
       // Check if it fails //
@@ -113,8 +113,8 @@ class ProfileController extends Controller
       $validation = Validator::make($request->all(), [
          'about_me' => 'required',
          'aboutmepicture'     => 'required|image|mimes:jpeg,png|min:1|max:3000',
-         'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:3240',
-         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:3240'
+         'video_ogg'    => 'required|mimes:mp4,ogx,oga,ogv,ogg,webm|min:1|max:32400',
+         'video_mp4'    => 'required|mimes:mp4,mov,ogg,qt,webm|min:1|max:32400'
       ]);
 
       // Check if it fails //

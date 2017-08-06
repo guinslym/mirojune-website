@@ -1,21 +1,30 @@
 Steps:
  ✔ Contact Form css to correct @done (17-08-06 10:11)
  ✔ About me Add footer with a PictureWall ---doesn't work @done (17-08-06 10:43)
- ☐ Thumbnail or JCrop with Laravel
  ✔ Login doesn<t work... + Add image + How to remove register @done (17-08-06 12:56)
  ✔ IsotopeJS or MixItUp.js for contents -- not important @done (17-08-06 10:44)
  ✔ Backend to do... @done (17-08-06 13:00)
  ✔ SignIn/SignUP form @done (17-08-06 12:57)
  ✔ Change password @done (17-08-06 12:57)
  ✔ Dashboard Layout @done (17-08-06 13:00)
- ☐ Backend (check Editing Profile)
+ ✔ Backend (check Editing Profile) @done (17-08-06 14:47)
+ ☐ Frontend Index (Video-all)
+ ☐ Image add wow transition left-right
+ ✔ Thumbnail or JCrop with Laravel @done (17-08-06 15:13)
+ ✔ Video to have @done (17-08-06 14:58)
+ ☐ pagination
+ ☐ Backend Remove profile
+ ✔ Where are the socials @done (17-08-06 13:31)
  ✔ Pictures/ Paintings/ Video table--- no need @done (17-08-06 13:01)
  ✔ Readme.md @done (17-08-06 10:25)
+ ☐ Messages to add in Auth/login
  ☐ Change the secret key
  ☐ Goddady Assets (public) How to debug it (maybe remove development)
  ☐ miro@gmail.com (famille)
  ☐ how to remove auth/register (in routes...)
- ☐ Messages to add in Auth/login
+ ☐ Image to have(Paintings to add) --- live on the server
+ ☐ File max upload (on server)
+ ☐ https://blackrockdigital.github.io/startbootstrap-thumbnail-gallery/#
 
 
  ☐ I took the video from ....
@@ -188,6 +197,7 @@ Question:
   insert into categories(category) values ('Painting');
   insert into categories(category) values ('Video');
   insert into categories(category) values ('Picture');
+  insert into categories(category) values ('About me picture');
   insert into categories(category) values ('HomeVideo_mp4');
   insert into categories(category) values ('HomeVideo_ogg');
   insert into categories(category) values ('Other');

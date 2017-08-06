@@ -3,7 +3,6 @@
 
 @section('body')
 <div class="container">
-	
 	@include('frontend.partials.about')
 </div>
 @stop

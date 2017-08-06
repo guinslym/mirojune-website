@@ -29,15 +29,24 @@ class HomeController extends Controller
     public function index(){
         $socials = Social::all();
         $medias = Media::where('category', '==', 'painting')->limit(3)->orderBy('created_at', 'desc');
+        $video_webm = Media::orderBy('created_at', 'desc');
+        $video_mp4 = Media::where('category', '==', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
+        return $video_webm->first();
+        //to the same as in other...
     	return view('frontend.index')->with('medias', $medias);
 
     }
     public function about(){
         $profile = Profile::first();
-        return view('frontend.about')->with('profile', $profile);
-    	
-    }
-    public function contact(){
+         $socials = Social::all();
+        $about_me_pic = Media::where('category', 'About me picture')->orderBy('created_at', 'desc')->get()->first();
+        return view('frontend.about')
+                ->with('profile', $profile)
+                ->with('about_me_pic', $about_me_pic->file)
+                ->with('about_me_description', $about_me_pic->description);
+    	}
+
+        public function contact(){
         //On profile I need to be about to add email
         return view('frontend.contact');
     	
@@ -46,7 +55,8 @@ class HomeController extends Controller
     	return view('frontend.thanks');
     }
     public function paintings(){
-        $paintings = Media::where('category', "=", 'Painting')->limit(5)->orderBy('created_at', 'desc')->get();
+        //https://stackoverflow.com/a/13931676/2581266
+        $paintings = Media::where('category', "=", 'Painting')->orderByRaw("RAND()")->get();
     	return view('frontend.paintings')->with('paintings', $paintings);
     }
     public function videos(){

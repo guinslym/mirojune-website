@@ -90,7 +90,22 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
         </a>
       </div>
 	</div>
-	
+
+  <div class="col-md-3 col-sm-4">
+      <div class="wrimagecard wrimagecard-topimage">
+          <a href="/socials">
+          <div class="wrimagecard-topimage_header" style="background-color:  #FFEA85">
+             <center><i class="fa fa-snapchat"> </i></center>
+          </div>
+          <div class="wrimagecard-topimage_title">
+            <h4>Socials Medias for the footer<br>(Paintings/Videos...)
+            <div class="pull-right badge" id="WrGridSystem"></div></h4>
+          </div>
+          
+        </a>
+      </div>
+  </div>
+
 </div>
 
 

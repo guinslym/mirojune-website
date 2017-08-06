@@ -28,14 +28,19 @@
                   <h2>Paintings</h2>
             </div>
 
+<style>
+  .thumb {
+    margin-bottom: 30px;
+}
 
+</style>
         @foreach($paintings as $painting)
-          <div class="col-lg-4 text-center paintings wow FadeIn" data-wow-duration="2s">
+          <div class="col-lg-12 thumb text-center paintings" >
           <!--
             <img src="{{  asset($painting->file) }}" alt="" class="img-responsive" width="255" height="327">
             -->
-            <a href="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
-              <img src="https://mirojune.s3.amazonaws.com/uploads/painting/image/11/_MG_5032.jpg" alt="" class="img-responsive" width="80%">
+            <a href="{{  asset($painting->file) }}" class="js-smartPhoto " data-caption="miro" data-id="miro" data-group="miro">
+              <img src="{{  asset($painting->file) }}" alt="" class="img-responsive wow FadeIn" width="40%" data-wow-duration="2s">
            </a>
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>My Title</h4>

@@ -47,6 +47,12 @@
 			<td class="text-center">
 			 @if($media->category == "Video")
 				Video
+			@elseif($media->category == "HomeVideo_ogg")
+				<i class="fa fa-file-video-o fa-3x" style="color:#3369e8"> </i>
+			@elseif($media->category == "HomeVideo_mp4")
+				<i class="fa fa-file-video-o fa-3x" style="color:#3369e8"> </i>
+			@elseif($media->category == "HomeVideo_webm")
+				<i class="fa fa-file-video-o fa-3x" style="color:#3369e8"> </i>
 			@else	
 				<img src="{{asset($media->file)}}" alt="" width="150px">
 			 {{ $media->file}}

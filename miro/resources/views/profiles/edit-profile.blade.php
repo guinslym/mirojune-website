@@ -3,7 +3,7 @@
 @section('body')
    @include('error-notification')
    {!! Form::model($profile,['url' => '/profile/'.$profile->id, 'method' => 'PUT', 'files'=>true]) !!}
-
+      <span>Actual video for the frontpage</span><br>
       <video width="400" controls>
         <source src="{{ asset($profile->video_mp4) }}" type="video/mp4">
         <source src="{{ asset($profile->video_ogg) }}" type="video/ogg">
@@ -17,12 +17,12 @@
       </div>
       
       <div class="form-group">
-         <label for="video_ogg">Upload File</label>
+         <label for="video_ogg">Upload File (video ogg)</label>
          {!! Form::file('video_ogg',null,['class'=>'form-control']) !!}
       </div>
 
       <div class="form-group">
-         <label for="video_mp4">Upload File</label>
+         <label for="video_mp4">Upload File (video webm)</label>
          {!! Form::file('video_mp4',null,['class'=>'form-control']) !!}
       </div>
 
