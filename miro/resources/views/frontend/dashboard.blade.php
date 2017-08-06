@@ -2,6 +2,12 @@
 
 
 @section('body')
+@if($errors->has())
+    @foreach ($errors->all() as $error)
+        <div>{{ $error }}</div>
+    @endforeach
+@endif
+
 <div class="container">
 	
 <style>
