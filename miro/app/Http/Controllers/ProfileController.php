@@ -9,6 +9,13 @@ use App\Http\Controllers\Controller;
 use App\Profile;
 use Validator;
 
+
+/*
+
+This controller and Model should be remove from the application
+because I don't use it
+
+*/
 class ProfileController extends Controller
 {
     /**

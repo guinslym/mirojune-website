@@ -25,7 +25,6 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                       <li><a href="/dashboard">Dashboard <span class="sr-only">(current)</span></a></li>
-                      <li><a href="/profile">Profile <span class="sr-only">(current)</span></a></li>
                       <li><a href="/medias">Medias <span class="sr-only">(current)</span></a></li>
                       <li><a href="/socials">Socials <span class="sr-only">(current)</span></a></li>
                     </ul>

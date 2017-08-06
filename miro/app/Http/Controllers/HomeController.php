@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Profile;
 use App\Media;
 use App\Category;
 use App\User;
@@ -40,7 +39,6 @@ class HomeController extends Controller
 
     }
     public function about(){
-        $profile = Profile::first();
          $socials = Social::all();
         $about_me_pic = Media::where('category', 'About me picture')->orderBy('created_at', 'desc')->get()->first();
         return view('frontend.about')

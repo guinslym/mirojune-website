@@ -7,13 +7,14 @@ Steps:
  ✔ SignIn/SignUP form @done (17-08-06 12:57)
  ✔ Change password @done (17-08-06 12:57)
  ✔ Dashboard Layout @done (17-08-06 13:00)
- ☐ Frontend Index (Video-all)
+ ✔ Frontend Index (Video-all) @done (17-08-06 16:06)
  ✔ Backend (check Editing Profile) @done (17-08-06 14:47)
  ✔ Image add wow transition left-right @done (17-08-06 15:54)
  ✔ Thumbnail or JCrop with Laravel @done (17-08-06 15:13)
  ✔ Video to have @done (17-08-06 14:58)
  ☐ pagination
- ☐ Backend Remove profile
+ ☐ Homepage frontend last 3 images
+ ✔ Backend Remove profile (not yet) @done (17-08-06 16:11)
  ✔ Where are the socials @done (17-08-06 13:31)
  ✔ Pictures/ Paintings/ Video table--- no need @done (17-08-06 13:01)
  ✔ Readme.md @done (17-08-06 10:25)
@@ -22,7 +23,7 @@ Steps:
  ☐ Goddady Assets (public) How to debug it (maybe remove development)
  ☐ miro@gmail.com (famille)
  ☐ how to remove auth/register (in routes...)
- ☐ Image to have(Paintings to add) --- live on the server
+ ✔ Image to have(Paintings to add) --- live on the server @done (17-08-06 16:11)
  ☐ File max upload (on server)
  ☐ https://blackrockdigital.github.io/startbootstrap-thumbnail-gallery/#
 

@@ -13,6 +13,8 @@
 	
 </div>
 
+{{ $medias->render() }}
+
 <h1>List of uploads</h1>
 <table class="table table-striped table-bordered table-fixed">
 	<thead>
