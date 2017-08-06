@@ -4,11 +4,12 @@ Steps:
  ☐ Thumbnail or JCrop with Laravel
  ✔ Login doesn<t work... + Add image + How to remove register @done (17-08-06 12:56)
  ✔ IsotopeJS or MixItUp.js for contents -- not important @done (17-08-06 10:44)
- ☐ Backend to do...
+ ✔ Backend to do... @done (17-08-06 13:00)
  ✔ SignIn/SignUP form @done (17-08-06 12:57)
  ✔ Change password @done (17-08-06 12:57)
- ☐ Dashboard Layout
- ☐ Pictures/ Paintings/ Video table
+ ✔ Dashboard Layout @done (17-08-06 13:00)
+ ☐ Backend (check Editing Profile)
+ ✔ Pictures/ Paintings/ Video table--- no need @done (17-08-06 13:01)
  ✔ Readme.md @done (17-08-06 10:25)
  ☐ Change the secret key
  ☐ Goddady Assets (public) How to debug it (maybe remove development)
