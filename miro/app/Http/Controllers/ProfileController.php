@@ -27,11 +27,6 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-        return view('profiles.add-new-profile');
-    }
 
     /**
      * Store a newly created resource in storage.
