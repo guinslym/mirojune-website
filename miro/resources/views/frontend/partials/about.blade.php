@@ -13,7 +13,7 @@
     <div class="container contents"  >
       <div class="row">
 
-            <div class="col-md-12 big-title wow bounceIn animated paintingsShow" style="visibility: visible;">
+            <div class="col-md-12 big-title wow fadeIn animated paintingsShow" style="visibility: visible;">
                   <h2>About me</h2>
             </div>
 
