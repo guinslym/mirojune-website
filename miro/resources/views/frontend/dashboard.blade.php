@@ -21,6 +21,7 @@
     border-radius: 4px;
     transition: all 0.3s ease;
 }
+
 .wrimagecard .fa{
 	position: relative;
     font-size: 70px;
