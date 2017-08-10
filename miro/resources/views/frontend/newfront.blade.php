@@ -60,7 +60,7 @@
   	<!-- Header Section Start -->
 
     <header id="video-area" data-stellar-background-ratio="0.5">    
-      <div id="block" data-vide-bg="{{ asset('/crystal/gif/aaa') }}"></div>
+      <div id="block" data-vide-bg="{{ asset('/crystal/gif/aaa.mp4') }}"></div>
       <div class="fixed-top">
           <div class="container">
             <div class="logo-menu">
