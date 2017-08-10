@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Miro June - Painter - Artist - Mannequin - Photograph</title>
+    <title>Miro June - Painter - Artist - Model - Photograph</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 

@@ -24,7 +24,7 @@ div.contact-form{
     <div class="container contents">
       <div class="row">
         <section class="contactForm">
-<link rel="stylesheet" href="{{  asset('css/contact.css') }}" />
+<link rel="stylesheet" href="{{  asset('/public/'.'css/contact.css') }}" />
 
 <div class="contact-form" id="miro_contact_form">
                         <div class="container">
@@ -50,7 +50,7 @@ div.contact-form{
 @else
 
                                     <div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;">
-                                          <h3>Use this form to contact me or click on a Social Media Icon.</h3>
+                                          <h3>Use this form to contact form or click on a Social Media Icon.</h3>
                                     </div>
                               </div>
                               <!-- /Title row -->

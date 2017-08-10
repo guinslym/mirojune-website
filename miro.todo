@@ -1,4 +1,13 @@
 Steps:
+ ☐ http://rafsimons.com/
+ ☐ http://www.wrkdept.com/
+ ☐ Requirements
+ ☐ Full screen Video 
+ ☐ Left side is the Menu Sidebar
+ ☐ https://slideout.js.org/
+ ☐ https://chrisyee.ca/pushy/
+ ☐ https://superfish.joelbirch.co/examples/vertical/#a
+ ☐ $(window).height(); or $(document).height(); 
  ✔ Contact Form css to correct @done (17-08-06 10:11)
  ✔ About me Add footer with a PictureWall ---doesn't work @done (17-08-06 10:43)
  ✔ Login doesn<t work... + Add image + How to remove register @done (17-08-06 12:56)
@@ -12,13 +21,23 @@ Steps:
  ✔ Image add wow transition left-right @done (17-08-06 15:54)
  ✔ Thumbnail or JCrop with Laravel @done (17-08-06 15:13)
  ✔ Video to have @done (17-08-06 14:58)
- ☐ pagination
- ☐ Maybe add a loading video Picture
- ☐ Maybe add a Info Modal Button for Information on Medias (categories)
+ ✔ pagination for videos @done (17-08-08 03:35)
+ ✔ Pictures/Paintings (description) @done (17-08-08 03:47)
+ ✔ Pictures (size bigger) @done (17-08-08 04:09)
+ ☐ Video doesn't work on Opera and IE
+ ☐ Pictures/ assets smartphotojs to add to local assets
+ ☐ I remove 'public' from assets on the server.. check to see if it's working
+ ☐ Contact form
+ ☐ contact.css not found
+ ☐ Documentation
+ ✔ Paintings (order last first) @done (17-08-08 03:50)
+ ☐ end-to-end testing
  ☐ Maybe add a Jquery on change (select box) for the name of the category in blue
- ☐ How to deploy
- ☐ https://www.youtube.com/watch?v=6g8G3YQtQt4
+ ☐ Maybe add a Info Modal Button for Information on Medias (categories)
  ☐ contact form (send email)
+ ✔ Maybe add a loading video Picture @done (17-08-08 02:40)
+ ✔ How to deploy @done (17-08-08 02:45)
+ ✔ https://www.youtube.com/watch?v=6g8G3YQtQt4 @done (17-08-08 02:45)
  ✔ Homepage frontend last 3 images @done (17-08-06 16:30)
  ✔ Backend Remove profile (not yet) @done (17-08-06 16:11)
  ✔ Where are the socials @done (17-08-06 13:31)
@@ -182,7 +201,10 @@ Categories
 Question:
  ☐ Following what you want on your website I built this one? 
  ☐ I did the frontend meaning the part that everybody sees. For the backend I didn<t finish it will depends on what you want to control on your website (like I want to be able to add/remove Social Media icons ...). 
- ☐ I don't really do Wordpress because personnally it;s a DIY kinda website. Meaning that it's pretty easy to pickup (learn) so usually I told someone that wants to build a website to choose a template online and I will help him build his website. 
+ ☐ To access the backend 
+ ☐ http://miro.mongexweb.ca/auth/login
+ ☐ mirojune@gmail.com and password (famille)
+ ☐ I don't really do Wordpress because personnally it;s a DIY kinda website. Meaning that it's pretty easy to pickup (learn) so usually I told someone that wants to build a website to choose a template online () and I will help him build his website.  
  ☐ Do you want a contact form or you prefer users to contact you by Social Media?
  ☐ I build it from scratch and it right now hosted on Godaddy. 
  ☐ I took the video from ....

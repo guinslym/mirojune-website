@@ -37,8 +37,8 @@
         @foreach($paintings as $painting)
           <div class="col-lg-4 text-center paintings wow fadeInUp" data-wow-offset="10" data-wow-duration="2s">
           
-            <a href="{{asset($painting->file)}}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
-              <img src="{{asset($painting->file)}}" alt="" class="img-responsive" width="255" height="327">
+            <a href="{{ asset('public/' . $painting->file) }}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
+              <img src="{{ asset('public/' . $painting->file) }}" alt="" class="img-responsive" width="255" height="327">
             </a>
           
             <address style="font-size:1.3em; line-height:1.4em;" class="">

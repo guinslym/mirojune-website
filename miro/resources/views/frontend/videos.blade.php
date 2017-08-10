@@ -29,13 +29,13 @@
           <div class="col-lg-6 text-center paintings">
 
           <video width="400" controls loop>
-              <source src="{{  asset($video->file) }}" >
+              <source src="{{  asset('public/' . $video->file) }}" >
               Your browser does not support HTML5 video.
             </video>
 
             <address style="font-size:1.3em; line-height:1.4em;" class="">
               <h4>
-                <a href="#">My title</a>
+                <p>{{  $video->caption }}</p>
               </h4>
                 
             </address>
@@ -44,7 +44,11 @@
 
         
       </div>
+
+      <div class="row text-center">
+        
+{!! $videos->render() !!}
+      </div>
     </div>
-  </div>
 
 @stop

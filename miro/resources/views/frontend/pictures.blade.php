@@ -12,11 +12,17 @@
   .paintings img{
     margin: 0 auto;
   }
-
+img.photogallery {
+        width: 50%;
+    }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    img.photogallery {
+        width: 100%;
+    }
+}
 
 </style>
-<script src="https://unpkg.com/smartphoto@0.7.6/js/smartphoto.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/smartphoto@0.7.6/css/smartphoto.min.css">
 
      <div class="container contents">
        
@@ -30,13 +36,13 @@
         @foreach($pictures as $picture)
           <div class="col-lg-12 thumb text-center paintings wow fadeIn" data-wow-duration="4s" data-wow-offset="40" >
           <a href="{{  asset($picture->file) }}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
-            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive " width="40%" >
+            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive photogallery">
             </a>
             <address style="font-size:1.3em; line-height:1.4em;" class="">
-              <h4>My title</h4>
-                by Miró June<br>
-                25x30inch<br>
-                Oil<br>
+              <h4>{{ $picture->caption }}</h4>
+              <div class="row text-center">
+                {{  $picture->description }}
+              </div>
                 
             </address>
           </div>

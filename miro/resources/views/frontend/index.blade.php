@@ -1,14 +1,14 @@
-@extends('frontend.frontend')
+@extends('frontend.master-homepage')
 
 
 @section('body')
-    <link rel="stylesheet" href="{{  asset('css/videos.css') }}" />
+    <link rel="stylesheet" href="{{  asset('public/' .'css/videos.css') }}" />
 
 <!--
       <div class="jumbotron">
         <video id="video-background" preload muted autoplay loop>
-          <source src="{{ asset('videos/Moving-Forward.mp4') }}" type="video/mp4">
-          <source src="{{ asset('videos/Moving-Forward.webm') }}" type="video/mp4">
+          <source src="{{ asset('public/' .'videos/Moving-Forward.mp4') }}" type="video/mp4">
+          <source src="{{ asset('public/' .'videos/Moving-Forward.webm') }}" type="video/mp4">
         </video>
       </div>
       -->
@@ -32,7 +32,7 @@
 
 	@include('frontend.partials.paintings-real')
 
-<link rel="stylesheet" href="{{  asset('css/background.css') }}" />
+<link rel="stylesheet" href="{{  asset('public/' .'css/background.css') }}" />
 <style>
 #home{
 	min-height: 500px;
@@ -75,20 +75,20 @@
 }
 
 </style>
-<script src="{{  asset('js/core.js') }}"></script>
-<script src="{{  asset('js/transition.js') }}"></script>
-<script src="{{  asset('js/background.js') }}"></script>
+<script src="{{  asset('public/' .'js/core.js') }}"></script>
+<script src="{{  asset('public/' .'js/transition.js') }}"></script>
+<script src="{{  asset('public/' .'js/background.js') }}"></script>
 
 <script>
-    var mp4 = "{{ $video_mp4 }}";
-    var ogg = "{{ $video_ogg }}";
+    var mp4 = "{{ asset('public/' .$video_ogg) }}";
+    var ogg = "{{'public/' . $video_ogg }}";
 
 </script>
 <script>
               // Formstone Background - Video Background Settings
     $(".video-section").background({
         source: {
-            poster: ogg,
+            poster: mp4,
             mp4: mp4
         }
     });

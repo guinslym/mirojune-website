@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,13 +9,14 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Miro June - Painter - Artist - Mannequin - Photograph</title>
+    <title>Miro June - Painter - Artist - Model - Photograph</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{  asset('css/bootstrap-paper.min.css') }}" />
+    <link rel="stylesheet" href="{{  asset('public/'. 'css/bootstrap-paper.min.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/smartphoto@0.7.6/css/smartphoto.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
@@ -98,6 +98,8 @@ section{
    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://unpkg.com/smartphoto@0.7.6/js/smartphoto.min.js"></script>
+
 
 
      <script>

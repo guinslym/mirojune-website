@@ -32,7 +32,7 @@ class HomeController extends Controller
         $video_ogg = Media::where('category', 'HomeVideo_ogg')->orderBy('created_at', 'desc')->get()->first();
 
         //to the same as in other...
-    	return view('frontend.index')
+    	return view('frontend.indexvideo')
                 ->with('paintings', $paintings)
                 ->with('video_mp4', $video_mp4->file)
                 ->with('video_ogg', $video_ogg->file);
@@ -56,11 +56,11 @@ class HomeController extends Controller
     }
     public function paintings(){
         //https://stackoverflow.com/a/13931676/2581266
-        $paintings = Media::where('category', "=", 'Painting')->orderByRaw("RAND()")->get();
+        $paintings = Media::where('category', "=", 'Painting')->orderBy('created_at', 'desc')->get();
     	return view('frontend.paintings')->with('paintings', $paintings);
     }
     public function videos(){
-        $videos = Media::where('category', "=", 'Video')->orderBy('created_at', 'desc')->get();
+        $videos = Media::where('category', "=", 'Video')->orderBy('created_at', 'desc')->paginate(6);
         return view('frontend.videos')->with('videos', $videos);
     }
     public function pictures(){
@@ -76,6 +76,25 @@ class HomeController extends Controller
     }
     public function vid(){
         return view('frontend.vid1');
+        
+    }
+    public function tryvid1(){
+        $paintings = Media::where('category', 'painting')->limit(3)->orderBy('created_at', 'desc')->get();
+        $video_webm = Media::orderBy('created_at', 'desc');
+        $video_mp4 = Media::where('category', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
+        $video_ogg = Media::where('category', 'HomeVideo_ogg')->orderBy('created_at', 'desc')->get()->first();
+
+        //to the same as in other...
+        return view('frontend.indexvideo')
+                ->with('paintings', $paintings)
+                ->with('video_mp4', $video_mp4->file)
+                ->with('video_ogg', $video_ogg->file);
+
+        
+    }
+
+    public function tryvid2(){
+        return view('frontend.newfront');
         
     }
 }

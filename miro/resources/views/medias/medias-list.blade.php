@@ -13,19 +13,31 @@
 	
 </div>
 
-<!--
-{{ $medias->render() }}
--->
+
+{!! $medias->render() !!}
 
 <h1>List of uploads</h1>
 <table class="table table-striped table-bordered table-fixed">
 	<thead>
 		<tr>
 			<td>id</td>
-			<td>category</td>
+			<td>
+				<a href="{{ URL::route('medias-category') }} ">
+					category
+				&nbsp;
+				<i class="fa fa-sort-alpha-desc" aria-hidden="true"></i>
+				</a>
+			</td>
 			<td class="text-center">file</td>
-			<td>created</td>
-			<td>Detail</td>
+			<td>
+				<a href="{{ URL::route('medias.index') }} ">
+					created
+				&nbsp;
+				<i class="fa fa-sort-numeric-desc" aria-hidden="true"></i>
+				</a>
+			</td>
+			<td>updated</td>
+			<td>detail</td>
 			<td>update</td>
 			<td>delete</td>
 		</tr>
@@ -37,6 +49,7 @@
 			<td>category</td>
 			<td class="text-center">file</td>
 			<td>created</td>
+			<td>updated</td>
 			<td>Detail</td>
 			<td>update</td>
 			<td>delete</td>
@@ -50,7 +63,7 @@
 			<td>{{ $media->category}}</td>
 			<td class="text-center">
 			 @if($media->category == "Video")
-				Video
+				<i class="fa fa-video-camera  fa-3x" style="color:#ffd921"></i>
 			@elseif($media->category == "HomeVideo_ogg")
 				<i class="fa fa-file-video-o fa-3x" style="color:#3369e8"> </i>
 			@elseif($media->category == "HomeVideo_mp4")
@@ -59,12 +72,14 @@
 				<i class="fa fa-file-video-o fa-3x" style="color:#3369e8"> </i>
 			@else	
 				<img src="{{asset($media->file)}}" alt="" width="150px">
-			 {{ $media->file}}
-			 @endif
+				<br>
 			 <!--
+			 {{ $media->file}}
 			 -->
+			 @endif
 			</td>
-			<td>{{ $media->created_at}}</td>
+			<td>{{ $media->created_at->diffForHumans() }}</td>
+			<td>{{ $media->updated_at->diffForHumans() }}</td>
 			<td><a href="{{ url('/medias/'.$media->id.'/') }}" class="btn btn-default pull-left">Show</a></td></td>
 			<td><a href="{{ url('/medias/'.$media->id.'/edit') }}" class="btn btn-warning pull-left">Edit</a></td>
 			<td>
@@ -85,5 +100,7 @@
 	
 </div>
 
+
+{!! $medias->render() !!}
 
 @stop

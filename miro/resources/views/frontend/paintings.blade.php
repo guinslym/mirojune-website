@@ -14,51 +14,46 @@
   }
 
 
-
+  .thumbnailgallery {
+    margin-bottom: 30px;
+}
+img.photogallery {
+        width: 50%;
+    }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    img.photogallery {
+        width: 100%;
+    }
+}
 
 </style>
-<script src="https://unpkg.com/smartphoto@0.7.6/js/smartphoto.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/smartphoto@0.7.6/css/smartphoto.min.css">
-
-     <div class="container contents">
-       
-      <div class="row">
+      
 
             <div class="col-md-12 big-title wow fadeIn animated paintings" style="visibility: visible;">
                   <h2>Paintings</h2>
             </div>
       </div>
-<style>
-  .thumb {
-    margin-bottom: 30px;
-}
 
-</style>
         @foreach($paintings as $painting)
-        <div class="row "  >
-          <div class="col-lg-12 thumb text-center paintings wow fadeIn" data-wow-duration="4s" data-wow-offset="40" >
-          <!--
-            <img src="{{  asset($painting->file) }}" alt="" class="img-responsive" width="255" height="327">
-            -->
+          <div class="col-lg-12 thumbnailgallery text-center paintings wow fadeIn" data-wow-duration="4s" data-wow-offset="40" >
+
             <a href="{{  asset($painting->file) }}" class="js-smartPhoto " data-caption="miro" data-id="miro" data-group="miro">
-              <img src="{{  asset($painting->file) }}" alt="" class="img-responsive" width="50%" >
+              <img src="{{  asset($painting->file) }}" alt="" class="img-responsive photogallery"  >
            </a>
             <address style="font-size:1.3em; line-height:1.4em;" class="">
-              <h4>My Title</h4>
-                by Miró June<br>
-                25x30inch<br>
-                Oil<br>
+              <h4>{{ $painting->caption }}</h4>
+              <div class="row text-center">
+                {{  $painting->description }}
+              </div>
                 
             </address>
           </div>
         @endforeach
 
         
-      </div>
 
 
-    </div>
-  </div>
 
 <script>
 window.addEventListener('DOMContentLoaded',function(){
