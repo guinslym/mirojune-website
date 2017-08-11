@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ asset('/crystal/css/menu_sideslide.css') }}">
     <link rel="stylesheet" href="{{ asset('/crystal/css/main.css') }}">    
     <link rel="stylesheet" href="{{ asset('/crystal/css/responsive.css') }}">
-
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
       <div class="menu-wrap">
@@ -29,22 +29,22 @@
           <div class="icon-list navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="/tryvid2">Home</a>
+                <a class="nav-link" href="/tryvid5page">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/vi2page">About Me</a>
+                <a class="nav-link" href="/tryvid5page">About Me</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="/vi2page">Paintings</a>
+                <a class="nav-link" href="/tryvid5page">Paintings</a>
               </li>                            
               <li class="nav-item">
-                <a class="nav-link" href="/vi2page">Pictures</a>
+                <a class="nav-link" href="/tryvid5page">Pictures</a>
               </li>            
               <li class="nav-item">
-                <a class="nav-link" href="/vi2page">Video</a>
+                <a class="nav-link" href="/tryvid5page">Video</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="/vi2page">Contact</a>
+                <a class="nav-link" href="/tryvid5page">Contact</a>
               </li> 
             </ul>
           </div>
@@ -59,7 +59,15 @@
           <div class="container">
             <div class="logo-menu">
               <a href="index.html" class="logo"><span class="lnr "></span> </a>
-              <button class="menu-button" id="open-button"><i class="lnr lnr-menu"></i></button>    
+              <!--
+              <button class="menu-button" id="open-button"><i class="lnr lnr-home"></i></button> 
+              -->
+              <a href="/tryvid5page">
+                <!--
+              <i class="fa fa-navicon fa-2x" aria-hidden="true" style="color: white"></i>
+              -->
+              <i class="lnr lnr-home"></i>
+              </a>   
             </div>           
           </div>
       </div>

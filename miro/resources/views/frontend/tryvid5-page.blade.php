@@ -139,6 +139,8 @@ footer {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/smartphoto@0.7.6/css/smartphoto.min.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Crimson+Text|Indie+Flower|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kaushan+Script|Satisfy" rel="stylesheet">
 <body>
 
 <!--
@@ -169,14 +171,14 @@ footer {
             <div class="sidebar-nav">
                 <ul class="nav">
                     
-                    <li class="active"><a href="#">Miro June</a></li>
+                    <li class="active"><a href="/tryvid2">Miro June</a></li>
                     <li class="nav-divider"></li>
-                    <li><a href="#">Paintings</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Pictures</a></li>
+                    <li><a href="/tryvid2">Paintings</a></li>
+                    <li><a href="/tryvid2">Videos</a></li>
+                    <li><a href="/tryvid2">Pictures</a></li>
                    <li class="nav-divider"></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/tryvid2">About Me</a></li>
+                    <li><a href="/tryvid2">Contact</a></li>
                 </ul>
             </div>
             <!--/.well -->
