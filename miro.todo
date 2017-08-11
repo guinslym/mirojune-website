@@ -4,9 +4,10 @@ Steps:
  ☐ Requirements
  ☐ Full screen Video 
  ☐ Left side is the Menu Sidebar
- ☐ https://slideout.js.org/
- ☐ https://chrisyee.ca/pushy/
- ☐ https://superfish.joelbirch.co/examples/vertical/#a
+ ✔ https://slideout.js.org/ @done (17-08-11 16:24)
+ ✔ https://chrisyee.ca/pushy/ @done (17-08-11 16:24)
+ ☐ Homepage => Fullscreen
+ ☐ Otherpage => Sidebar Left (Background white) => Content Right
  ☐ $(window).height(); or $(document).height(); 
  ✔ Contact Form css to correct @done (17-08-06 10:11)
  ✔ About me Add footer with a PictureWall ---doesn't work @done (17-08-06 10:43)
@@ -93,6 +94,9 @@ Steps:
  ☐ https://www.google.ca/search?q=laravel+app+only+one+user+admin&rlz=1C1CHBF_enCA741CA741&oq=laravel+app+only+one+user+admin&aqs=chrome..69i57.5896j0j4&sourceid=chrome&ie=UTF-8
  ☐ isotope page ???
  ☐ Metadata
+ ☐ https://vimeo.com/228386091
+ ☐ http://clients.mucci.co/en/
+ ☐ https://bootsnipp.com/snippets/featured/fancy-sidebar-navigation
  ☐ 
 
 Other tasks:

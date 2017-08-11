@@ -23,7 +23,17 @@ Route::get('/tryvid1', ['as' => 'vid1', 'uses' => 'HomeController@tryvid1']);
 Route::get('/tryvid2', ['as' => 'vid2', 'uses' => 'HomeController@tryvid2']);
 Route::get('/vi2page', ['as' => 'tryvid2page', 'uses' => 'HomeController@tryvid2page']);
 
+//vid3
+Route::get('/tryvid3', ['as' => 'vid2', 'uses' => 'HomeController@tryvid3']);
+Route::get('/vid3page', ['as' => 'tryvid3page', 'uses' => 'HomeController@tryvid3page']);
 
+//vid4
+Route::get('/tryvid4', ['as' => 'vid2', 'uses' => 'HomeController@tryvid4']);
+Route::get('/vid4page', ['as' => 'tryvid4page', 'uses' => 'HomeController@tryvid4page']);
+
+//vid4
+Route::get('/tryvid5', ['as' => 'vid2', 'uses' => 'HomeController@tryvid5']);
+Route::get('/vid5page', ['as' => 'tryvid5page', 'uses' => 'HomeController@tryvid5page']);
 
 
 Route::get('/archive', ['as' => 'fontend-archive', 'uses' => 'HomeController@archive']);

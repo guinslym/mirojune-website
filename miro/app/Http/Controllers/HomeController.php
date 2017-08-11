@@ -101,4 +101,26 @@ class HomeController extends Controller
         return view('frontend.newfront-page');
         
     }
+
+    public function tryvid3(){
+        return view('frontend.tryvid3');
+    }
+    public function tryvid3page(){
+        return view('frontend.tryvid3-page');
+    }
+
+    public function tryvid4(){
+        return view('frontend.tryvid4');
+    }
+    public function tryvid4page(){
+        return view('frontend.tryvid4-page');
+    }
+
+    public function tryvid5(){
+        return view('frontend.tryvid5');
+    }
+    public function tryvid5page(){
+        return view('frontend.tryvid5-page');
+    }
+
 }

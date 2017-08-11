@@ -29,7 +29,7 @@
           <div class="icon-list navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="/vi2page">Home</a>
+                <a class="nav-link" href="/tryvid2">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/vi2page">About Me</a>
@@ -53,8 +53,7 @@
       </div>      
   	<!-- Header Section Start -->
 
-    <header id="video-area" data-stellar-background-ratio="0.5">    
-      <div id="block" data-vide-bg="{{ asset('/crystal/gif/aaa.mp4') }}"></div>
+
       <div class="fixed-top">
           <div class="container">
             <div class="logo-menu">
@@ -63,18 +62,6 @@
             </div>           
           </div>
       </div>
-      <div class="overlay overlay-2"></div>      
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <div class="contents text-center">
-              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"></h1>
-              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></p>
-              <a href="#" class=" wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="d"></i> </a>
-            </div>
-          </div>
-        </div> 
-      </div>      
     </header>
     <!-- Header Section End --> 
 
