@@ -17,7 +17,15 @@ Route::get('/', ['as' => 'frontend-index', 'uses' => 'HomeController@index']);
 Route::get('/about', ['as' => 'fontend-about', 'uses' => 'HomeController@about']);
 Route::get('/vid', ['as' => 'vid', 'uses' => 'HomeController@vid']);
 Route::get('/tryvid1', ['as' => 'vid1', 'uses' => 'HomeController@tryvid1']);
+
+
+//vid2
 Route::get('/tryvid2', ['as' => 'vid2', 'uses' => 'HomeController@tryvid2']);
+Route::get('/vi2page', ['as' => 'tryvid2page', 'uses' => 'HomeController@tryvid2page']);
+
+
+
+
 Route::get('/archive', ['as' => 'fontend-archive', 'uses' => 'HomeController@archive']);
 Route::get('/thanks', ['as' => 'fontend-thanks', 'uses' => 'HomeController@thanks']);
 Route::get('/medias', ['as' => 'fontend-admin-medias', 'uses' => 'HomeController@painting']);

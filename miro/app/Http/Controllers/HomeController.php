@@ -97,4 +97,8 @@ class HomeController extends Controller
         return view('frontend.newfront');
         
     }
+    public function tryvid2page(){
+        return view('frontend.newfront-page');
+        
+    }
 }
