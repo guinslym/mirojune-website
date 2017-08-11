@@ -34,6 +34,7 @@ footer {
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
     background:#ecf0f1;
+    background: white;
   }
 
   .row-offcanvas-left
@@ -60,6 +61,75 @@ footer {
     /*margin-top:10px;*/
     margin-top: 0;
 }
+
+
+
+      .big-title {
+    text-align: center;
+}
+  .big-title h2 {
+      padding: 12px 10px 10px;
+      color: #566473;
+      font-size: 44px;
+      line-height: 50px;
+      margin: 0 auto 50px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+  }
+
+
+  .big-title h2::before,
+  .big-title h2::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #566473;
+      content: '';
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+      -webkit-transform: scale(0.85);
+      -moz-transform: scale(0.85);
+      transform: scale(0.85);
+  }
+
+  .big-title h2::after {
+      opacity: 0;
+      -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+      transition: top 0.3s, opacity 0.3s, transform 0.3s;
+  }
+
+  .big-title h2:hover::before,
+  .big-title h2:hover::after,
+  .big-title h2:focus::before,
+  .big-title h2:focus::after {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      transform: scale(1);
+  }
+  .big-title h2:hover::after,
+  .big-title h2:focus::after {
+      top: 0%;
+      opacity: 1;
+  }
+
+  /* big title light */
+
+  .big-title.light h2::before,
+  .big-title.light h2::after {
+      background: white;
+  }
+
+  .big-title{
+    margin: 60px 0 20px 0;
+  }
 	</style>
 </head>
 <!-- jQuery -->
@@ -139,27 +209,59 @@ footer {
                     <p><a class="btn btn-default" href="#">View details »</a></p>
                 </div>
                 <!--/span-->
-                <div class="col-6 col-sm-6 col-lg-4">
-                    <h2>Heading</h2>
-                    <p>Bootstrap is a front-end framework that uses CSS and JavaScript to facilitate responsive Web design. Bootply is a playground for Bootstrap that enables developers and designers to test, prototype and create mockups using Bootstrap
-                        friendly HTML, CSS and Javascript.</p>
-                    <p><a class="btn btn-default" href="#">View details »</a></p>
-                </div>
+
                 <!--/span-->
             </div>
             <!--/row-->
+
+		<hr>
+		<div class="col-xs-12 col-sm-9">
+				{{-- Paintings --}}
+				<div class="row">
+					<div class="col-md-12 big-title wow bounceIn animated paintings" style="visibility: visible;">
+			                  <h2>Paintings</h2>
+			        </div>
+				</div>
+				
+
+				<div class="text-center">
+					
+
+		        @foreach($paintings as $picture)
+		          <div class="thumb text-center paintings wow fadeIn" data-wow-duration="4s" data-wow-offset="40" >
+		          <a href="{{  asset($picture->file) }}" class="js-smartPhoto" data-caption="miro" data-id="miro" data-group="miro">
+		            <img src="{{  asset($picture->file) }}" alt="" class="img-responsive center-block   photogallery" width="60%">
+		            </a>
+		            <address style="font-size:1.3em; line-height:1.4em;" class="">
+		              <h4>{{ $picture->caption }}</h4>
+		              <div class="row text-center">
+		                {{  $picture->description }}
+		              </div>
+		                
+		            </address>
+		          </div>
+		        @endforeach
+			</div>
+
+
+		{{-- col-xs-12 col-sm-9 --}}
+		</div>
+		<div class="col-xs-12 col-sm-9">
+		{{-- Paintings --}}
+		
+		</div>
+		{{-- About Me --}}
+		{{-- Pictures --}}
+		{{-- Contact Me --}}
+
         </div>
         <!--/span-->
 
+@include('frontend.partials.socials')
 
     </div>
     <!--/row-->
 
-    <hr>
-
-    <footer>
-        <p>© Company 2017</p>
-    </footer>
 
 </div>
 <!--/.container-->
