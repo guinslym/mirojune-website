@@ -7,7 +7,11 @@ Steps:
  ✔ https://slideout.js.org/ @done (17-08-11 16:24)
  ✔ https://chrisyee.ca/pushy/ @done (17-08-11 16:24)
  ☐ Homepage => Fullscreen
+ ☐ I am satisfied with the first page ... 
+ ☐ The second page I still have some worries...
  ☐ Otherpage => Sidebar Left (Background white) => Content Right
+ ☐ Tryvid5
+   ☐ How does it look on a Tablet or Mobile phone????
  ☐ $(window).height(); or $(document).height(); 
  ✔ Contact Form css to correct @done (17-08-06 10:11)
  ✔ About me Add footer with a PictureWall ---doesn't work @done (17-08-06 10:43)

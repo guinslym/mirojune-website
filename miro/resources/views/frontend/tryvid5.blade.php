@@ -62,8 +62,13 @@ footer {
 }
 	</style>
 </head>
+<!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <body>
 
+<!--
 <div class="navbar navbar-fixed-top navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -81,11 +86,9 @@ footer {
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <!-- /.nav-collapse -->
     </div>
-    <!-- /.container -->
 </div>
-<!-- /.navbar -->
+ /.navbar -->
 
 <div class="container-fluid">
     <div class="row row-offcanvas row-offcanvas-left">
@@ -94,14 +97,13 @@ footer {
                 <ul class="nav">
                     
                     <li class="active"><a href="#">Miro June</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Paintings</a></li>
                     <li class="nav-divider"></li>
-                    <li><a href="#">Pictures</a></li>
+                    <li><a href="#">Paintings</a></li>
                     <li><a href="#">Videos</a></li>
+                    <li><a href="#">Pictures</a></li>
                    <li class="nav-divider"></li>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <!--/.well -->
@@ -161,6 +163,7 @@ footer {
 
 </div>
 <!--/.container-->
+
 </body>
 <script>
 	$(document).ready(function() {
