@@ -33,7 +33,7 @@ Route::get('/vid4page', ['as' => 'tryvid4page', 'uses' => 'HomeController@tryvid
 
 //vid4
 Route::get('/tryvid5', ['as' => 'vid2', 'uses' => 'HomeController@tryvid5']);
-Route::get('/vid5page', ['as' => 'tryvid5page', 'uses' => 'HomeController@tryvid5page']);
+Route::get('/tryvid5page', ['as' => 'tryvid5page', 'uses' => 'HomeController@tryvid5page']);
 
 
 Route::get('/archive', ['as' => 'fontend-archive', 'uses' => 'HomeController@archive']);

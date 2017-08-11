@@ -117,6 +117,7 @@ class HomeController extends Controller
     }
 
     public function tryvid5(){
+        $about_me_pic = Media::where('category', 'About me picture')->orderBy('created_at', 'desc')->get()->first();
         $paintings = Media::where('category', 'painting')->limit(2)->orderBy('created_at', 'desc')->get();
         $video_webm = Media::orderBy('created_at', 'desc');
         $video_mp4 = Media::where('category', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
@@ -126,10 +127,13 @@ class HomeController extends Controller
         return view('frontend.tryvid5')
                 ->with('paintings', $paintings)
                 ->with('video_mp4', $video_mp4->file)
-                ->with('video_ogg', $video_ogg->file);
+                ->with('video_ogg', $video_ogg->file)
+                ->with('about_me_pic', $about_me_pic->file)
+                ->with('about_me_description', $about_me_pic->description);
     }
 
     public function tryvid5page(){
+        $about_me_pic = Media::where('category', 'About me picture')->orderBy('created_at', 'desc')->get()->first();
         $paintings = Media::where('category', 'painting')->limit(2)->orderBy('created_at', 'desc')->get();
         $video_webm = Media::orderBy('created_at', 'desc');
         $video_mp4 = Media::where('category', 'HomeVideo_mp4')->orderBy('created_at', 'desc')->get()->first();
@@ -139,7 +143,9 @@ class HomeController extends Controller
         return view('frontend.tryvid5-page')
                 ->with('paintings', $paintings)
                 ->with('video_mp4', $video_mp4->file)
-                ->with('video_ogg', $video_ogg->file);
+                ->with('video_ogg', $video_ogg->file)
+                ->with('about_me_pic', $about_me_pic->file)
+                ->with('about_me_description', $about_me_pic->description);
     }
 
 }
